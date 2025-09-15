@@ -1,4 +1,4 @@
-# Je suis Alban Dericbourg et je suis _software engineer_
+# Je suis Alban Dericbourg et je suis développeur
 
 En tant qu'ingénieur logiciel senior, je peux renforcer vos équipes ou apporter des compétences complémentaires (techniques ou non) dont votre équipe pourrait avoir besoin.
 
