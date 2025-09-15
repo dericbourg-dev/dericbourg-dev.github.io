@@ -1,15 +1,13 @@
 [fr]
 title = "Alban Dericbourg — Développeur"
-contentDir = "content/francais"
 weight = 1
 LanguageName = "🇫🇷 Français"
-[fr.params]
-description = "Je suis développeur"
+  [fr.params]
+  description = "Je suis développeur"
 
 [en]
 title = "Alban Dericbourg — Software Engineer"
 weight = 2
 LanguageName = "🇬🇧 English"
-contentDir = "content/english"
-[en.params]
-description = "My name is Alban Dericbourg and I am a software engineer"
+  [en.params]
+  description = "I am a software engineer"

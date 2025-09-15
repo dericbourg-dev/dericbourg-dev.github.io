@@ -1,8 +1,8 @@
-#[main]]
-#name = "Home"
-#identifier = "home"
-#weight = 100
-#url = "/"
+[[main]]
+name = "Home"
+identifier = "home"
+weight = 100
+url = "/en/"
 
 #[[main]]
 #name = "About"

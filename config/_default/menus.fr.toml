@@ -1,8 +1,8 @@
-#[[main]]
-#name = "Accueil"
-#identifier = "accueil"
-#weight = 100
-#url = "/fr/"
+[[main]]
+name = "Accueil"
+identifier = "accueil"
+weight = 100
+url = "/fr/"
 
 #[[main]]
 #name = "À propos"
