@@ -1,23 +1,29 @@
-  [[main]]
-  name = "Accueil"
-  identifier = "accueil"
-  weight = 100
-  url = "/fr/"
+#[[main]]
+#name = "Accueil"
+#identifier = "accueil"
+#weight = 100
+#url = "/fr/"
 
-  [[main]]
-  name = "À propos"
-  weight = 400
-  identifier = "apropos"
-  url = "/fr/a-propos/"
+#[[main]]
+#name = "À propos"
+#weight = 400
+#identifier = "apropos"
+#url = "/fr/a-propos/"
 
-  [[main]]
-  name = "Contact"
-  weight = 600
-  identifier = "contact"
-  url = "/contact/"
+#[[main]]
+#name = "Contact"
+#weight = 600
+#identifier = "contact"
+#url = "/contact/"
 
-  [[footer]]
-  name = "imprint"
-  weight = 1
-  identifier = "imprint"
-  url = "/imprint/"
+#[[footer]]
+#name = "imprint"
+#weight = 1
+#identifier = "imprint"
+#url = "/imprint/"
+
+[[footer]]
+name = "Retrouvez-moi également sur Malt"
+weight = 1
+identifier = "imprint"
+url = "https://www.malt.fr/profile/albandericbourg"
