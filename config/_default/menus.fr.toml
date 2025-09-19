@@ -4,6 +4,12 @@ identifier = "accueil"
 weight = 100
 url = "/fr/"
 
+[[main]]
+name = "Références"
+weight = 200
+identifier = "references"
+url = "/references/"
+
 #[[main]]
 #name = "À propos"
 #weight = 400

@@ -4,6 +4,12 @@ identifier = "home"
 weight = 100
 url = "/en/"
 
+[[main]]
+name = "References"
+weight = 200
+identifier = "references"
+url = "/en/references/"
+
 #[[main]]
 #name = "About"
 #weight = 400
