@@ -24,3 +24,18 @@ In terms of coordination and communication, Alban has repeatedly proven that he 
 Finally, I've seen in him a true driving force for cooperation and collective intelligence. He takes initiatives to improve how to team works (e.g., clarifying the role and objectives of certain meetings) and actively contributes to creating a positive work environment. Always responsive and cheerful, he also helps less experienced people grow.
 
 In short: a long-term technical vision, an ability to deliver with confidence, and a real strength for the team. Working with Alban is not only efficient, but also truly enjoyable.
+
+## Jérémy B <small>Software engineer, BlaBlaCar</small>
+
+_Translated from French_
+
+For three years, I had the pleasure of working with Alban in BlaBlaCar's Search squad, him as a backend developer, me as a frontend developer.
+
+In addition to his solid expertise in the Java/Spring ecosystem, Alban knows how to imagine, present, and implement robust, end-to-end solutions with the right level of abstraction. He places great emphasis on the scalability (ability to make it evolve) of these solutions. His experience allows him to understand that the relevance of a technical decision is primarily judged by the evolution of the product, and he enjoys this challenge.
+The quality and reliability of the deployed code is also a central concern of his, which he demonstrated by being one of the first architects of the implementation of SLOs.
+
+Among Alban's human qualities, I was particularly struck by his pedagogical approach, which I observed both during technical discussions and during more product-oriented discussions. He knows how to adapt to his interlocutor, rephrasing, in order to find a common language and, ultimately, a consensus. This pedagogy was also used to support more junior profiles. Personally, I will remember Alban for his invaluable assistance when I wanted to develop my backend skills. He helped me get my foot in the door, with patience and kindness.
+
+Alban was undoubtedly a pillar within our team, and his leadership qualities naturally led him to successfully lead cross-functional projects involving several teams.
+
+Working with Alban means having an independent, reliable technical partner with an excellent collaborative spirit. I highly recommend him.

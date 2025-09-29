@@ -24,3 +24,15 @@ Enfin, j’ai vu en lui un vrai moteur pour la coopération et l’intelligence 
 
 En résumé : une vision technique long terme, une capacité à livrer dans la sérénité, et une vraie force pour l’équipe. Travailler avec Alban est non seulement efficace, mais aussi réellement agréable.
 
+## Jérémy B <small>Software engineer, BlaBlaCar</small>
+
+Pendant 3 années, j'ai eu le plaisir de travailler avec Alban au sein de la squad Search de BlaBlaCar, lui en tant que développeur backend, moi en tant que développeur frontend.
+ 
+Outre sa solide expertise sur l'écosystème Java/Spring, Alban sait imaginer, présenter et mettre en place des solutions de bout en bout, robustes et avec le bon niveau d'abstraction. Il s'attache beaucoup à l'évolutivité de ces solutions. Son expérience lui permet de savoir que la pertinence d'une décision technique se juge principalement à l'aune des évolutions du produit, et il apprécie ce challenge. 
+La qualité et la fiabilité du code déployé est également au centre de ses préoccupations, ce qu'il a notamment pu démontrer en étant un des premiers artisans de la mise en place de SLOs.
+ 
+Parmi les qualités humaines d'Alban, j'ai été particulièrement marqué par sa pédagogie, constatée aussi bien lors de discussions techniques que lors de discussions plus orientées produit. Il sait s'adapter à son interlocuteur, reformuler, afin de trouver un langage commun et, in fine, un consensus. Cette pédagogie était également mise au service de l'accompagnement des profils plus juniors. À titre personnel, je retiendrai d'ailleurs d'Alban son aide précieuse lorsque j'ai souhaité monter en compétence sur le backend. Il m'a permis de mettre le pied à l'étrier, avec patience et bienveillance.
+ 
+Alban était sans conteste un pilier au sein de notre équipe, et ses qualités de leader l'ont naturellement amené à mener avec succès des projets transversaux impliquant plusieurs équipes.
+ 
+Travailler avec Alban, c'est s'assurer d'avoir un partenaire technique autonome, fiable et doté d'un excellent esprit collaboratif. Je le recommande vivement.
