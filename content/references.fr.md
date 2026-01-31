@@ -6,7 +6,7 @@ J’ai eu l’occasion de travailler pendant un an avec Alban en tant que Produc
 
 ## Benoit R. <small>Software engineer, BlaBlaCar</small>
 
-_Traduit de l'anglais an français_
+_Traduit de l'anglais au français_
 
 Alban et moi faisions partie de la même équipe chez BlaBlaCar. Il était l'ingénieur back-end le plus expérimenté lorsque j'ai rejoint l'équipe, et notre ingénieur le plus expérimenté tout court. Ce qui m'a frappé, c'est la façon dont Alban a su gérer l'autorité naturelle qui découle d'un tel héritage. Alban a des opinions, forgées au fil des années, et les compétences nécessaires pour les étayer. Mais il est aussi impliqué. Il tient à ce que son équipe comprenne ce qu'elle fait. Il tient à ce que les opinions soient exprimées, afin que les équipes apprennent en les considérant ouvertement. Il tient à ce que son équipe soit fière de ce qu'elle livre.
 
