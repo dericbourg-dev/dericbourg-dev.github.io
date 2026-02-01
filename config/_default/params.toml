@@ -4,10 +4,9 @@ author = "Alban Dericbourg"
 profilePicture = "images/profile.webp"
 keywords = ""
 favicon = "favicons/"
-# example ["css/custom.css"]
-customCss = []
-# example ["js/custom.js"]
-customJs = [] 
+# Accessibility enhancements (WCAG 2.2 AA)
+customCss = ["css/a11y.css"]
+customJs = ["js/a11y.js"] 
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
 doNotLoadAnimations = false

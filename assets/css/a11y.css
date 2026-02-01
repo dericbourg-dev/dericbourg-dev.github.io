@@ -1,0 +1,118 @@
+/* Accessibility enhancements for WCAG 2.2 AA compliance */
+
+/* ==========================================================================
+   Skip Link (WCAG 2.4.1 Bypass Blocks)
+   ========================================================================== */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 12px 24px;
+  background-color: #6086b4;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #152028;
+  outline-offset: 2px;
+}
+
+.theme--dark .skip-link:focus {
+  outline-color: #fff;
+}
+
+/* ==========================================================================
+   Focus Indicators (WCAG 2.4.7 Focus Visible)
+   ========================================================================== */
+
+/* Global focus style */
+*:focus {
+  outline: 3px solid #6086b4;
+  outline-offset: 2px;
+}
+
+/* Remove default and apply consistent focus for interactive elements */
+a:focus,
+button:focus,
+[role="button"]:focus,
+input:focus,
+select:focus,
+textarea:focus,
+summary:focus {
+  outline: 3px solid #6086b4;
+  outline-offset: 2px;
+}
+
+/* Ensure focus visible on dark backgrounds */
+.theme--dark a:focus,
+.theme--dark button:focus,
+.theme--dark [role="button"]:focus {
+  outline-color: #8fb3d9;
+}
+
+/* Navigation links */
+.nav__list-item a:focus {
+  outline: 3px solid #6086b4;
+  outline-offset: 4px;
+}
+
+/* Social icons focus */
+.sidebar__list-item a:focus {
+  outline: 3px solid #6086b4;
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+/* Theme switcher focus */
+.themeswitch a:focus {
+  outline: 3px solid #6086b4;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Navbar burger focus */
+.navbar-burger:focus {
+  outline: 3px solid #6086b4;
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Color Contrast Fixes (WCAG 1.4.3 Contrast Minimum)
+   ========================================================================== */
+
+/* Fix low contrast on tags - #9f9f9f on white is only 2.8:1 */
+.theme--light .tag,
+.theme--light .archive__list-date {
+  color: #595959; /* 7:1 contrast ratio on white */
+}
+
+.theme--dark .tag,
+.theme--dark .archive__list-date {
+  color: #b8b8b8; /* ~5:1 contrast ratio on #152028 */
+}
+
+/* ==========================================================================
+   Reduced Motion (WCAG 2.3.3 Animation from Interactions)
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animated {
+    animation: none !important;
+  }
+}

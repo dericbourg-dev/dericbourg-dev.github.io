@@ -22,6 +22,14 @@ RUN ARCH=$(echo ${TARGETARCH} | sed 's/amd64/amd64/;s/arm64/arm64/') && \
     dpkg -i /tmp/hugo.deb && \
     rm /tmp/hugo.deb
 
+# Install Dart Sass (required for SCSS compilation)
+RUN ARCH=$(echo ${TARGETARCH} | sed 's/amd64/x64/;s/arm64/arm64/') && \
+    wget -O /tmp/sass.tar.gz "https://github.com/sass/dart-sass/releases/download/1.83.4/dart-sass-1.83.4-linux-${ARCH}.tar.gz" && \
+    tar -C /usr/local -xzf /tmp/sass.tar.gz && \
+    rm /tmp/sass.tar.gz
+
+ENV PATH="/usr/local/dart-sass:${PATH}"
+
 WORKDIR /site
 EXPOSE 1313
 

@@ -58,3 +58,33 @@ Automatic deployment to GitHub Pages on push to `main` branch via `.github/workf
 - LaTeX math supported via passthrough delimiters (`$$...$$` for blocks, `\(...\)` for inline)
 - Static files go in `static/` directory
 - Generated output (`public/`) is gitignored
+
+## Accessibility (WCAG 2.2 AA)
+
+Target compliance: **WCAG 2.2 Level AA**. All changes must maintain or improve accessibility.
+
+### Requirements for New Content
+- All images must have meaningful `alt` text (or `alt=""` if purely decorative)
+- Links must have descriptive text (avoid "click here", "read more")
+- External links should indicate they open in a new tab
+- Maintain proper heading hierarchy (h1 → h2 → h3, no skipped levels)
+- Content in both languages must be semantically equivalent
+
+### Requirements for CSS/Styling Changes
+- Text contrast ratio: minimum 4.5:1 (3:1 for large text ≥18pt)
+- UI component contrast: minimum 3:1
+- Never remove focus outlines (`outline: none`) without providing visible alternative
+- Include `@media (prefers-reduced-motion: reduce)` for animations
+- Test in both light and dark themes
+
+### Requirements for Interactive Elements
+- All interactive elements must be keyboard accessible
+- Focus order must follow visual order
+- Custom widgets need proper ARIA roles, states, and keyboard handlers
+- Theme/language switchers must work with keyboard alone
+
+### Known Issues to Address
+- Missing skip-to-content link
+- Theme switcher not keyboard accessible (upstream theme issue)
+- Some low-contrast secondary text (#9f9f9f)
+- Empty `<h1>` on content pages (theme template issue)
