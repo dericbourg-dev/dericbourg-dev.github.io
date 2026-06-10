@@ -1,0 +1,268 @@
+/* ==========================================================================
+   dericbourg.dev — hand-written CSS
+   No webfonts. No JavaScript. Single column. WCAG 2.2 AA.
+   Dark (default) = terminal B | Light (prefers-color-scheme) = warm D
+   ========================================================================== */
+
+/* --- Variables ----------------------------------------------------------- */
+
+:root {
+  --bg:           #2a2622;
+  --fg:           #d8d4cc;
+  --link:         #7fae7f;
+  --link-visited: #6a9b6a;
+  --muted:        #9a9590;
+  --border:       #3d3833;
+  --font: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+  --max-w: 68ch;
+  --pad: clamp(1rem, 4vw, 2rem);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:           #f3ead8;
+    --fg:           #2b2620;
+    --link:         #8a5a2b;
+    --link-visited: #704a22;
+    --muted:        #6b5e4f;
+    --border:       #d4c8b0;
+  }
+}
+
+/* --- Reset & base -------------------------------------------------------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  line-height: 1.65;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Layout -------------------------------------------------------------- */
+
+.site-wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+/* --- Skip link (WCAG 2.4.1) --------------------------------------------- */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.4rem 0.9rem;
+  background: var(--fg);
+  color: var(--bg);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0 0 3px 3px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* --- Focus (WCAG 2.4.7) -------------------------------------------------- */
+
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+}
+
+/* --- Typography ---------------------------------------------------------- */
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h1 { font-size: 1.35rem; margin-top: 0; }
+h2 { font-size: 1.1rem; }
+h3 { font-size: 1rem; }
+
+p {
+  margin: 0 0 1rem;
+}
+
+small {
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0 1.5rem;
+  max-width: 6ch;
+  margin-left: 0;
+}
+
+ul, ol {
+  padding-left: 2ch;
+  margin: 0 0 1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+blockquote {
+  border-left: 3px solid var(--border);
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+/* --- Links --------------------------------------------------------------- */
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--fg);
+}
+
+/* --- Navigation ---------------------------------------------------------- */
+
+.site-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0;
+  justify-content: space-between;
+}
+
+.nav-list,
+.lang-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.25rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"] {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lang-list {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.lang-list a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.lang-list a[aria-current="true"] {
+  color: var(--fg);
+  font-weight: 700;
+}
+
+.lang-list a:hover {
+  color: var(--link);
+}
+
+/* --- Content pages ------------------------------------------------------- */
+
+.site-main {
+  min-height: 30vh;
+  outline: none; /* tabindex="-1" focus target — no visible outline needed here */
+}
+
+.page-content > * + * {
+  /* Handled by element styles */
+}
+
+/* References: terminal-style quote blocks */
+.page-content h2 {
+  margin-top: 2.5rem;
+}
+
+.page-content h2:first-child {
+  margin-top: 0;
+}
+
+/* --- Footer -------------------------------------------------------------- */
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.5rem;
+}
+
+.social-list a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.social-list a:hover {
+  color: var(--link);
+}
+
+.ext-hint {
+  font-size: 0.75em;
+  margin-left: 0.15em;
+  opacity: 0.7;
+}
+
+/* --- Reduced motion (WCAG 2.3.3) ---------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

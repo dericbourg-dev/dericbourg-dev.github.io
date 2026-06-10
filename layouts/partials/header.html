@@ -1,0 +1,16 @@
+<nav aria-label="{{ if eq site.Language.Lang "fr" }}Navigation principale{{ else }}Main navigation{{ end }}">
+  <ul class="nav-list" role="list">
+    {{- range .Site.Menus.main }}
+    <li><a href="{{ .URL }}"{{if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+    {{- end }}
+  </ul>
+  {{/* Language switcher */}}
+  {{- $translations := .AllTranslations -}}
+  {{- if gt (len $translations) 1 }}
+  <ul class="lang-list" role="list" aria-label="{{ if eq site.Language.Lang "fr" }}Langue{{ else }}Language{{ end }}">
+    {{- range $translations }}
+    <li><a href="{{ .Permalink }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="true"{{ end }}>{{ .Language.LanguageName }}</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</nav>

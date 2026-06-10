@@ -1,0 +1,22 @@
+<div class="footer-inner">
+  <ul class="social-list" role="list">
+    {{- range site.Params.socialLinks }}
+    <li>
+      {{- if hasPrefix .url "mailto:" -}}
+      <a href="{{ .url }}">{{ .label }}</a>
+      {{- else -}}
+      <a href="{{ .url }}" rel="noopener noreferrer" target="_blank">
+        {{ .label }}<span class="ext-hint" aria-label="{{ if eq site.Language.Lang "fr" }}(ouvre dans un nouvel onglet){{ else }}(opens in new tab){{ end }}">&#8599;</span>
+      </a>
+      {{- end -}}
+    </li>
+    {{- end }}
+    {{- range site.Menus.footer }}
+    <li>
+      <a href="{{ .URL }}" rel="noopener noreferrer" target="_blank">
+        {{ .Name }}<span class="ext-hint" aria-label="{{ if eq site.Language.Lang "fr" }}(ouvre dans un nouvel onglet){{ else }}(opens in new tab){{ end }}">&#8599;</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</div>
