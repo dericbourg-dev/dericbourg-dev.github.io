@@ -176,10 +176,16 @@ a:hover {
   color: var(--fg);
 }
 
-.nav-list a:hover,
+.nav-list a:hover {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .nav-list a[aria-current="page"] {
   color: var(--link);
   text-decoration: underline;
+  text-decoration-style: dotted;
   text-underline-offset: 3px;
 }
 
