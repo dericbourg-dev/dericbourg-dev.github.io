@@ -19,4 +19,14 @@
     </li>
     {{- end }}
   </ul>
+  {{- $css := resources.Get "css/main.css" | minify -}}
+  {{- $pageBytes := add (len $css.Content) (len .Content) -}}
+  {{- $pageKB := math.Round (div (mul 1.0 $pageBytes) 1024.0) -}}
+  <p class="page-weight">
+    {{- if eq site.Language.Lang "fr" -}}
+    Éco-conçu · ~{{ $pageKB }} Ko
+    {{- else -}}
+    Eco-designed · ~{{ $pageKB }} KB
+    {{- end -}}
+  </p>
 </div>
