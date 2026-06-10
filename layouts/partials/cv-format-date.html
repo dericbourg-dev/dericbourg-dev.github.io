@@ -1,0 +1,12 @@
+{{/*
+  cv-format-date.html
+  Context (.): a date string — either "YYYY-MM" (role/extra) or "YYYY" (education).
+  With localizedDates = true (set in hugo.toml), time.Format translates month names
+  to the current page language automatically.
+*/}}
+{{- $d := . -}}
+{{- if eq (len $d) 4 -}}
+  {{- $d -}}
+{{- else -}}
+  {{- time.Format "January 2006" (printf "%s-01" $d) -}}
+{{- end -}}

@@ -1,0 +1,201 @@
+{{ define "main" }}
+{{- $cv   := hugo.Data.cv -}}
+{{- $lang := site.Language.Lang -}}
+
+{{/* UI strings — inline conditional matches baseof.html convention (skip link) */}}
+{{- $present          := cond (eq $lang "fr") "Aujourd'hui"           "Present"               -}}
+{{- $expHeading       := cond (eq $lang "fr") "Expérience"            "Experience"            -}}
+{{- $eduHeading       := cond (eq $lang "fr") "Formation"             "Education"             -}}
+{{- $skillsHeading    := cond (eq $lang "fr") "Compétences"           "Skills"                -}}
+{{- $extrasHeading    := cond (eq $lang "fr") "Missions transverses"  "Cross-team contributions" -}}
+{{- $langHeading      := cond (eq $lang "fr") "Langues"               "Languages"             -}}
+{{- $summaryHeading   := cond (eq $lang "fr") "Vue d'ensemble"         "Summary"               -}}
+{{- $levels           := hugo.Data.cv_levels -}}
+{{- $levelWidths      := dict "beginner" "25" "intermediate" "50" "fluent" "75" "native" "100" -}}
+
+<article class="cv">
+
+  <h1>{{ .Title }}{{ with $cv.header }}{{ with .name }} — {{ . }}{{ end }}{{ end }}</h1>
+
+  {{ with $cv.header }}
+  {{ with index .title $lang }}
+  <p class="cv-title">{{ . }}</p>
+  {{ end }}
+  {{ with index .summary $lang }}
+  <div class="cv-summary">{{ . | markdownify }}</div>
+  {{ end }}
+  {{ end }}
+
+  {{/* ── Summary ──────────────────────────────────────────────────────────── */}}
+  {{ with $cv.experiences }}
+  <section class="cv-section cv-toc" aria-labelledby="cv-summary-heading">
+    <h2 id="cv-summary-heading">{{ $summaryHeading }}</h2>
+    <ul class="cv-toc-list">
+      {{ range . }}
+      {{- $company := . -}}
+
+      {{- $startYear := "" -}}
+      {{- $endYear   := "" -}}
+      {{- $ongoing   := false -}}
+      {{- range $company.roles -}}
+        {{- $sYear := index (split .start "-") 0 -}}
+        {{- if or (eq $startYear "") (lt $sYear $startYear) -}}{{- $startYear = $sYear -}}{{- end -}}
+        {{- if .end -}}
+          {{- $eYear := index (split .end "-") 0 -}}
+          {{- if or (eq $endYear "") (gt $eYear $endYear) -}}{{- $endYear = $eYear -}}{{- end -}}
+        {{- else -}}
+          {{- $ongoing = true -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- $allTags := slice -}}
+      {{- with $company.tags -}}{{- $allTags = $allTags | append . -}}{{- end -}}
+      {{- range $company.roles -}}
+        {{- with .tags -}}{{- $allTags = $allTags | append . -}}{{- end -}}
+      {{- end -}}
+      {{- $uniqueTags := $allTags | uniq -}}
+
+      <li class="cv-toc-entry">
+        <span class="cv-toc-company">
+          <a href="#company-{{ $company.company | urlize }}">{{ $company.company }}</a>
+          <span class="cv-dates">{{ $startYear }} – {{- if $ongoing }} {{ $present }}{{- else }} {{ $endYear }}{{- end -}}</span>
+        </span>
+        {{ with $uniqueTags }}
+        <span class="cv-tags cv-toc-tags">{{ range . }}#{{ replaceRE "[^[:alnum:]]" "" (strings.Title .) }} {{ end }}</span>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{/* ── Experiences ─────────────────────────────────────────────────────── */}}
+  {{ with $cv.experiences }}
+  <section class="cv-section" aria-labelledby="cv-exp-heading">
+    <h2 id="cv-exp-heading">{{ $expHeading }}</h2>
+
+    {{ range . }}
+    {{- $company := . -}}
+    <div class="cv-company" id="company-{{ $company.company | urlize }}">
+
+      <h3>
+        {{- if $company.url -}}
+        <a href="{{ $company.url }}" class="cv-company-link">{{ $company.company }}</a>
+        {{- else -}}
+        {{- $company.company -}}
+        {{- end -}}
+        {{ with $company.location }}<small> — {{ . }}</small>{{ end }}
+      </h3>
+
+      {{ with $company.tags }}
+      <p class="cv-tags">{{ range . }}#{{ replaceRE "[^[:alnum:]]" "" (strings.Title .) }} {{ end }}</p>
+      {{ end }}
+
+      {{ range $company.roles }}
+      {{- $role := . -}}
+      <div class="cv-role">
+        <h4>
+          {{- index $role.role $lang -}}
+          {{ with $role.department }}<small> — {{ . }}</small>{{ end }}
+        </h4>
+        <p class="cv-dates">
+          <time datetime="{{ $role.start }}">{{ partial "cv-format-date.html" $role.start }}</time>
+          –
+          {{ with $role.end -}}
+          <time datetime="{{ . }}">{{ partial "cv-format-date.html" . }}</time>
+          {{- else -}}
+          <span>{{ $present }}</span>
+          {{- end -}}
+        </p>
+        {{ with index $role.description $lang }}
+        <div class="cv-desc">{{ . | markdownify }}</div>
+        {{ end }}
+        {{ with $role.tags }}
+        <p class="cv-tags">{{ range . }}#{{ replaceRE "[^[:alnum:]]" "" (strings.Title .) }} {{ end }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ with $company.extra }}
+      <div class="cv-extras">
+        <h4>{{ $extrasHeading }}</h4>
+        <ul class="cv-extras-list">
+          {{ range . }}
+          <li class="cv-extra">
+            <strong>{{ index .topic $lang }}</strong>
+            {{ if or .start .end }}
+            <p class="cv-dates">
+              {{ with .start }}<time datetime="{{ . }}">{{ partial "cv-format-date.html" . }}</time>{{ end -}}
+              {{- if and .start .end }} – {{ end -}}
+              {{- with .end }}<time datetime="{{ . }}">{{ partial "cv-format-date.html" . }}</time>{{ end }}
+            </p>
+            {{ end }}
+            {{ with index .description $lang }}
+            <div class="cv-desc">{{ . | markdownify }}</div>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{/* ── Education ───────────────────────────────────────────────────────── */}}
+  {{ with $cv.education }}
+  <section class="cv-section" aria-labelledby="cv-edu-heading">
+    <h2 id="cv-edu-heading">{{ $eduHeading }}</h2>
+
+    {{ range . }}
+    <div class="cv-edu-entry">
+      <h3>{{ .school }}</h3>
+      {{ with .location }}<p class="cv-edu-location"><small>{{ . }}</small></p>{{ end }}
+      <p class="cv-dates">{{ .start }}{{ with .end }} – {{ . }}{{ end }}</p>
+      {{ with index .degree $lang }}<p>{{ . }}</p>{{ end }}
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{/* ── Skills ──────────────────────────────────────────────────────────── */}}
+  {{ with $cv.skills }}
+  <section class="cv-section" aria-labelledby="cv-skills-heading">
+    <h2 id="cv-skills-heading">{{ $skillsHeading }}</h2>
+    <dl class="cv-skill-list">
+      {{ range . }}
+      <div class="cv-skill-group">
+        <dt>{{ index .group $lang }}</dt>
+        <dd>{{ delimit .items ", " }}</dd>
+      </div>
+      {{ end }}
+    </dl>
+  </section>
+  {{ end }}
+
+  {{/* ── Spoken languages ───────────────────────────────────────────────── */}}
+  {{ with $cv.spokenLanguages }}
+  <section class="cv-section" aria-labelledby="cv-lang-heading">
+    <h2 id="cv-lang-heading">{{ $langHeading }}</h2>
+    <dl class="cv-lang-list">
+      {{ range . }}
+      {{- $label := index (index $levels .level) $lang -}}
+      {{- $width := index $levelWidths .level -}}
+      <div class="cv-lang-entry">
+        <dt>{{ index .name $lang }}</dt>
+        <dd>
+          <div class="cv-lang-bar" role="meter" aria-valuenow="{{ $width }}" aria-valuemin="0" aria-valuemax="100" aria-label="{{ $label }}">
+            <div class="cv-lang-bar-fill" style="width: {{ $width }}%"></div>
+          </div>
+          <span class="cv-lang-label">{{ $label }}</span>
+        </dd>
+      </div>
+      {{ end }}
+    </dl>
+  </section>
+  {{ end }}
+
+</article>
+{{ end }}

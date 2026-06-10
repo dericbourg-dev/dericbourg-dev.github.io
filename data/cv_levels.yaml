@@ -1,0 +1,12 @@
+beginner:
+  fr: Débutant
+  en: Beginner
+intermediate:
+  fr: Intermédiaire
+  en: Intermediate
+fluent:
+  fr: Courant
+  en: Fluent
+native:
+  fr: Langue maternelle
+  en: Native

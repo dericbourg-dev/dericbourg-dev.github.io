@@ -270,6 +270,265 @@ a:hover {
   color: var(--muted);
 }
 
+/* --- CV ------------------------------------------------------------------ */
+
+.cv-title {
+  font-size: 1rem;
+  color: var(--muted);
+  margin: 0.25rem 0 1.5rem;
+}
+
+.cv-summary {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.cv-summary p {
+  margin-bottom: 0.5rem;
+}
+
+.cv-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cv-toc-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.cv-toc-company {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.cv-toc-tags {
+  font-size: 0.85em;
+  color: var(--muted);
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section h2 {
+  font-size: 1.25rem;
+  color: var(--link);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.cv-company {
+  margin-bottom: 3rem;
+}
+
+.cv-company h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.cv-company-link {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.cv-company-link:hover {
+  color: var(--link);
+}
+
+.cv-role {
+  margin: 1rem 0 1rem 1.5ch;
+  padding-left: 1ch;
+  border-left: 2px solid var(--border);
+}
+
+.cv-role h4 {
+  color: var(--link);
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+}
+
+.cv-dates {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: left;
+  hyphens: none;
+}
+
+.cv-desc {
+  margin-bottom: 0.4rem;
+}
+
+.cv-desc p {
+  margin-bottom: 0.4rem;
+}
+
+.cv-tags {
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  word-spacing: 0.3em;
+  text-align: left;
+  hyphens: none;
+}
+
+.cv-extras {
+  margin-top: 1rem;
+  margin-left: 1.5ch;
+  padding: 0.75rem 1ch;
+  border: 1px solid var(--border);
+}
+
+.cv-extras h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.cv-extras-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-extra {
+  margin-bottom: 0.75rem;
+}
+
+.cv-extra:last-child {
+  margin-bottom: 0;
+}
+
+.cv-edu-entry {
+  margin-bottom: 1.25rem;
+}
+
+.cv-edu-entry h3 {
+  margin-bottom: 0.15rem;
+}
+
+.cv-edu-location {
+  margin: 0;
+}
+
+.cv-skill-list {
+  margin: 0;
+}
+
+.cv-skill-group {
+  display: flex;
+  gap: 0.75ch;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.cv-skill-group dt {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cv-skill-group dd {
+  margin: 0;
+}
+
+/* --- CV: spoken languages ------------------------------------------------ */
+
+.cv-lang-list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 0.4rem 0.75rem;
+}
+
+.cv-lang-entry {
+  display: contents;
+}
+
+.cv-lang-entry dt {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cv-lang-entry dd {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.cv-lang-bar {
+  flex: 1;
+  height: 6px;
+  background: color-mix(in srgb, currentColor 15%, transparent);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.cv-lang-bar-fill {
+  height: 100%;
+  background: currentColor;
+  border-radius: 3px;
+}
+
+.cv-lang-label {
+  font-size: 0.85em;
+  white-space: nowrap;
+  flex: 0 0 9rem;
+}
+
+/* --- CV: print ----------------------------------------------------------- */
+
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  .site-header,
+  .site-footer,
+  .skip-link {
+    display: none;
+  }
+
+  .site-wrap {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  :root {
+    --bg:     #ffffff;
+    --fg:     #000000;
+    --muted:  #555555;
+    --border: #cccccc;
+    --link:   #000000;
+  }
+
+  a {
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  .cv-role,
+  .cv-edu-entry,
+  .cv-extra {
+    break-inside: avoid;
+  }
+
+  .cv-company {
+    break-inside: avoid;
+  }
+}
+
 /* --- Reduced motion (WCAG 2.3.3) ---------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {

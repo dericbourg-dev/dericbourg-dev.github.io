@@ -1,7 +1,4 @@
 +++
 title = "CV"
+layout = "cv"
 +++
-
-# CV
-
-*(À venir — le CV sera rendu depuis une source YAML dans une prochaine itération.)*

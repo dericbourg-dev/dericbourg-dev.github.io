@@ -1,0 +1,289 @@
+# yaml-language-server: $schema=
+header:
+  name: Alban Dericbourg
+  title:
+    fr: Ingénieur logiciel senior (indépendant)
+    en: Freelance Senior Software Engineer
+  summary:
+    fr: >-
+      Ingénieur logiciel senior fort de 15 ans d'expérience, acquise dans trois licornes
+      françaises (Criteo, BlaBlaCar, Mirakl). J'aime plonger dans de vastes bases de code
+      héritées, autant pour améliorer l'existant que pour concevoir de nouveaux services
+      au sein de systèmes distribués, avec une forte appétence pour l'observabilité et la
+      fiabilité (SLOs).
+    en: >-
+      Senior software engineer with 15 years of experience across three French unicorns
+      (Criteo, BlaBlaCar, Mirakl). I enjoy diving into large legacy codebases, improving
+      what exists as much as designing new services within distributed systems, with a
+      strong focus on observability and reliability (SLOs).
+
+experiences:
+  - company: Mirakl
+    location: Paris
+    url: https://www.mirakl.com
+    roles:
+      - role:
+          fr: Ingénieur logiciel senior (indépendant)
+          en: Senior Software Engineer (freelance)
+        department: Connect (post-sales)
+        start: "2026-04"
+        description:
+          fr: |
+            L'équipe _post-sales_ est responsable du cycle de vie des commandes.
+
+            J'ai contribué à améliorer le processus de conception (design doc) pour qu'il couvre des angles morts préalablement ignorés (volumétrie, observabilité, tests), avec un focus sur les objectifs et la résolution de problèmes.
+             * Plaidé pour l'adoption de templates, avec des indications dans chaque section
+             * Développé des _skills_ AIg pour revoir et restructurer ces documents — focus sur la lisibilité et l'actionnabilité
+          en: |
+            The post-sales team is responsible for the order lifecycle.
+
+            I contributed to leveraging the design doc process so that it covers previously blind spots (volumetry, observability, testing) with a focus on goals and problem solving.
+             * Advocated for templates, with hints in each section
+             * Built AIg skills to review and re-structure those documents — focus on readability and actionability
+        tags: [Java, SpringBoot, PostgreSQL, Kafka, AIg, Datadog]
+      - role:
+          fr: Ingénieur logiciel senior (indépendant)
+          en: Senior Software Engineer (freelance)
+        department: MPI
+        start: "2025-11"
+        end: "2026-03"
+        description:
+          fr: |
+            Connecteur Mirakl <> Shopify pour les opérateurs de plateforme
+
+            Contribution à un middleware entre Shopify et la plateforme Mirakl, permettant aux propriétaires de boutiques Shopify d'ouvrir leur boutique à des vendeurs tiers.
+
+            En particulier :
+             * Conception et implémentation du support de l'internationalisation
+             * Pilotage de la mise en place des SLO, de la conception à la conduite du changement
+          en: |
+            Mirakl <> Shopify connector for platrorm operators
+
+            Release a middleware between Shopify and the Mirakl platform, allowing Shopify shop owners to open their shop to third-party sellers.
+
+             * Designed and implemented internationalization support
+             * Led the implementation of SLO, from design to change management
+        tags: [Java, SpringBoot, PostgreSQL, Shopify APIs, Mirakl Platform, Datadog]
+    extra:
+      - topic: 
+          fr: Détection de changement cassants d'API (OpenAPI)
+          en: OpenAPI breaking change detection
+        start: 2026-04
+        description:
+          fr: |
+            Mise en place d'outillage automatisé pour évaluer les changements dans un contrat OpenAPI, évaluer leur impact et produire un rapport de changements.
+
+            Comprend la possibilité de bloquer un pipeline Github Actions lorsqu'un changement cassant est détecté.
+
+            La solution repose sur l'outil open-source [oasdiff](https://github.com/oasdiff/oasdiff).
+          en: |
+            Setup automated tooling to evaluate changes in an OpenAPI contract, assess the impact and produce a change report.
+
+            Includes the ability to block a Github Action pipeline when a breaking change is detected.
+
+            The solution is based on the [oasdiff](https://github.com/oasdiff/oasdiff) open-source tool.
+  - company: BlaBlaCar
+    location: Paris
+    url: https://www.blablacar.com
+    tags: [Java, Spring, Elasticsearch, SRE]
+    roles:
+      - role:
+          fr: Ingénieur logiciel senior backend
+          en: Senior Backend Software Engineer
+        department: Search
+        start: "2021-04"
+        end: "2025-10"
+        description:
+          fr: |
+            Équipe full-stack
+            Périmètre centré sur l'expérience de recherche côté conducteur, de l'envie de voyager au choix du trajet le plus pertinent, en adéquation avec ses préférences
+
+             * Coordiné des projets produit de la découverte au déploiement, dont des programmes de 9 mois impliquant 4 équipes
+             * Axé sur l'amélioration de la fiabilité des services de l'équipe : amélioration des processus et de l'observabilité des services en production, amélioration du processus de conception pour les nouveaux services
+             * Refonte de l'architecture pour l'adapter à l'échelle de l'entreprise et à sa trajectoire vers la multimodalité ; coordination de la transition vers cette architecture  #NoRewrite
+             * Pionnier dans la mise en place des SLO : travail en étroite collaboration avec l'équipe SRE pour implémenter les premiers SLO techniques puis les Feature SLO afin d'améliorer la précision de la modélisation de l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
+             * Initié les Open Spaces (« Forum ouvert ») pour l'équipe backend afin de créer des liens entre les membres et favoriser la coopération
+             * (et bien sûr !) Contribution à la livraison quotidienne de l'équipe
+          en: |
+            Full-stack team
+            Scoped on driver the search user experience, from their will to travel to choosing the most relevant ride, matching their preferences
+
+             * Coordinated from discovery to rollout product projects, including 9-months programs involving 4 teams
+             * Focused on improving the team's services reliability: improve processes and observability for running services, improve the design process for new ones
+             * Revamped the architecture to adapt it to the company's scale and path to multimodality; coordinated the transition to that architecture  #NoRewrite
+             * Pioneered in the SLO implementation: worked side-to-side with the SRE team to implement the first technical SLOs and then Feature SLOs to improve our users' experience modelling accuracy; contributed to onboard other teams in the process
+             * Initiated Open Spaces ("Forum ouvert") for the backend team to create connections between team members and boost cooperation
+             * (and of course!) Contributed to the day-to-day delivery of the team
+        tags: [Java, SpringBoot, Elasticsearch, SLO, Datadog, Kubernetes]
+      - role:
+          fr: Ingénieur logiciel senior backend
+          en: Senior Backend Software Engineer
+        department: Monetize
+        start: "2019-09"
+        end: "2021-04"
+        description:
+          fr: |
+            Équipe backend uniquement, en collaboration étroite avec les équipes frontend
+            Périmètre centré sur le calcul des frais de service pour les passagers et l'orchestration du tunnel d'achat
+
+             * Contribution à la mise en production de services de monétisation indépendants hors du monolithe historique, promotion des bonnes pratiques d'architecture et de conception au sein de l'équipe
+             * Impulsion d'une démarche SRE, axée principalement sur la réduction du bruit et de la fatigue des alertes lors des astreintes
+             * Pilotage de la migration de Fleet/Rocket vers Docker/Kubernetes dans le périmètre de l'équipe
+             * Mission transverse axée sur les performances de l'équipe, des outils et des applications
+             * Mentorat d'un membre junior de l'équipe
+          en: |
+            Backend-only team, closely working with frontend teams
+            Scoped on computing carpool passenger fees and orchestrating the purchase flow
+
+             * Contributed to releasing independent monetization services outside of a historical monolith, promoting architecture and code design better practices within the team
+             * Impulsed an SRE approach, with the main focus on reducing noise and alert fatigue during on-call shifts
+             * Led the migration from Fleet/Rocket to Docker/Kubernetes in the team's scope
+             * Side-mission focused on team, tooling, and application performances
+             * Mentored a younger team member
+        tags: [Java, SpringBoot, Kubernetes, Prometheus, Grafana]
+    extra:
+      - topic:
+          fr: Refonte de l'entretien de recrutement backend
+          en: Backend hiring interview revamp
+        start: "2021"
+        description:
+          fr: |
+            J'ai piloté la définition du nouvel exercice de recrutement backend (live coding), avec 6 autres ingénieurs contributeurs. Nous avons mis l'accent sur l'équité de l'exercice et l'avons conçu pour maximiser l'égalité des chances.
+
+            L'entretien est conçu pour ressembler au quotidien chez BlaBlaCar et favorise fortement le travail en équipe, ce qui permet d'évaluer les soft skills.
+          en: |
+            I led the definition of the new backend hiring exercise (live coding), with 6 other contributing engineers. We focused on the exercise's fairness and designed it to maximize equality of chances.
+
+            The interview is designed to feel like a day-to-day job at BlaBlaCar and heavily promotes teamwork, which helps assessing soft skills.
+  - company: Criteo
+    location: Paris
+    url: https://www.criteo.com
+    tags: [Java, Scala, Finatra, Finagle, .NET Core, Prometheus, Grafana, Observability]
+    roles:
+      - role:
+          fr: Ingénieur logiciel
+          en: Software engineer
+        department: Observability
+        start: "2018"
+        end: "2019"
+        description:
+          fr: |
+            Équipe en charge des outils d'observabilité (logs, métriques, traçage distribué)
+
+            Seul développeur au sein d'une équipe d'ops, j'ai :
+             * Poussé à concevoir des APIs orientées utilisateur pour les bibliothèques de l'équipe
+             * Contribué aux composants d'observabilité (dont open-source, comme BigGraphite par exemple)
+             * Promu les bonnes pratiques de développement (conception, code, tests et revues)
+             * Organisé des ateliers Scala pour monter mes collègues en compétences sur ce langage
+          en: |
+            Team in charge of observability tools (logging, metrics, distributed tracing)
+
+            As the only developer in the team among ops, I:
+             * Pushed to design user-oriented APIs for the team's libraries
+             * Contributed to observability components (including open-source, like BigGraphite for instance)
+             * Promoted development best practices (designing, coding, testing and reviewing)
+             * Organized Scala workshops to ramp-up my teammates on this language
+      - role:
+          fr: Ingénieur logiciel
+          en: Software engineer
+        department: Scalability
+        start: "2017"
+        end: "2018"
+        description:
+          fr: |
+            Interface entre les équipes SRE et les équipes produit, équipe centrée sur la découverte de services et les métriques.
+
+            En tant que membre de cette équipe, j'ai :
+             * Piloté la migration d'un outil maison d'agrégation de métriques vers Prometheus (communication et synchronisation avec les autres équipes incluses)
+             * Contribué à la définition et à la mise en production d'un moyen d'identifier de manière unique une application du point de vue du code
+             * Assuré du support sur les problématiques JVM
+          en: |
+            Interface between SRE teams and feature teams, team focused on service discovery and metrics.
+
+            As a member of this team, I:
+             * Lead migration from an in-house metric aggregation tool to Prometheus (including communication and synchronization with other teams)
+             * Contributed to the definition and release of a way to uniquely identify an application from a code point of view
+             * Worked as support for JVM-related issues
+      - role:
+          fr: Ingénieur logiciel
+          en: Software engineer
+        department: Criteo Dynamic E-mail
+        start: "2016"
+        end: "2017"
+        description:
+          fr: |
+            Conception, développement et maintenance :
+             * Outils orientés délivrabilité (capacité à délivrer un e-mail en boîte de réception et non en spam)
+             * Moteur de templates d'e-mails
+          en: |
+            Design, development and maintenance:
+             * Deliverability-oriented tools (ability to deliver an a-mail into inbox and not into spam box)
+             * E-mail templating
+    extra:
+      - topic:
+          fr: Agilité
+          en: Agility
+        description:
+          fr: Mise en place de rétrospectives dans les trois équipes pour soutenir un processus d'amélioration continue
+          en: Boostrapped retrospectives in all three teams to support a continuous improvement process
+  - company: Spideo
+    location: Paris
+    url: https://spideo.com
+    tags: [Java, Scala, MongoDB, AWS, Ansible]
+    roles:
+      - role:
+          fr: Tech lead
+          en: Tech lead
+        start: 2015-04
+        end: 2015-11
+        description:
+          fr: |
+            Développement et maintenance d'APIs consommées par des fournisseurs de contenu
+
+            Réalisation personnelle dans cette équipe :
+             * Mise en place de la gestion de configuration et du déploiement automatique
+          en: |
+             Development and maintenance of APIs consumed by content providers
+
+             Personal achievement in this team:
+              * Set-up of configuration management and automatic deployment
+
+education:
+  - school: CentraleSupélec (École Supérieure d'Électricité)
+    degree:
+      fr: Diplôme d'ingénieur — Systèmes d'information sécurisés
+      en: Engineering Degree — Secured Information Systems
+    location: Gif-sur-Yvette / Rennes
+    start: "2007"
+    end: "2009"
+  - school: Arts et Métiers ParisTech (ENSAM)
+    degree:
+      fr: Diplôme d'ingénieur
+      en: Engineering Degree
+    location: Angers
+    start: "2005"
+    end: "2007"
+
+skills:
+  - group:
+      fr: Langages
+      en: Languages
+    items: [Java, SQL, TypeScript]  # TODO — compléter / to complete
+  - group:
+      fr: Frameworks & outils
+      en: Frameworks & tools
+    items: [Spring, "Spring Boot", PostgreSQL, Elasticsearch, Docker]  # TODO — compléter / to complete
+  - group:
+      fr: Pratiques
+      en: Practices
+    items: [TDD, SLO, SRE, "Code Review"]  # TODO — compléter / to complete
+
+spokenLanguages:
+  - name:
+      fr: Français
+      en: French
+    level: native
+  - name:
+      fr: Anglais
+      en: English
+    level: fluent
