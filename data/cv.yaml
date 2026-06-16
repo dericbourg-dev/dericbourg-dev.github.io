@@ -136,7 +136,7 @@ experiences:
              * Led the migration from Fleet/Rocket to Docker/Kubernetes in the team's scope
              * Cross-cutting mission on performance (team, tooling, applications)
              * Mentored a junior engineer
-        tags: [Java, SpringBoot, Kubernetes, Prometheus, Grafana]
+        tags: [Java, SpringBoot, MariaDB, Kubernetes, Prometheus, Grafana]
     extra:
       - topic:
           fr: Refonte de l'entretien de recrutement backend
@@ -154,7 +154,7 @@ experiences:
   - company: Criteo
     location: Paris
     url: https://www.criteo.com
-    tags: [Java, Scala, Finatra, Finagle, .NET Core, Prometheus, Grafana, Observability]
+    tags: [Java, Scala, Finatra, Finagle, .NET Core, MSSQL, Prometheus, Grafana, Observability]
     roles:
       - role:
           fr: Ingénieur logiciel
@@ -260,13 +260,29 @@ skills:
       en: Languages
     items: [Java, Scala, Python, SQL]
   - group:
-      fr: Frameworks & outils
-      en: Frameworks & tools
-    items: [Spring, "Spring Boot", PostgreSQL, Kafka, Docker, Kubernetes, Datadog, Prometheus, Grafana]
+      fr: Frameworks
+      en: Frameworks
+    items: [Spring, "Spring Boot"]
+  - group:
+      fr: Données & messaging
+      en: Data & messaging
+    items: [MariaDB, PostgreSQL, Kafka]
+  - group:
+      fr: Conteneurs & orchestration
+      en: Containers & orchestration
+    items: [Docker, Kubernetes]
+  - group:
+      fr: Observabilité
+      en: Observability
+    items: [Datadog, Prometheus, Grafana]
+  - group:
+      fr: Outillage
+      en: Tooling
+    items: [Git, Maven, Gradle, GitHub]
   - group:
       fr: Pratiques
       en: Practices
-    items: ["Distributed Systems", "Observability", SLO, SRE, TDD, "Code Review", "Design Docs"]
+    items: ["Distributed Systems", SLO, SRE, TDD, "Code Review", "Design Docs"]
 
 spokenLanguages:
   - name:
