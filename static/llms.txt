@@ -1,0 +1,28 @@
+# Alban Dericbourg
+
+> Freelance senior software engineer with 15 years of experience across three French unicorns (Criteo, BlaBlaCar, Mirakl). Expert in distributed systems, observability, and reliability (SLO / SRE).
+
+Alban Dericbourg is a Paris-based freelance software engineer available for missions. He holds engineering degrees from CentraleSupélec and Arts et Métiers ParisTech, and has spent 15 years building and hardening back-end services in high-traffic distributed systems. He has strong expertise in observability, reliability engineering (SLO / SRE), technical hiring, and driving cross-team engineering projects.
+
+Core skills: Java, Spring Boot, Distributed Systems, Kafka, PostgreSQL, Docker, Kubernetes, Datadog, Prometheus, SLO, SRE, TDD, Design Docs.
+
+## Pages (French)
+
+- [Accueil](https://dericbourg.dev/)
+- [CV](https://dericbourg.dev/cv/)
+- [Références](https://dericbourg.dev/references/)
+- [Contact](https://dericbourg.dev/contact/)
+
+## Pages (English)
+
+- [Home](https://dericbourg.dev/en/)
+- [CV](https://dericbourg.dev/en/cv/)
+- [References](https://dericbourg.dev/en/references/)
+- [Contact](https://dericbourg.dev/en/contact/)
+
+## Professional profiles
+
+- [LinkedIn](https://www.linkedin.com/in/adericbourg/)
+- [GitHub](https://github.com/adericbourg)
+- [Malt](https://www.malt.fr/profile/albandericbourg)
+- [Email](mailto:alban@dericbourg.dev)
