@@ -6,16 +6,17 @@ header:
     en: Freelance Senior Software Engineer
   summary:
     fr: >-
-      Ingénieur logiciel senior fort de 15 ans d'expérience, acquise dans trois licornes
-      françaises (Criteo, BlaBlaCar, Mirakl). J'aime plonger dans de vastes bases de code
-      héritées, autant pour améliorer l'existant que pour concevoir de nouveaux services
-      au sein de systèmes distribués, avec une forte appétence pour l'observabilité et la
-      fiabilité (SLOs).
+      Ingénieur logiciel senior, 15 ans d'expérience au sein de trois licornes françaises
+      (Criteo, BlaBlaCar, Mirakl). Je conçois et fiabilise des services back-end dans des
+      systèmes distribués à fort trafic, et j'aime autant moderniser de vastes bases de code
+      héritées que livrer de nouveaux services. Expertise marquée en observabilité et en
+      fiabilité (SLO / SRE), et en coordination de projets transverses.
     en: >-
       Senior software engineer with 15 years of experience across three French unicorns
-      (Criteo, BlaBlaCar, Mirakl). I enjoy diving into large legacy codebases, improving
-      what exists as much as designing new services within distributed systems, with a
-      strong focus on observability and reliability (SLOs).
+      (Criteo, BlaBlaCar, Mirakl). I design and harden back-end services in high-traffic
+      distributed systems, and enjoy modernizing large legacy codebases as much as shipping
+      new ones. Strong expertise in observability and reliability (SLO / SRE), and in
+      driving cross-team projects.
 
 experiences:
   - company: Mirakl
@@ -29,17 +30,19 @@ experiences:
         start: "2026-04"
         description:
           fr: |
-            L'équipe _post-sales_ est responsable du cycle de vie des commandes.
+            L'équipe _post-sales_ possède le cycle de vie des commandes (fort volume, système distribué).
 
-            J'ai contribué à améliorer le processus de conception (design doc) pour qu'il couvre des angles morts préalablement ignorés (volumétrie, observabilité, tests), avec un focus sur les objectifs et la résolution de problèmes.
-             * Plaidé pour l'adoption de templates, avec des indications dans chaque section
-             * Développé des _skills_ IA pour revoir et restructurer ces documents — focus sur la lisibilité et l'actionnabilité
+            Intégré en renfort de l'équipe, j'ai pris l'initiative d'élever le niveau d'exigence sur la conception et la livraison :
+             * Refonte du processus de design doc pour couvrir des angles morts récurrents (capacité / volumétrie, observabilité, tests) et recentrer les revues sur les objectifs et les arbitrages
+             * Adoption de templates structurés, avec des indications par section
+             * Conception de _skills_ IA qui restructurent les design docs pour les rendre plus lisibles et actionnables, réduisant les allers-retours en revue
           en: |
-            The post-sales team is responsible for the order lifecycle.
+            The post-sales team owns the order lifecycle (high-volume, distributed system).
 
-            I contributed to leveraging the design doc process so that it covers previously blind spots (volumetry, observability, testing) with a focus on goals and problem solving.
-             * Advocated for templates, with hints in each section
-             * Built AI skills to review and re-structure those documents — focus on readability and actionability
+            Joined to reinforce the team, I took the initiative to raise the engineering bar on design and delivery:
+             * Reworked the design-doc process to close recurring blind spots (capacity / volumetry, observability, testing) and refocus reviews on goals and trade-offs
+             * Drove adoption of structured templates with inline guidance per section
+             * Built AI skills that restructure design docs for readability and actionability, cutting review back-and-forth
         tags: [Java, SpringBoot, PostgreSQL, Kafka, AI, Datadog]
       - role:
           fr: Ingénieur logiciel senior (indépendant)
@@ -49,20 +52,17 @@ experiences:
         end: "2026-03"
         description:
           fr: |
-            Connecteur Mirakl <> Shopify pour les opérateurs de plateforme
+            Connecteur Mirakl ↔ Shopify pour les opérateurs de plateforme.
 
-            Contribution à un middleware entre Shopify et la plateforme Mirakl, permettant aux propriétaires de boutiques Shopify d'ouvrir leur boutique à des vendeurs tiers.
-
-            En particulier :
-             * Conception et implémentation du support de l'internationalisation
-             * Pilotage de la mise en place des SLO, de la conception à la conduite du changement
+            Livraison d'un middleware entre Shopify et la plateforme Mirakl permettant aux propriétaires de boutiques Shopify d'ouvrir leur boutique à des vendeurs tiers.
+             * Conception et implémentation du support de l'internationalisation (i18n) sur l'ensemble du connecteur
+             * Pilotage de bout en bout de la mise en place des SLO : de la conception à la conduite du changement et à l'adoption par l'équipe
           en: |
-            Mirakl <> Shopify connector for platform operators
+            Mirakl ↔ Shopify connector for platform operators.
 
-            Release a middleware between Shopify and the Mirakl platform, allowing Shopify shop owners to open their shop to third-party sellers.
-
-             * Designed and implemented internationalization support
-             * Led the implementation of SLO, from design to change management
+            Shipped a middleware between Shopify and the Mirakl platform, letting Shopify shop owners open their store to third-party sellers.
+             * Designed and implemented internationalization (i18n) support across the connector
+             * Led SLO rollout end-to-end — from design through change management and team adoption
         tags: [Java, SpringBoot, PostgreSQL, Shopify APIs, Mirakl Platform, Datadog]
     extra:
       - topic: 
@@ -95,25 +95,23 @@ experiences:
         end: "2025-10"
         description:
           fr: |
-            Équipe full-stack
-            Périmètre centré sur l'expérience de recherche côté conducteur, de l'envie de voyager au choix du trajet le plus pertinent, en adéquation avec ses préférences
+            Équipe full-stack — expérience de recherche côté passager, de l'envie de voyager au choix du trajet le plus pertinent selon ses préférences.
 
-             * Coordonné des projets produit de la découverte au déploiement, dont des programmes de 9 mois impliquant 4 équipes
-             * Axé sur l'amélioration de la fiabilité des services de l'équipe : amélioration des processus et de l'observabilité des services en production, amélioration du processus de conception pour les nouveaux services
-             * Refonte de l'architecture pour l'adapter à l'échelle de l'entreprise et à sa trajectoire vers la multimodalité ; coordination de la transition vers cette architecture  #NoRewrite
-             * Pionnier dans la mise en place des SLO : travail en étroite collaboration avec l'équipe SRE pour implémenter les premiers SLO techniques puis les Feature SLO afin d'améliorer la précision de la modélisation de l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
-             * Initié les Open Spaces (« Forum ouvert ») pour l'équipe backend afin de créer des liens entre les membres et favoriser la coopération
-             * (et bien sûr !) Contribution à la livraison quotidienne de l'équipe
+             * Pilotage de projets produit de la découverte au déploiement, dont des programmes de 9 mois impliquant 4 équipes
+             * Refonte de l'architecture de recherche pour l'adapter à l'échelle de l'entreprise et à sa trajectoire multimodale, puis coordination de la migration progressive — sans réécriture _big-bang_ (#NoRewrite)
+             * Pionnier des SLO dans l'équipe : en binôme avec l'équipe SRE, mise en place des premiers SLO techniques puis des Feature SLO pour modéliser plus finement l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
+             * Amélioration continue de la fiabilité : renforcement de l'observabilité des services en production et du processus de conception des nouveaux services
+             * Lancement des Open Spaces (« Forum ouvert ») de l'équipe backend pour renforcer la coopération entre ingénieurs
+             * Contribution quotidienne à la livraison de l'équipe
           en: |
-            Full-stack team
-            Scoped on driver the search user experience, from their will to travel to choosing the most relevant ride, matching their preferences
+            Full-stack team — passenger-side search experience, from the will to travel to choosing the most relevant ride for one's preferences.
 
-             * Coordinated from discovery to rollout product projects, including 9-months programs involving 4 teams
-             * Focused on improving the team's services reliability: improve processes and observability for running services, improve the design process for new ones
-             * Revamped the architecture to adapt it to the company's scale and path to multimodality; coordinated the transition to that architecture  #NoRewrite
-             * Pioneered in the SLO implementation: worked side-to-side with the SRE team to implement the first technical SLOs and then Feature SLOs to improve our users' experience modelling accuracy; contributed to onboard other teams in the process
-             * Initiated Open Spaces ("Forum ouvert") for the backend team to create connections between team members and boost cooperation
-             * (and of course!) Contributed to the day-to-day delivery of the team
+             * Drove product projects from discovery to rollout, including 9-month programs spanning 4 teams
+             * Revamped the search architecture to fit company scale and its multimodal roadmap, then coordinated a progressive migration — no big-bang rewrite (#NoRewrite)
+             * Pioneered SLOs in the team: paired with the SRE team to ship the first technical SLOs, then Feature SLOs for sharper user-experience modeling; helped onboard other teams
+             * Continuously improved reliability: strengthened production observability and the design process for new services
+             * Launched the backend team's Open Spaces ("Forum ouvert") to boost cooperation between engineers
+             * Contributed to the team's day-to-day delivery
         tags: [Java, SpringBoot, Elasticsearch, SLO, Datadog, Kubernetes]
       - role:
           fr: Ingénieur logiciel senior backend
@@ -123,24 +121,22 @@ experiences:
         end: "2021-04"
         description:
           fr: |
-            Équipe backend uniquement, en collaboration étroite avec les équipes frontend
-            Périmètre centré sur le calcul des frais de service pour les passagers et l'orchestration du tunnel d'achat
+            Équipe backend, en collaboration étroite avec les équipes frontend — calcul des frais de service passagers et orchestration du tunnel d'achat.
 
-             * Contribution à la mise en production de services de monétisation indépendants hors du monolithe historique, promotion des bonnes pratiques d'architecture et de conception au sein de l'équipe
-             * Impulsion d'une démarche SRE, axée principalement sur la réduction du bruit et de la fatigue des alertes lors des astreintes
-             * Pilotage de la migration de Fleet/Rocket vers Docker/Kubernetes dans le périmètre de l'équipe
-             * Mission transverse axée sur les performances de l'équipe, des outils et des applications
-             * Mentorat d'un membre junior de l'équipe
+             * Extraction de services de monétisation autonomes hors du monolithe historique, et diffusion des bonnes pratiques d'architecture et de conception dans l'équipe
+             * Impulsion d'une démarche SRE, centrée sur la réduction du bruit et de la fatigue d'alerte en astreinte
+             * Pilotage de la migration de Fleet/Rocket vers Docker/Kubernetes sur le périmètre de l'équipe
+             * Mission transverse d'optimisation des performances (équipe, outillage, applications)
+             * Mentorat d'un ingénieur junior
           en: |
-            Backend-only team, closely working with frontend teams
-            Scoped on computing carpool passenger fees and orchestrating the purchase flow
+            Backend team working closely with frontend teams — computing carpool passenger fees and orchestrating the purchase flow.
 
-             * Contributed to releasing independent monetization services outside of a historical monolith, promoting architecture and code design better practices within the team
-             * Impulsed an SRE approach, with the main focus on reducing noise and alert fatigue during on-call shifts
+             * Extracted standalone monetization services out of the legacy monolith, and spread architecture and code-design best practices across the team
+             * Drove an SRE approach focused on reducing alert noise and on-call fatigue
              * Led the migration from Fleet/Rocket to Docker/Kubernetes in the team's scope
-             * Side-mission focused on team, tooling, and application performances
-             * Mentored a younger team member
-        tags: [Java, SpringBoot, Kubernetes, Prometheus, Grafana]
+             * Cross-cutting mission on performance (team, tooling, applications)
+             * Mentored a junior engineer
+        tags: [Java, SpringBoot, MariaDB, Kubernetes, Prometheus, Grafana]
     extra:
       - topic:
           fr: Refonte de l'entretien de recrutement backend
@@ -158,7 +154,7 @@ experiences:
   - company: Criteo
     location: Paris
     url: https://www.criteo.com
-    tags: [Java, Scala, Finatra, Finagle, .NET Core, Prometheus, Grafana, Observability]
+    tags: [Java, Scala, Finatra, Finagle, .NET Core, MSSQL, Prometheus, Grafana, Observability]
     roles:
       - role:
           fr: Ingénieur logiciel
@@ -168,21 +164,21 @@ experiences:
         end: "2019"
         description:
           fr: |
-            Équipe en charge des outils d'observabilité (logs, métriques, traçage distribué)
+            Équipe responsable de la stack d'observabilité (logs, métriques, traçage distribué).
 
-            Seul développeur au sein d'une équipe d'ops, j'ai :
-             * Poussé à concevoir des APIs orientées utilisateur pour les bibliothèques de l'équipe
-             * Contribué aux composants d'observabilité (dont open-source, comme BigGraphite par exemple)
-             * Promu les bonnes pratiques de développement (conception, code, tests et revues)
-             * Organisé des ateliers Scala pour monter mes collègues en compétences sur ce langage
+            Seul ingénieur logiciel au sein d'une équipe d'ops :
+             * Conception d'APIs orientées utilisateur pour les bibliothèques clientes de l'équipe
+             * Contribution aux composants d'observabilité, dont de l'open source (ex. BigGraphite)
+             * Diffusion des bonnes pratiques d'ingénierie (conception, code, tests, revues)
+             * Animation d'ateliers Scala pour monter l'équipe en compétences
           en: |
-            Team in charge of observability tools (logging, metrics, distributed tracing)
+            Team owning Criteo's observability stack (logging, metrics, distributed tracing).
 
-            As the only developer in the team among ops, I:
-             * Pushed to design user-oriented APIs for the team's libraries
-             * Contributed to observability components (including open-source, like BigGraphite for instance)
-             * Promoted development best practices (designing, coding, testing and reviewing)
-             * Organized Scala workshops to ramp-up my teammates on this language
+            Sole software engineer among ops:
+             * Designed user-oriented APIs for the team's client libraries
+             * Contributed to observability components, including open source (e.g. BigGraphite)
+             * Spread engineering best practices (design, code, testing, reviews)
+             * Ran Scala workshops to upskill teammates
       - role:
           fr: Ingénieur logiciel
           en: Software engineer
@@ -191,19 +187,17 @@ experiences:
         end: "2018"
         description:
           fr: |
-            Interface entre les équipes SRE et les équipes produit, équipe centrée sur la découverte de services et les métriques.
+            Interface entre les équipes SRE et les équipes produit ; périmètre centré sur la découverte de services et les métriques.
 
-            En tant que membre de cette équipe, j'ai :
-             * Piloté la migration d'un outil maison d'agrégation de métriques vers Prometheus (communication et synchronisation avec les autres équipes incluses)
-             * Contribué à la définition et à la mise en production d'un moyen d'identifier de manière unique une application du point de vue du code
-             * Assuré du support sur les problématiques JVM
+             * Pilotage de la migration d'un agrégateur de métriques maison vers Prometheus, communication et synchronisation cross-équipes incluses
+             * Définition et mise en production d'un identifiant unique d'application au niveau du code
+             * Support sur les problématiques JVM
           en: |
-            Interface between SRE teams and feature teams, team focused on service discovery and metrics.
+            Interface between SRE and feature teams; scoped on service discovery and metrics.
 
-            As a member of this team, I:
-             * Led migration from an in-house metric aggregation tool to Prometheus (including communication and synchronization with other teams)
-             * Contributed to the definition and release of a way to uniquely identify an application from a code point of view
-             * Worked as support for JVM-related issues
+             * Led the migration from an in-house metrics aggregator to Prometheus, including cross-team communication and rollout
+             * Defined and shipped a way to uniquely identify an application from the code
+             * Provided support on JVM-related issues
       - role:
           fr: Ingénieur logiciel
           en: Software engineer
@@ -213,12 +207,12 @@ experiences:
         description:
           fr: |
             Conception, développement et maintenance :
-             * Outils orientés délivrabilité (capacité à délivrer un e-mail en boîte de réception et non en spam)
+             * Outils de délivrabilité pour maximiser le placement en boîte de réception (plutôt qu'en spam)
              * Moteur de templates d'e-mails
           en: |
-            Design, development and maintenance:
-             * Deliverability-oriented tools (ability to deliver an e-mail into inbox and not into spam box)
-             * E-mail templating
+            Designed, built and maintained:
+             * Deliverability tooling to maximize inbox placement (over spam)
+             * An e-mail templating engine
     extra:
       - topic:
           fr: Agilité
@@ -238,15 +232,11 @@ experiences:
         end: 2015-11
         description:
           fr: |
-            Développement et maintenance d'APIs consommées par des fournisseurs de contenu
-
-            Réalisation personnelle dans cette équipe :
-             * Mise en place de la gestion de configuration et du déploiement automatique
+            Développement et maintenance d'APIs consommées par des fournisseurs de contenu.
+             * Mise en place de la gestion de configuration et du déploiement automatisé pour l'équipe
           en: |
-             Development and maintenance of APIs consumed by content providers
-
-             Personal achievement in this team:
-              * Set-up of configuration management and automatic deployment
+            Development and maintenance of APIs consumed by content providers.
+             * Set up configuration management and automated deployment for the team
 
 education:
   - school: CentraleSupélec (École Supérieure d'Électricité)
@@ -268,15 +258,31 @@ skills:
   - group:
       fr: Langages
       en: Languages
-    items: [Java, SQL, TypeScript]  # TODO — compléter / to complete
+    items: [Java, Scala, Python, SQL]
   - group:
-      fr: Frameworks & outils
-      en: Frameworks & tools
-    items: [Spring, "Spring Boot", PostgreSQL, Elasticsearch, Docker]  # TODO — compléter / to complete
+      fr: Frameworks
+      en: Frameworks
+    items: [Spring, "Spring Boot"]
+  - group:
+      fr: Données & messaging
+      en: Data & messaging
+    items: [MariaDB, PostgreSQL, Kafka]
+  - group:
+      fr: Conteneurs & orchestration
+      en: Containers & orchestration
+    items: [Docker, Kubernetes]
+  - group:
+      fr: Observabilité
+      en: Observability
+    items: [Datadog, Prometheus, Grafana]
+  - group:
+      fr: Outillage
+      en: Tooling
+    items: [Git, Maven, Gradle, GitHub]
   - group:
       fr: Pratiques
       en: Practices
-    items: [TDD, SLO, SRE, "Code Review"]  # TODO — compléter / to complete
+    items: ["Distributed Systems", SLO, SRE, TDD, "Code Review", "Design Docs"]
 
 spokenLanguages:
   - name:
