@@ -1,4 +1,4 @@
-# My name is Alban Dericbourg and I am a software engineer
+# My name is Alban Dericbourg and I am a freelance software engineer
 
 As a senior software engineer, I can strengthen your workforce or bring extra (soft or hard) skills your team may need.
 
