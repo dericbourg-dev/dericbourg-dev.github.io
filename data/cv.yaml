@@ -33,14 +33,14 @@ experiences:
 
             J'ai contribué à améliorer le processus de conception (design doc) pour qu'il couvre des angles morts préalablement ignorés (volumétrie, observabilité, tests), avec un focus sur les objectifs et la résolution de problèmes.
              * Plaidé pour l'adoption de templates, avec des indications dans chaque section
-             * Développé des _skills_ AIg pour revoir et restructurer ces documents — focus sur la lisibilité et l'actionnabilité
+             * Développé des _skills_ IA pour revoir et restructurer ces documents — focus sur la lisibilité et l'actionnabilité
           en: |
             The post-sales team is responsible for the order lifecycle.
 
             I contributed to leveraging the design doc process so that it covers previously blind spots (volumetry, observability, testing) with a focus on goals and problem solving.
              * Advocated for templates, with hints in each section
-             * Built AIg skills to review and re-structure those documents — focus on readability and actionability
-        tags: [Java, SpringBoot, PostgreSQL, Kafka, AIg, Datadog]
+             * Built AI skills to review and re-structure those documents — focus on readability and actionability
+        tags: [Java, SpringBoot, PostgreSQL, Kafka, AI, Datadog]
       - role:
           fr: Ingénieur logiciel senior (indépendant)
           en: Senior Software Engineer (freelance)
@@ -57,7 +57,7 @@ experiences:
              * Conception et implémentation du support de l'internationalisation
              * Pilotage de la mise en place des SLO, de la conception à la conduite du changement
           en: |
-            Mirakl <> Shopify connector for platrorm operators
+            Mirakl <> Shopify connector for platform operators
 
             Release a middleware between Shopify and the Mirakl platform, allowing Shopify shop owners to open their shop to third-party sellers.
 
@@ -98,7 +98,7 @@ experiences:
             Équipe full-stack
             Périmètre centré sur l'expérience de recherche côté conducteur, de l'envie de voyager au choix du trajet le plus pertinent, en adéquation avec ses préférences
 
-             * Coordiné des projets produit de la découverte au déploiement, dont des programmes de 9 mois impliquant 4 équipes
+             * Coordonné des projets produit de la découverte au déploiement, dont des programmes de 9 mois impliquant 4 équipes
              * Axé sur l'amélioration de la fiabilité des services de l'équipe : amélioration des processus et de l'observabilité des services en production, amélioration du processus de conception pour les nouveaux services
              * Refonte de l'architecture pour l'adapter à l'échelle de l'entreprise et à sa trajectoire vers la multimodalité ; coordination de la transition vers cette architecture  #NoRewrite
              * Pionnier dans la mise en place des SLO : travail en étroite collaboration avec l'équipe SRE pour implémenter les premiers SLO techniques puis les Feature SLO afin d'améliorer la précision de la modélisation de l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
@@ -201,7 +201,7 @@ experiences:
             Interface between SRE teams and feature teams, team focused on service discovery and metrics.
 
             As a member of this team, I:
-             * Lead migration from an in-house metric aggregation tool to Prometheus (including communication and synchronization with other teams)
+             * Led migration from an in-house metric aggregation tool to Prometheus (including communication and synchronization with other teams)
              * Contributed to the definition and release of a way to uniquely identify an application from a code point of view
              * Worked as support for JVM-related issues
       - role:
@@ -217,7 +217,7 @@ experiences:
              * Moteur de templates d'e-mails
           en: |
             Design, development and maintenance:
-             * Deliverability-oriented tools (ability to deliver an a-mail into inbox and not into spam box)
+             * Deliverability-oriented tools (ability to deliver an e-mail into inbox and not into spam box)
              * E-mail templating
     extra:
       - topic:
@@ -225,7 +225,7 @@ experiences:
           en: Agility
         description:
           fr: Mise en place de rétrospectives dans les trois équipes pour soutenir un processus d'amélioration continue
-          en: Boostrapped retrospectives in all three teams to support a continuous improvement process
+          en: Bootstrapped retrospectives in all three teams to support a continuous improvement process
   - company: Spideo
     location: Paris
     url: https://spideo.com

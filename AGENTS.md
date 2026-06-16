@@ -34,7 +34,9 @@ hugo --minify                          # Build site to /public
 ### Content Organization
 Bilingual content uses suffix naming convention:
 - `content/_index.fr.md` / `content/_index.en.md` - Homepage
-- `content/about.fr.md` / `content/about.en.md` - About page
+- `content/contact.fr.md` / `content/contact.en.md` - Contact page
+- `content/cv.fr.md` / `content/cv.en.md` - CV page (`layout = "cv"`, content sourced from `data/cv.yaml`)
+- `content/references.fr.md` / `content/references.en.md` - References page (`layout = "references"`, content sourced from `data/references.yaml`)
 
 Content uses TOML frontmatter with `+++` delimiters.
 
@@ -46,7 +48,13 @@ Versions are pinned in dedicated files (read by Makefile and GitHub Actions):
 To update: modify the file, then `make build`.
 
 ### Theme
-Uses [Anatole](https://github.com/lxndrblz/anatole) theme as a Hugo Module (defined in `go.mod`).
+No external theme — `layouts/` and `assets/css/main.css` are hand-written and project-local
+(no Hugo Module, no Sass/Node build step). Key files:
+- `layouts/_default/baseof.html` - base template (skip link, header/main/footer scaffold)
+- `layouts/partials/{head,header,footer}.html` - document head, nav + language switcher, footer
+- `layouts/_default/{cv,references}.html` - data-driven layouts reading `data/cv.yaml` /
+  `data/references.yaml` via `hugo.Data`
+- `assets/css/main.css` - single CSS file, minified and fingerprinted at build time
 
 ## Deployment
 
@@ -55,7 +63,7 @@ Automatic deployment to GitHub Pages on push to `main` branch via `.github/workf
 ## Key Conventions
 
 - French is the default language (`DefaultContentLanguage = "fr"`)
-- LaTeX math supported via passthrough delimiters (`$$...$$` for blocks, `\(...\)` for inline)
+- No JavaScript and no webfonts — keep the site low-tech (system monospace stack, plain CSS)
 - Static files go in `static/` directory
 - Generated output (`public/`) is gitignored
 
@@ -81,10 +89,4 @@ Target compliance: **WCAG 2.2 Level AA**. All changes must maintain or improve a
 - All interactive elements must be keyboard accessible
 - Focus order must follow visual order
 - Custom widgets need proper ARIA roles, states, and keyboard handlers
-- Theme/language switchers must work with keyboard alone
-
-### Known Issues to Address
-- Missing skip-to-content link
-- Theme switcher not keyboard accessible (upstream theme issue)
-- Some low-contrast secondary text (#9f9f9f)
-- Empty `<h1>` on content pages (theme template issue)
+- Language switcher must work with keyboard alone

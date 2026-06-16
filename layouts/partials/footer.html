@@ -19,14 +19,18 @@
     </li>
     {{- end }}
   </ul>
+  {{/*
+    Only the CSS is measured here: it's the one asset shared and cached across every page
+    (no JS, no webfonts, no images). The HTML document itself isn't included — Hugo has no
+    way to know a page's own final rendered size while it's still being rendered.
+  */}}
   {{- $css := resources.Get "css/main.css" | minify -}}
-  {{- $pageBytes := add (len $css.Content) (len .Content) -}}
-  {{- $pageKB := math.Round (div (mul 1.0 $pageBytes) 1024.0) -}}
+  {{- $cssKB := math.Round (div (mul 1.0 (len $css.Content)) 1024.0) -}}
   <p class="page-weight">
     {{- if eq site.Language.Lang "fr" -}}
-    Éco-conçu · ~{{ $pageKB }} Ko
+    Éco-conçu · pas de JS, pas de polices web · CSS ~{{ $cssKB }} Ko
     {{- else -}}
-    Eco-designed · ~{{ $pageKB }} KB
+    Eco-designed · no JS, no webfonts · CSS ~{{ $cssKB }} KB
     {{- end -}}
   </p>
 </div>

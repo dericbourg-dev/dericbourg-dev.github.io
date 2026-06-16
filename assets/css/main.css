@@ -213,12 +213,6 @@ a:hover {
 .site-main {
   min-height: 30vh;
   outline: none; /* tabindex="-1" focus target — no visible outline needed here */
-  text-align: justify;
-  hyphens: auto;
-}
-
-.page-content > * + * {
-  /* Handled by element styles */
 }
 
 /* References: terminal-style quote blocks */
@@ -360,8 +354,6 @@ a:hover {
   margin: 0 0 0.4rem;
   font-size: 0.85rem;
   color: var(--muted);
-  text-align: left;
-  hyphens: none;
 }
 
 .cv-desc {
@@ -377,8 +369,6 @@ a:hover {
   font-size: 0.8rem;
   color: var(--muted);
   word-spacing: 0.3em;
-  text-align: left;
-  hyphens: none;
 }
 
 .cv-extras {
