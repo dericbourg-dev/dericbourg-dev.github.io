@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{- $refs := hugo.Data.references -}}
+{{- $lang := site.Language.Lang -}}
+
+{{/* "Translated from" prefix in each UI language */}}
+{{- $translatedFromPrefix := dict "en" "Translated from" "fr" "Traduit" -}}
+{{/* How to refer to each original language, per UI language */}}
+{{- $langComplement := dict
+    "en" (dict "fr" "French")
+    "fr" (dict "en" "de l'anglais")
+-}}
+
+<div class="references">
+  <h1>{{ .Title }}</h1>
+  {{ range $refs }}
+  <article class="reference">
+    <h2>{{ .author.name }} <small>{{ .author.role }}, {{ .author.company }}</small></h2>
+    {{ if and .originalLanguage (ne .originalLanguage $lang) }}
+    {{- $prefix := index $translatedFromPrefix $lang -}}
+    {{- $complement := index (index $langComplement $lang) .originalLanguage -}}
+    {{ with $complement }}<p><em>{{ $prefix }} {{ . }}</em></p>{{ end }}
+    {{ end }}
+    <blockquote>
+      {{ index .text $lang | markdownify }}
+    </blockquote>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
