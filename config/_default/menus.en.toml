@@ -1,35 +1,29 @@
 [[main]]
-name = "Home"
+name       = "home"
 identifier = "home"
-weight = 100
-url = "/en/"
+weight     = 100
+url        = "/en/"
 
 [[main]]
-name = "References"
-weight = 200
+name       = "references"
 identifier = "references"
-url = "/en/references/"
+weight     = 200
+url        = "/en/references/"
 
-#[[main]]
-#name = "About"
-#weight = 400
-#identifier = "about"
-#url = "/about/"
+[[main]]
+name       = "cv"
+identifier = "cv"
+weight     = 300
+url        = "/en/cv/"
 
-#[[main]]
-#name = "Contact"
-#weight = 600
-#identifier = "contact"
-#url = "/contact/"
-
-#[[footer]]
-#name = "imprint"
-#weight = 1
-#identifier = "imprint"
-#url = "/imprint/"
+[[main]]
+name       = "contact"
+identifier = "contact"
+weight     = 400
+url        = "/en/contact/"
 
 [[footer]]
-name = "Also find me on Malt"
-weight = 1
-identifier = "imprint"
-url = "https://www.malt.fr/profile/albandericbourg"
+name       = "malt"
+identifier = "malt"
+weight     = 1
+url        = "https://www.malt.fr/profile/albandericbourg"

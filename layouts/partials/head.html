@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Language.Params.description }}{{ . }}{{ else }}{{ site.Params.author }}{{ end }}{{ end }}">
+  <meta name="author" content="{{ site.Params.author }}">
+
+  <title>
+    {{- if .IsHome -}}
+      {{ site.Title }}
+    {{- else -}}
+      {{ .Title }} — {{ site.Title }}
+    {{- end -}}
+  </title>
+
+  {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+  {{/* hreflang for bilingual site */}}
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{- end }}
+  <link rel="alternate" hreflang="x-default" href="{{ site.BaseURL }}">
+
+  {{- with site.Params.favicon }}
+  <link rel="icon" type="image/svg+xml" href="{{ . }}">
+  {{- end }}
+
+  {{/* Open Graph — minimal */}}
+  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} — {{ site.Title }}{{ end }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+</head>
