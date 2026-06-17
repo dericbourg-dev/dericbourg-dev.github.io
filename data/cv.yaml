@@ -238,10 +238,12 @@ experiences:
         description:
           fr: |
             Développement et maintenance d'APIs consommées par des fournisseurs de contenu.
-             * Mise en place de la gestion de configuration et du déploiement automatisé pour l'équipe
+            
+            Mise en place de la gestion de configuration et du déploiement automatisé pour l'équipe
           en: |
             Development and maintenance of APIs consumed by content providers.
-             * Set up configuration management and automated deployment for the team
+            
+            Set up configuration management and automated deployment for the team
 
 education:
   - school: CentraleSupélec (École Supérieure d'Électricité)
