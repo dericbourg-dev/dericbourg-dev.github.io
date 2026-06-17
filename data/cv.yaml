@@ -91,7 +91,6 @@ experiences:
   - company: BlaBlaCar
     location: Paris
     url: https://www.blablacar.com
-    tags: [Java, Spring, Elasticsearch, SRE]
     roles:
       - role:
           fr: Ingénieur logiciel senior backend
