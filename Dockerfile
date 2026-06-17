@@ -2,13 +2,24 @@ FROM debian:bookworm-slim
 
 ARG HUGO_VERSION
 ARG GO_VERSION
+ARG WEASYPRINT_VERSION
 ARG TARGETARCH
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     wget \
     git \
+    python3 \
+    python3-pip \
+    python3-venv \
+    libpango-1.0-0 \
+    libpangoft2-1.0-0 \
+    fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m venv /opt/venv \
+    && /opt/venv/bin/pip install --no-cache-dir "weasyprint==${WEASYPRINT_VERSION}"
+ENV PATH="/opt/venv/bin:${PATH}"
 
 RUN ARCH=$(echo ${TARGETARCH} | sed 's/amd64/amd64/;s/arm64/arm64/') && \
     wget -O /tmp/go.tar.gz "https://go.dev/dl/go${GO_VERSION}.linux-${ARCH}.tar.gz" && \

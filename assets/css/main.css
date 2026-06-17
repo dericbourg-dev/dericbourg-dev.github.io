@@ -266,6 +266,11 @@ a:hover {
 
 /* --- CV ------------------------------------------------------------------ */
 
+.cv-download {
+  text-align: right;
+  margin: 0 0 0.5rem;
+}
+
 .cv-title {
   font-size: 1rem;
   color: var(--muted);
@@ -481,12 +486,15 @@ a:hover {
 
 @media print {
   @page {
-    margin: 2cm;
+    size: A4;
+    margin: 1.5cm 2cm;
   }
 
   .site-header,
   .site-footer,
-  .skip-link {
+  .skip-link,
+  .cv-download,
+  .cv-toc {
     display: none;
   }
 
@@ -508,14 +516,78 @@ a:hover {
     text-decoration: none;
   }
 
+  /* Tighter density for print */
+  .cv {
+    font-size: 10.5pt;
+  }
+
+  .cv-section {
+    margin-bottom: 1.25rem;
+  }
+
+  .cv-company {
+    margin-bottom: 1.5rem;
+  }
+
+  .cv-role {
+    margin: 0.5rem 0 0.5rem 1.5ch;
+  }
+
+  /* Keep headings with the content that follows */
+  .cv-section h2,
+  .cv-company h3,
+  .cv-company > .cv-tags,
+  .cv-role h4 {
+    break-after: avoid;
+  }
+
+  /* Prevent orphaned/widowed lines in descriptions */
+  .cv-desc {
+    orphans: 2;
+    widows: 2;
+  }
+
   .cv-role,
   .cv-edu-entry,
+  .cv-extras,
   .cv-extra {
     break-inside: avoid;
   }
 
-  .cv-company {
-    break-inside: avoid;
+  /* WeasyPrint does not support flexbox gap; use margin instead */
+  .cv-skill-group dt {
+    margin-right: 0.5em;
+  }
+
+  /* WeasyPrint does not support display:contents inside CSS Grid;
+     replace with a flex row per entry */
+  .cv-lang-list {
+    display: block;
+  }
+
+  .cv-lang-entry {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .cv-lang-entry dt {
+    min-width: 7rem;
+  }
+
+  /* Ensure language proficiency bars render in print/PDF
+     (browsers suppress backgrounds by default; PDF converters render them) */
+  .cv-lang-bar {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: #e0e0e0;
+  }
+
+  .cv-lang-bar-fill {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: #000000;
   }
 }
 

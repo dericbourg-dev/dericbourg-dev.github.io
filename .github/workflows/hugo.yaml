@@ -44,16 +44,24 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build with Hugo
+      - name: Read WeasyPrint version
+        id: weasyprint-version
+        run: echo "version=$(cat .weasyprint-version)" >> $GITHUB_OUTPUT
+
+      - name: Install WeasyPrint
+        env:
+          WEASYPRINT_VERSION: ${{ steps.weasyprint-version.outputs.version }}
+        run: |
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+            libpango-1.0-0 libpangoft2-1.0-0 fonts-dejavu-core
+          pip install --break-system-packages "weasyprint==${WEASYPRINT_VERSION}"
+
+      - name: Build with Hugo and generate PDFs
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: Europe/Paris
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: sh scripts/build.sh --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

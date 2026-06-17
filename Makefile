@@ -1,20 +1,25 @@
 HUGO_VERSION := $(shell cat .hugo-version)
 GO_VERSION := $(shell cat .go-version)
-export HUGO_VERSION GO_VERSION
+WEASYPRINT_VERSION := $(shell cat .weasyprint-version)
+export HUGO_VERSION GO_VERSION WEASYPRINT_VERSION
 
-.PHONY: build serve shell clean env
+.PHONY: image build serve shell clean env
 
 env:
 	@echo "HUGO_VERSION=$(HUGO_VERSION)" > .env
 	@echo "GO_VERSION=$(GO_VERSION)" >> .env
+	@echo "WEASYPRINT_VERSION=$(WEASYPRINT_VERSION)" >> .env
 
-build: env
+image: env
 	docker compose build
 
-serve: build
+build: image
+	docker compose run --rm shell sh scripts/build.sh
+
+serve: image
 	docker compose up hugo
 
-shell: build
+shell: image
 	docker compose run --rm shell
 
 clean:

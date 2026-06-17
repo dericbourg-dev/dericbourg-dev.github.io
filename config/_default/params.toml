@@ -1,5 +1,6 @@
 author = "Alban Dericbourg"
 favicon = "/favicon.svg"
+cvPdfPrefix = "cv-dericbourg-alban"
 
 [[socialLinks]]
 label = "LinkedIn"

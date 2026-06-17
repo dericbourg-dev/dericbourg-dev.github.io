@@ -15,6 +15,12 @@
 
 <article class="cv">
 
+  {{- $downloadLabel := cond (eq $lang "fr") "Télécharger en PDF" "Download as PDF" -}}
+  {{- $downloadHref  := printf "/%s.%s.pdf" site.Params.cvPdfPrefix $lang -}}
+  <p class="cv-download">
+    <a href="{{ $downloadHref }}" download>{{ $downloadLabel }}</a>
+  </p>
+
   <h1>{{ .Title }}{{ with $cv.header }}{{ with .name }} — {{ . }}{{ end }}{{ end }}</h1>
 
   {{ with $cv.header }}

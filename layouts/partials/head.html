@@ -26,6 +26,12 @@
   <link rel="icon" type="image/svg+xml" href="{{ . }}">
   {{- end }}
 
+  {{/* PDF alternate (CV page only) */}}
+  {{- if eq .Layout "cv" }}
+  {{- $pdf := printf "/%s.%s.pdf" site.Params.cvPdfPrefix site.Language.Lang -}}
+  <link rel="alternate" type="application/pdf" hreflang="{{ site.Language.Lang }}" href="{{ $pdf | absURL }}">
+  {{- end }}
+
   {{/* Open Graph */}}
   {{- $localeMap := dict "fr" "fr_FR" "en" "en_US" -}}
   {{- $currentLang := site.Language.Lang -}}
