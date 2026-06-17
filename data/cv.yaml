@@ -36,14 +36,14 @@ experiences:
         start: "2026-04"
         description:
           fr: |
-            L'équipe _post-sales_ possède le cycle de vie des commandes (fort volume, système distribué).
+            Mirakl Connect est le réseau B2B reliant opérateurs et vendeurs. L'équipe _post-sales_ y possède le cycle de vie des commandes (fort volume, système distribué).
 
             Intégré en renfort de l'équipe, j'ai pris l'initiative d'élever le niveau d'exigence sur la conception et la livraison :
              * Refonte du processus de design doc pour couvrir des angles morts récurrents (capacité / volumétrie, observabilité, tests) et recentrer les revues sur les objectifs et les arbitrages
              * Adoption de templates structurés, avec des indications par section
              * Conception de _skills_ IA qui restructurent les design docs pour les rendre plus lisibles et actionnables, réduisant les allers-retours en revue
           en: |
-            The post-sales team owns the order lifecycle (high-volume, distributed system).
+            Mirakl Connect is the B2B network connecting operators and sellers. The post-sales team owns the order lifecycle there (high-volume, distributed system).
 
             Joined to reinforce the team, I took the initiative to raise the engineering bar on design and delivery:
              * Reworked the design-doc process to close recurring blind spots (capacity / volumetry, observability, testing) and refocus reviews on goals and trade-offs
