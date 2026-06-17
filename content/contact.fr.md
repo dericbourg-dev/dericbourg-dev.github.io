@@ -1,5 +1,6 @@
 +++
 title = "Contact"
+description = "Contacter Alban Dericbourg, ingénieur logiciel senior indépendant en télétravail, pour discuter d'une mission : e-mail, LinkedIn, GitHub, Malt."
 +++
 
 # Contact

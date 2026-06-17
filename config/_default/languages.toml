@@ -3,11 +3,11 @@ title = "Alban Dericbourg — Développeur"
 weight = 1
 LanguageName = "🇫🇷 Français"
   [fr.params]
-  description = "Ingénieur logiciel senior freelance avec 15 ans d'expérience au sein de trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Expert en systèmes distribués, observabilité et fiabilité (SLO / SRE)."
+  description = "Ingénieur logiciel senior freelance, en télétravail (basé entre Poitiers et Angoulême). 15 ans d'expérience dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Expert en systèmes distribués, observabilité et fiabilité (SLO / SRE)."
 
 [en]
 title = "Alban Dericbourg — Software Engineer"
 weight = 2
 LanguageName = "🇬🇧 English"
   [en.params]
-  description = "Freelance senior software engineer with 15 years of experience across three French unicorns (Criteo, BlaBlaCar, Mirakl). Expert in distributed systems, observability, and reliability (SLO / SRE)."
+  description = "Freelance senior software engineer, working remotely (based between Poitiers and Angoulême, France). 15 years of experience across three French unicorns (Criteo, BlaBlaCar, Mirakl). Expert in distributed systems, observability, and reliability (SLO / SRE)."

@@ -1,5 +1,6 @@
 +++
 title = "Contact"
+description = "Get in touch with Alban Dericbourg, freelance senior software engineer working remotely, to discuss a project: email, LinkedIn, GitHub, Malt."
 +++
 
 # Contact
