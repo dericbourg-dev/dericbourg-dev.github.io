@@ -41,14 +41,14 @@ experiences:
             Intégré en renfort de l'équipe, j'ai pris l'initiative d'élever le niveau d'exigence sur la conception et la livraison :
              * Refonte du processus de design doc pour couvrir des angles morts récurrents (capacité / volumétrie, observabilité, tests) et recentrer les revues sur les objectifs et les arbitrages
              * Adoption de templates structurés, avec des indications par section
-             * Conception de _skills_ IA qui restructurent les design docs pour les rendre plus lisibles et actionnables, réduisant les allers-retours en revue
+             * Conception de _plugins_/_skills_ IA qui restructurent les design docs pour les rendre plus lisibles et actionnables, réduisant les allers-retours en revue
           en: |
             Mirakl Connect is the B2B network connecting operators and sellers. The post-sales team owns the order lifecycle there (high-volume, distributed system).
 
             Joined to reinforce the team, I took the initiative to raise the engineering bar on design and delivery:
              * Reworked the design-doc process to close recurring blind spots (capacity / volumetry, observability, testing) and refocus reviews on goals and trade-offs
              * Drove adoption of structured templates with inline guidance per section
-             * Built AI skills that restructure design docs for readability and actionability, cutting review back-and-forth
+             * Built AI plugins/skills that restructure design docs for readability and actionability, cutting review back-and-forth
         tags: [Java, SpringBoot, PostgreSQL, Kafka, AI, Datadog]
       - role:
           fr: Ingénieur logiciel senior (indépendant)
