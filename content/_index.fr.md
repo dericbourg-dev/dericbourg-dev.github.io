@@ -19,7 +19,7 @@ Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à 
 
 ### Sur quelles missions puis-je intervenir ?
 
-Développement back-end dans des systèmes distribués à fort trafic : nouveaux services, modernisation de code hérité, fiabilité et observabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
+Développement back-end dans des systèmes distribués à fort trafic : nouveaux services, modernisation de code hérité, mise en place d'observabilité, fiabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
 
 ### Avec quelles technologies ?
 

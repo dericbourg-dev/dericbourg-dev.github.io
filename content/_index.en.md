@@ -19,7 +19,7 @@ If not, maybe you could point me to two people worth reaching out to. :)
 
 ### What kind of work do I take on?
 
-Back-end development in high-traffic distributed systems: new services, modernizing legacy code, reliability and observability. I also drive cross-team projects.
+Back-end development in high-traffic distributed systems: new services, modernizing legacy code, setting up observability, reliability. I also drive cross-team projects.
 
 ### Which technologies?
 
