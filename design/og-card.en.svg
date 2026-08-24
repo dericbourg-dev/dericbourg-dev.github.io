@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#2a2622"/>
+  <rect x="80" y="80" width="1040" height="470" fill="none" stroke="#3d3833" stroke-width="2"/>
+  <g font-family="ui-monospace, 'SF Mono', Menlo, 'DejaVu Sans Mono', monospace">
+    <text x="140" y="300" fill="#d8d4cc" font-size="64" font-weight="700">Alban Dericbourg</text>
+    <text x="140" y="360" fill="#d8d4cc" font-size="34">Freelance Senior Software Engineer</text>
+    <text x="140" y="460" fill="#7fae7f" font-size="30">dericbourg.dev</text>
+  </g>
+</svg>
