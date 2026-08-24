@@ -23,7 +23,7 @@ Back-end development in high-traffic distributed systems: new services, moderniz
 
 ### Which technologies?
 
-Mainly Java and Spring Boot, with PostgreSQL, Kafka, Docker and Kubernetes. For observability: Datadog, Prometheus and Grafana. The [detailed CV](/en/cv/) gives the context of each mission.
+Mainly Java and Spring Boot, with MariaDB, PostgreSQL, Kafka, Docker and Kubernetes. For observability: Datadog, Prometheus and Grafana. I also use AI-assisted development tools daily, Claude Code in particular. The [detailed CV](/en/cv/) gives the context of each mission.
 
 ### Remote or on-site?
 

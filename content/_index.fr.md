@@ -23,7 +23,7 @@ Développement back-end dans des systèmes distribués à fort trafic : nouveaux
 
 ### Avec quelles technologies ?
 
-Principalement Java et Spring Boot, avec PostgreSQL, Kafka, Docker et Kubernetes. Côté observabilité : Datadog, Prometheus et Grafana. Le [CV détaillé](/cv/) précise le contexte de chaque mission.
+Principalement Java et Spring Boot, avec MariaDB, PostgreSQL, Kafka, Docker et Kubernetes. Côté observabilité : Datadog, Prometheus et Grafana. J'utilise aussi les outils de développement assistés par IA au quotidien, notamment Claude Code. Le [CV détaillé](/cv/) précise le contexte de chaque mission.
 
 ### Télétravail ou sur site ?
 
