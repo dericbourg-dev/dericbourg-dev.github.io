@@ -4,14 +4,12 @@
   {{- $desc := or .Description site.Language.Params.description site.Params.author -}}
   <meta name="description" content="{{ $desc }}">
   <meta name="author" content="{{ site.Params.author }}">
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <title>
-    {{- if .IsHome -}}
-      {{ site.Title }}
-    {{- else -}}
-      {{ .Title }} — {{ site.Title }}
-    {{- end -}}
-  </title>
+  {{- $pageTitle := cond .IsHome site.Title (printf "%s — %s" .Title site.Params.author) -}}
+  <title>{{ $pageTitle }}</title>
+
+  <link rel="canonical" href="{{ .Permalink }}">
 
   {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
@@ -20,7 +18,13 @@
   {{- range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
   {{- end }}
-  <link rel="alternate" hreflang="x-default" href="{{ site.BaseURL }}">
+  {{- $xDefault := .Permalink -}}
+  {{- if not site.Language.IsDefault -}}
+    {{- range .AllTranslations -}}
+      {{- if .Language.IsDefault -}}{{- $xDefault = .Permalink -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  <link rel="alternate" hreflang="x-default" href="{{ $xDefault }}">
 
   {{- with site.Params.favicon }}
   <link rel="icon" type="image/svg+xml" href="{{ . }}">
@@ -36,8 +40,10 @@
   {{- $localeMap := dict "fr" "fr_FR" "en" "en_US" -}}
   {{- $currentLang := site.Language.Lang -}}
   {{- $locale := index $localeMap $currentLang | default $currentLang -}}
-  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} — {{ site.Title }}{{ end }}">
-  <meta property="og:type" content="website">
+  {{- $isProfile := or .IsHome (eq .Layout "cv") -}}
+  {{- $ogImage := printf "/og-card.%s.png" $currentLang | absURL -}}
+  <meta property="og:title" content="{{ $pageTitle }}">
+  <meta property="og:type" content="{{ if $isProfile }}profile{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:description" content="{{ $desc }}">
   <meta property="og:site_name" content="{{ site.Title }}">
@@ -48,9 +54,20 @@
   <meta property="og:locale:alternate" content="{{ $altLocale }}">
   {{- end }}
   {{- end }}
+  <meta property="og:image" content="{{ $ogImage }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ site.Params.author }}">
+  {{- if $isProfile }}
+  {{- $nameParts := split site.Params.author " " -}}
+  <meta property="profile:first_name" content="{{ index $nameParts 0 }}">
+  <meta property="profile:last_name" content="{{ delimit (after 1 $nameParts) " " }}">
+  {{- end }}
 
   {{/* Twitter / X Card */}}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} — {{ site.Title }}{{ end }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $pageTitle }}">
   <meta name="twitter:description" content="{{ $desc }}">
+  <meta name="twitter:image" content="{{ $ogImage }}">
+
 </head>
