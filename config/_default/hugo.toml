@@ -14,6 +14,12 @@ disableKinds = ["rss"]
 # Disable unused default taxonomies
 [taxonomies]
 
+# An explicit front-matter lastmod wins over the git date. Needed for the
+# data-driven pages (/cv/, /references/): enableGitInfo only tracks their
+# content/*.md file, which doesn't change when data/*.yaml does.
+[frontmatter]
+lastmod = ["lastmod", ":git", ":default"]
+
 [outputFormats.llms]
 mediaType = "text/plain"
 baseName = "llms"
