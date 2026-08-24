@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+{{/* Explicit welcome for AI retrieval/training crawlers (GEO). Named groups
+     override the wildcard group above rather than adding to it, so each one
+     repeats Allow: / in full. */}}
+{{- range (slice "GPTBot" "OAI-SearchBot" "ChatGPT-User" "ClaudeBot" "Claude-User" "Claude-SearchBot" "PerplexityBot" "Perplexity-User" "Google-Extended" "Applebot-Extended" "Amazonbot" "meta-externalagent" "CCBot") }}
+
+User-agent: {{ . }}
+Allow: /
+{{- end }}
+
 Sitemap: {{ "sitemap.xml" | absURL }}
