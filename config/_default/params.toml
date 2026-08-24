@@ -11,5 +11,9 @@ label = "GitHub"
 url   = "https://github.com/adericbourg"
 
 [[socialLinks]]
+label = "Malt"
+url   = "https://www.malt.fr/profile/albandericbourg"
+
+[[socialLinks]]
 label = "e-mail"
 url   = "mailto:alban@dericbourg.dev"

@@ -1,0 +1,77 @@
+{{/*
+  Person structured data (JSON-LD), driven entirely by data/cv.yaml and
+  site.Params.socialLinks so it can't drift from the CV. Included from
+  head.html on the home and CV pages only.
+*/}}
+{{- $cv   := hugo.Data.cv -}}
+{{- $lang := site.Language.Lang -}}
+
+{{- $email := "" -}}
+{{- $sameAs := slice -}}
+{{- range site.Params.socialLinks -}}
+  {{- if hasPrefix .url "mailto:" -}}
+    {{- $email = strings.TrimPrefix "mailto:" .url -}}
+  {{- else -}}
+    {{- $sameAs = $sameAs | append .url -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $knowsLanguage := slice -}}
+{{- range $cv.spokenLanguages -}}
+  {{- $knowsLanguage = $knowsLanguage | append (index .name $lang) -}}
+{{- end -}}
+
+{{- $alumniOf := slice -}}
+{{- range $cv.education -}}
+  {{- $alumniOf = $alumniOf | append (dict "@type" "CollegeOrUniversity" "name" .school) -}}
+{{- end -}}
+
+{{- $knowsAbout := slice -}}
+{{- range $cv.skills -}}
+  {{- $knowsAbout = $knowsAbout | append .items -}}
+{{- end -}}
+{{- $knowsAbout = $knowsAbout | uniq -}}
+
+{{/* Current employer: the first role with no end date */}}
+{{- $currentCompany := "" -}}
+{{- $currentCompanyUrl := "" -}}
+{{- range $cv.experiences -}}
+  {{- $company := . -}}
+  {{- if eq $currentCompany "" -}}
+    {{- range $company.roles -}}
+      {{- if and (not .end) (eq $currentCompany "") -}}
+        {{- $currentCompany = $company.company -}}
+        {{- $currentCompanyUrl = $company.url -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $person := dict
+  "@type" "Person"
+  "name" $cv.header.name
+  "url" site.BaseURL
+  "jobTitle" (index $cv.header.title $lang)
+  "description" (index $cv.header.summary $lang)
+  "sameAs" $sameAs
+  "knowsLanguage" $knowsLanguage
+  "alumniOf" $alumniOf
+  "knowsAbout" $knowsAbout
+-}}
+{{- if ne $email "" -}}
+  {{- $person = merge $person (dict "email" $email) -}}
+{{- end -}}
+{{- if ne $currentCompany "" -}}
+  {{- $org := dict "@type" "Organization" "name" $currentCompany -}}
+  {{- if ne $currentCompanyUrl "" -}}
+    {{- $org = merge $org (dict "url" $currentCompanyUrl) -}}
+  {{- end -}}
+  {{- $person = merge $person (dict "worksFor" $org) -}}
+{{- end -}}
+
+{{- $data := dict
+  "@context" "https://schema.org"
+  "@type" "ProfilePage"
+  "mainEntity" $person
+-}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>

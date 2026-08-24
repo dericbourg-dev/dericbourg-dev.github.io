@@ -67,6 +67,10 @@ Automatic deployment to GitHub Pages on push to `main` branch via `.github/workf
 - Static files go in `static/` directory
 - Generated output (`public/`) is gitignored
 
+## SEO / GEO
+
+- `layouts/partials/schema-person.html` emits Person JSON-LD (home + CV pages only), built entirely from `data/cv.yaml` and `site.Params.socialLinks` — don't hand-edit facts into it, edit the CV data instead
+
 ## Accessibility (WCAG 2.2 AA)
 
 Target compliance: **WCAG 2.2 Level AA**. All changes must maintain or improve accessibility.

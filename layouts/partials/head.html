@@ -70,4 +70,8 @@
   <meta name="twitter:description" content="{{ $desc }}">
   <meta name="twitter:image" content="{{ $ogImage }}">
 
+  {{/* Structured data (Person) — home and CV only */}}
+  {{- if $isProfile }}
+  {{- partial "schema-person.html" . }}
+  {{- end }}
 </head>
