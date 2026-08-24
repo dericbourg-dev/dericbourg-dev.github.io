@@ -14,3 +14,25 @@ Beyond the code, I enjoy moving a group forward: clarifying decisions, facilitat
 
 Looking for a software engineer? I'd be glad to talk.
 If not, maybe you could point me to two people worth reaching out to. :)
+
+## Frequently asked questions
+
+### What kind of work do I take on?
+
+Back-end development in high-traffic distributed systems: new services, modernizing legacy code, reliability and observability. I also drive cross-team projects.
+
+### Which technologies?
+
+Mainly Java and Spring Boot, with PostgreSQL, Kafka, Docker and Kubernetes. For observability: Datadog, Prometheus and Grafana. The [detailed CV](/en/cv/) gives the context of each mission.
+
+### Remote or on-site?
+
+I work mostly remotely, from the countryside between Poitiers and Angoulême. I'm glad to travel for a team's key moments.
+
+### Which languages?
+
+French and English, written and spoken.
+
+### How to get in touch?
+
+By [email, LinkedIn or Malt](/en/contact/). If your need doesn't match, an introduction is always welcome.

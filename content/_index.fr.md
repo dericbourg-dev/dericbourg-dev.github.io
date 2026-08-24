@@ -14,3 +14,25 @@ Au-delà du code, j'aime faire avancer un collectif : clarifier les décisions, 
 
 Vous cherchez un ingénieur logiciel ? Je serai ravi d'en discuter.
 Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à qui en parler. :)
+
+## Questions fréquentes
+
+### Sur quelles missions puis-je intervenir ?
+
+Développement back-end dans des systèmes distribués à fort trafic : nouveaux services, modernisation de code hérité, fiabilité et observabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
+
+### Avec quelles technologies ?
+
+Principalement Java et Spring Boot, avec PostgreSQL, Kafka, Docker et Kubernetes. Côté observabilité : Datadog, Prometheus et Grafana. Le [CV détaillé](/cv/) précise le contexte de chaque mission.
+
+### Télétravail ou sur site ?
+
+Je travaille principalement à distance, depuis la campagne entre Poitiers et Angoulême. Je me déplace volontiers pour les temps forts d'une équipe.
+
+### En quelles langues ?
+
+Français et anglais, à l'écrit comme à l'oral.
+
+### Comment me contacter ?
+
+Par [e-mail, LinkedIn ou Malt](/contact/). Si votre besoin ne correspond pas, une mise en relation est toujours la bienvenue.
