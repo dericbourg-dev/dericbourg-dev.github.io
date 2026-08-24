@@ -26,8 +26,14 @@ baseName = "llms"
 isPlainText = true
 notAlternative = true
 
+[outputFormats.llms-full]
+mediaType = "text/plain"
+baseName = "llms-full"
+isPlainText = true
+notAlternative = true
+
 [outputs]
-home = ["html", "llms"]
+home = ["html", "llms", "llms-full"]
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,70 @@
+{{- $lang := site.Language.Lang -}}
+{{- $cv := hugo.Data.cv -}}
+{{- $refs := hugo.Data.references -}}
+{{- $present := cond (eq $lang "fr") "Aujourd'hui" "Present" -}}
+# {{ site.Params.author }}
+
+> {{ index $cv.header.summary $lang | strings.TrimSpace }}
+
+## Experience
+
+{{ range $cv.experiences }}
+{{- $company := . -}}
+### {{ $company.company }}{{ with $company.location }} — {{ . }}{{ end }}
+{{ range $company.roles }}
+{{- $role := . }}
+**{{ index .role $lang }}**{{ with .department }} — {{ . }}{{ end }} ({{ partial "cv-format-date.html" .start }} – {{ with .end }}{{ partial "cv-format-date.html" . }}{{ else }}{{ $present }}{{ end }})
+
+{{ with index .description $lang }}{{ . }}{{ end }}
+{{- with .tags }}
+Tags: {{ delimit . ", " }}.
+{{ end -}}
+{{ end -}}
+{{- with $company.extra }}
+{{ range . }}
+- **{{ index .topic $lang }}**{{ if or .start .end }} ({{ with .start }}{{ partial "cv-format-date.html" . }}{{ end }}{{ if and .start .end }} – {{ end }}{{ with .end }}{{ partial "cv-format-date.html" . }}{{ end }}){{ end }}: {{ with index .description $lang }}{{ . | strings.TrimSpace }}{{ end }}
+{{ end -}}
+{{ end -}}
+{{ end }}
+## Education
+
+{{ range $cv.education }}
+- **{{ .school }}**{{ with .location }} — {{ . }}{{ end }}, {{ .start }}–{{ .end }}{{ with index .degree $lang }}: {{ . }}{{ end }}
+{{- end }}
+
+## Skills
+
+{{ range $cv.skills }}
+- {{ index .group $lang }}: {{ delimit .items ", " }}
+{{- end }}
+
+## Languages
+
+{{ range $cv.spokenLanguages }}
+- {{ index .name $lang }}: {{ .level }}
+{{- end }}
+
+## References
+
+{{ range $refs }}
+{{- $ref := . -}}
+{{ with index .text $lang }}
+> {{ . | strings.TrimSpace }}
+— {{ $ref.author.name }}, {{ $ref.author.role }}, {{ $ref.author.company }}
+{{ end -}}
+{{ end }}
+## Pages and contact
+
+{{ range hugo.Sites }}
+### {{ .Title }} ({{ .Language.Lang }})
+
+- [{{ .Title }}]({{ .Home.Permalink }})
+{{- range .RegularPages }}
+- [{{ .Title }}]({{ .Permalink }})
+{{- end }}
+{{ end }}
+## Professional profiles
+
+{{- range site.Params.socialLinks }}
+- [{{ .label }}]({{ .url }})
+{{- end }}
