@@ -8,7 +8,7 @@
 > {{ index $cv.header.summary $lang | strings.TrimSpace }}
 
 Core skills: {{ delimit $skills ", " }}.
-{{ range site.Sites }}
+{{ range hugo.Sites }}
 ## Pages ({{ .Language.Lang }})
 
 - [{{ .Title }}]({{ .Home.Permalink }})
