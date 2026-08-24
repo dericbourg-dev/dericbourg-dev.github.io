@@ -5,7 +5,11 @@ title = "Alban Dericbourg"
 
 enableEmoji = true
 enableRobotsTXT = true
+enableGitInfo = true
 localizedDates = true
+
+# No blog/feed content — avoid publishing an RSS feed with bogus dates
+disableKinds = ["rss"]
 
 # Disable unused default taxonomies
 [taxonomies]
