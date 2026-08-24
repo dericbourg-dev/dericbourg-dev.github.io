@@ -5,6 +5,8 @@ description = "Get in touch with Alban Dericbourg, freelance senior software eng
 
 # Contact
 
+I'm a freelance senior software engineer, working remotely from the countryside between Poitiers and Angoulême.
+
 To discuss a project or pass on a referral:
 
 - **E-mail**: [alban@dericbourg.dev](mailto:alban@dericbourg.dev)

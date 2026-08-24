@@ -5,6 +5,8 @@ description = "Contacter Alban Dericbourg, ingénieur logiciel senior indépenda
 
 # Contact
 
+Je suis ingénieur logiciel senior indépendant, en télétravail depuis la campagne entre Poitiers et Angoulême.
+
 Pour discuter d'une mission ou me recommander :
 
 - **E-mail** : [alban@dericbourg.dev](mailto:alban@dericbourg.dev)
