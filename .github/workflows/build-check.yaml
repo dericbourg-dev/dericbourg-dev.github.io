@@ -35,4 +35,9 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: Europe/Paris
-        run: hugo --gc --minify
+        run: |
+          hugo --gc --minify
+          python3 scripts/page-weight.py
+
+      - name: Check footer page-weight figures
+        run: sh scripts/test-page-weight.sh

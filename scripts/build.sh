@@ -8,6 +8,10 @@ PREFIX=$(sed -nE 's/^cvPdfPrefix[[:space:]]*=[[:space:]]*"([^"]+)".*/\1/p' confi
 # Build the static site (extra args pass through, e.g. --baseURL in CI)
 hugo --gc --minify "$@"
 
+# Replace the footer's `~?` placeholder with each page's measured weight.
+# Sequenced before the throwaway server so nothing ever reads a placeholder.
+python3 scripts/page-weight.py
+
 # Serve public/ on a throwaway port so WeasyPrint resolves root-relative CSS (/css/...)
 PORT=8919
 python3 -m http.server "$PORT" --directory public >/dev/null 2>&1 &

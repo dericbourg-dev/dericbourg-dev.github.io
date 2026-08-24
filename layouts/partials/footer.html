@@ -20,17 +20,18 @@
     {{- end }}
   </ul>
   {{/*
-    Only the CSS is measured here: it's the one asset shared and cached across every page
-    (no JS, no webfonts, no images). The HTML document itself isn't included — Hugo has no
-    way to know a page's own final rendered size while it's still being rendered.
+    The figure is written after the build by scripts/page-weight.py: this page's
+    own HTML bytes plus the stylesheet it links (no JS, no webfonts, no images).
+    Hugo can't compute it — a page has no way to know its own final byte size
+    while it is still being rendered — so it stays `~?` on `hugo server`.
+    The `page-weight` class is the script's only marker; the script fails the
+    build if it matches nothing.
   */}}
-  {{- $css := resources.Get "css/main.css" | minify -}}
-  {{- $cssKB := math.Round (div (mul 1.0 (len $css.Content)) 1024.0) -}}
   <p class="page-weight">
     {{- if eq site.Language.Lang "fr" -}}
-    Éco-conçu · pas de JS, pas de polices web · CSS ~{{ $cssKB }} Ko
+    Éco-conçu · pas de JS, pas de polices web · HTML + CSS ~? Ko
     {{- else -}}
-    Eco-designed · no JS, no webfonts · CSS ~{{ $cssKB }} KB
+    Eco-designed · no JS, no webfonts · HTML + CSS ~? KB
     {{- end -}}
   </p>
 </div>

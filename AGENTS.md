@@ -66,6 +66,23 @@ Automatic deployment to GitHub Pages on push to `main` branch via `.github/workf
 - No JavaScript and no webfonts — keep the site low-tech (system monospace stack, plain CSS)
 - Static files go in `static/` directory
 - Generated output (`public/`) is gitignored
+- **Page weight**: the footer's `.page-weight` line reports **this page's own HTML bytes plus the
+  bytes of the stylesheet it links** — with no JS, no webfonts and no images, that is the whole
+  page. Hugo cannot compute it (a page has no way to know its own final size while it is still
+  being rendered), so `layouts/partials/footer.html` renders a `~?` placeholder and
+  `scripts/page-weight.py` replaces it with the measured value, from `scripts/build.sh` right
+  after `hugo --gc --minify`. Consequences: `make serve` shows `~?`, which is correct — the number
+  only exists in a built `public/`. The script keys off the `page-weight` class (also used by
+  `assets/css/main.css`) and **exits non-zero if it matches no page**, so renaming that class or
+  dropping the `~` from the sentence breaks the build instead of silently shipping a stale figure.
+  It reads the CSS size from each page's own `<link rel="stylesheet">` rather than globbing
+  `public/css/main.min.*.css`, because Hugo does not clear `public/` and a glob can hit a stale
+  fingerprinted bundle. Nothing here is hand-calibrated — if you find yourself adding a constant to
+  make the dev server show a number, don't: that is the bug this replaced. The figure is
+  uncompressed bytes (GitHub Pages serves it gzipped, so the wire cost is roughly a quarter), and
+  it never appears in the CV PDFs because `@media print` hides `.site-footer`. `scripts/test-page-weight.sh`
+  (`make test`) guards this: it fails if the figure is constant across pages or drifts from the
+  real file size by more than 50 bytes
 
 ## SEO / GEO
 

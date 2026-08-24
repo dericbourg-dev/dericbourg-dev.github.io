@@ -3,7 +3,7 @@ GO_VERSION := $(shell cat .go-version)
 WEASYPRINT_VERSION := $(shell cat .weasyprint-version)
 export HUGO_VERSION GO_VERSION WEASYPRINT_VERSION
 
-.PHONY: image build serve shell clean env
+.PHONY: image build test serve shell clean env
 
 env:
 	@echo "HUGO_VERSION=$(HUGO_VERSION)" > .env
@@ -15,6 +15,9 @@ image: env
 
 build: image
 	docker compose run --rm shell sh scripts/build.sh
+
+test: build
+	docker compose run --rm shell sh scripts/test-page-weight.sh
 
 serve: image
 	docker compose up hugo
