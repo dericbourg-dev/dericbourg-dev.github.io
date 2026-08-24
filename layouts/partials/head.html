@@ -4,9 +4,18 @@
   {{- $desc := or .Description site.Language.Params.description site.Params.author -}}
   <meta name="description" content="{{ $desc }}">
   <meta name="author" content="{{ site.Params.author }}">
+  {{- if eq .Kind "404" }}
+  <meta name="robots" content="noindex">
+  {{- else }}
   <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  {{- end }}
 
-  {{- $pageTitle := cond .IsHome site.Title (printf "%s — %s" .Title site.Params.author) -}}
+  {{- $pageTitle := "" -}}
+  {{- if eq .Kind "404" -}}
+    {{- $pageTitle = printf "404 — %s" site.Params.author -}}
+  {{- else -}}
+    {{- $pageTitle = cond .IsHome site.Title (printf "%s — %s" .Title site.Params.author) -}}
+  {{- end -}}
   <title>{{ $pageTitle }}</title>
 
   <link rel="canonical" href="{{ .Permalink }}">
