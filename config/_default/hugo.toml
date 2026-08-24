@@ -10,6 +10,15 @@ localizedDates = true
 # Disable unused default taxonomies
 [taxonomies]
 
+[outputFormats.llms]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["html", "llms"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

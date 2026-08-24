@@ -1,0 +1,23 @@
+{{- $lang := site.Language.Lang -}}
+{{- $cv := hugo.Data.cv -}}
+{{- $skills := slice -}}
+{{- range $cv.skills -}}{{- $skills = $skills | append .items -}}{{- end -}}
+{{- $skills = $skills | uniq -}}
+# {{ site.Params.author }}
+
+> {{ index $cv.header.summary $lang | strings.TrimSpace }}
+
+Core skills: {{ delimit $skills ", " }}.
+{{ range site.Sites }}
+## Pages ({{ .Language.Lang }})
+
+- [{{ .Title }}]({{ .Home.Permalink }})
+{{- range .RegularPages }}
+- [{{ .Title }}]({{ .Permalink }})
+{{- end }}
+{{ end }}
+## Professional profiles
+
+{{- range site.Params.socialLinks }}
+- [{{ .label }}]({{ .url }})
+{{- end }}

@@ -71,6 +71,7 @@ Automatic deployment to GitHub Pages on push to `main` branch via `.github/workf
 
 - `layouts/partials/schema-person.html` emits Person JSON-LD (home + CV pages only), built entirely from `data/cv.yaml` and `site.Params.socialLinks` — don't hand-edit facts into it, edit the CV data instead
 - `layouts/robots.txt` explicitly allows named AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.) in addition to `User-agent: *` — a named group overrides the wildcard rather than adding to it, so each one repeats `Allow: /` in full
+- `static/llms.txt` is generated (`layouts/index.llms.txt`, output format `llms` on the home page) — don't recreate a hand-written `static/llms.txt`, it will shadow the generated one
 
 ## Accessibility (WCAG 2.2 AA)
 
