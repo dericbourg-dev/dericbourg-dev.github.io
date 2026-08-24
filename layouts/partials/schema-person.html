@@ -6,6 +6,14 @@
 {{- $cv   := hugo.Data.cv -}}
 {{- $lang := site.Language.Lang -}}
 
+{{/* Stable, language-independent identity: same @id everywhere so every page
+     describes ONE Person/ProfilePage entity rather than one per language. */}}
+{{- $canonicalRoot := "" -}}
+{{- range hugo.Sites -}}
+  {{- if .Language.IsDefault -}}{{- $canonicalRoot = .Home.Permalink -}}{{- end -}}
+{{- end -}}
+{{- $personID := printf "%s#person" $canonicalRoot -}}
+
 {{- $email := "" -}}
 {{- $sameAs := slice -}}
 {{- range site.Params.socialLinks -}}
@@ -49,8 +57,9 @@
 
 {{- $person := dict
   "@type" "Person"
+  "@id" $personID
   "name" $cv.header.name
-  "url" site.BaseURL
+  "url" $canonicalRoot
   "jobTitle" (index $cv.header.title $lang)
   "description" (index $cv.header.summary $lang)
   "sameAs" $sameAs
@@ -72,6 +81,10 @@
 {{- $data := dict
   "@context" "https://schema.org"
   "@type" "ProfilePage"
+  "@id" .Permalink
+  "url" .Permalink
+  "inLanguage" $lang
+  "dateModified" (.Lastmod.Format "2006-01-02")
   "mainEntity" $person
 -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
