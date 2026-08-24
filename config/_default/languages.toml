@@ -1,12 +1,12 @@
 [fr]
-title = "Alban Dericbourg — Développeur"
+title = "Alban Dericbourg — Ingénieur logiciel freelance"
 weight = 1
 LanguageName = "🇫🇷 Français"
   [fr.params]
   description = "Ingénieur logiciel senior freelance, en télétravail (basé entre Poitiers et Angoulême). 15 ans d'expérience dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Expert en systèmes distribués, observabilité et fiabilité (SLO / SRE)."
 
 [en]
-title = "Alban Dericbourg — Software Engineer"
+title = "Alban Dericbourg — Freelance Software Engineer"
 weight = 2
 LanguageName = "🇬🇧 English"
   [en.params]
