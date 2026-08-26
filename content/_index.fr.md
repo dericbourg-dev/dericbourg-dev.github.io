@@ -1,5 +1,5 @@
 +++
-description = "Alban Dericbourg, ingénieur logiciel senior indépendant. 15 ans dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Systèmes distribués, observabilité et fiabilité (SLO / SRE). En télétravail, basé entre Poitiers et Angoulême."
+description = "Alban Dericbourg, ingénieur logiciel senior indépendant. 15 ans dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Systèmes distribués, observabilité et fiabilité (SLO / SRE). Full remote depuis 2019, basé entre Poitiers et Angoulême."
 +++
 
 # Alban Dericbourg, ingénieur logiciel senior indépendant
@@ -8,7 +8,7 @@ Quinze ans à concevoir et fiabiliser des services back-end, notamment au cœur 
 
 Je viens en renfort de vos équipes en gardant toujours en tête le problème que je cherche à résoudre et la valeur pour les utilisateurs : c'est ce qui guide les choix techniques, et non l'inverse. Je suis aussi à l'aise sur du code hérité que sur un projet parti de zéro : explorer et moderniser de vastes bases de code existantes comme livrer de nouveaux services dans des systèmes distribués à fort trafic, et rendre l'ensemble fiable et observable. La fiabilité est mon terrain de prédilection : j'ai été l'un des premiers à mettre en place les SLO et une démarche SRE dans plusieurs équipes. Je reste attiré par les missions back-end plus généralistes.
 
-Depuis la campagne entre Poitiers et Angoulême, je privilégie le télétravail. C'est un mode de fonctionnement que je pratique avec rigueur : communication écrite soignée, autonomie, et une culture de la coopération qui rend le travail à distance lisible pour toute l'équipe. Je me déplace néanmoins volontiers : le lien avec mes collègues est important pour moi.
+Je travaille en full remote depuis 2019, chez BlaBlaCar puis Mirakl. Sept ans pendant lesquels j'ai piloté à distance des projets impliquant plusieurs équipes et accompagné des ingénieurs dans leur montée en compétence. Ma façon de faire par défaut : beaucoup de visio, parce que le lien avec les gens se construit là — et systématiquement de l'écrit derrière, pour que les idées et les décisions ne se perdent pas. Un point d'avancement arrive chaque semaine sans que vous ayez à le demander, au rythme et au format qui vous conviennent. Je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois, systématiquement pour les lancements de projet, et volontiers pour les temps forts de l'équipe.
 
 Au-delà du code, j'aime faire avancer un collectif : clarifier les décisions, animer les échanges et désamorcer les tensions. Mes anciens coéquipiers en parlent mieux que moi : [leurs mots sont ici](/references/).
 
@@ -27,7 +27,19 @@ Principalement Java et Spring Boot, avec MariaDB, PostgreSQL, Kafka, Docker et K
 
 ### Télétravail ou sur site ?
 
-Je travaille principalement à distance, depuis la campagne entre Poitiers et Angoulême. Je me déplace volontiers pour les temps forts d'une équipe.
+Full remote depuis 2019, depuis la campagne entre Poitiers et Angoulême. Je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois, à ajuster selon vos besoins, systématiquement pour les lancements de projet, et volontiers pour les temps forts de l'équipe.
+
+### Comment savoir ce que je fais, à distance ?
+
+Vous n'aurez pas à le demander. Ce que je propose par défaut : chaque semaine, un point écrit — ce qui est livré, les prochaines étapes, les points bloquants, et les décisions à prendre. C'est ce que j'ai pratiqué jusqu'ici. Si votre équipe a déjà ses rituels et son format, je m'y adapte volontiers : ce qui compte est que personne n'ait à se demander où en sont les choses. C'est typiquement le genre de choses sur lesquelles nous pouvons nous accorder en début de mission.
+
+### Comment les décisions se prennent-elles à distance ?
+
+En parlant, souvent : la visio reste le meilleur moyen de se comprendre et de trancher vite. Mais elles ne doivent pas rester orales : je crois qu'une trace écrite est nécessaire. Mon habitude pour une décision de conception est de passer par un design doc, relu de façon asynchrone, puis en petit comité avec un référent par équipe, et enfin présenté en kickoff avec toutes les équipes concernées. L'intérêt tient moins au document qu'à ce qu'il laisse derrière lui : une décision consultable à tout moment, par quelqu'un qui n'était pas dans la pièce ou qui arrive dans l'équipe plus tard.
+
+### Le télétravail tient-il sur des projets transverses ?
+
+Chez BlaBlaCar, j'ai piloté à distance un programme de neuf mois impliquant quatre équipes, et accompagné des ingénieurs dans leur montée en compétence. [Mes anciens coéquipiers](/references/), avec qui j'ai travaillé un à trois ans à distance, en parlent mieux que moi.
 
 ### En quelles langues ?
 

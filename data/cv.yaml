@@ -12,8 +12,9 @@ header:
       distribués à fort trafic, aussi à l'aise sur du code hérité que sur un projet parti de
       zéro. Expertise marquée en observabilité et en fiabilité (SLO / SRE), et en pilotage de
       projets transverses. Je facilite aussi la coopération au sein des équipes.
-      Basé à la campagne entre Poitiers et Angoulême, je privilégie le télétravail, tout en me
-      déplaçant volontiers : le lien avec mes collègues compte pour moi.
+      Basé à la campagne entre Poitiers et Angoulême, je travaille en full remote depuis 2019
+      (BlaBlaCar, Mirakl), avec le réflexe de mettre par écrit ce qui doit rester (idées,
+      décisions, arbitrages) ; je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois.
     en: >-
       Senior software engineer with 15 years of experience, notably across three French
       unicorns (Criteo, BlaBlaCar, Mirakl). Driven by the problem to solve and the value for
@@ -21,12 +22,13 @@ header:
       comfortable with legacy code as with a greenfield project. Strong expertise in
       observability and reliability (SLO / SRE), and in driving cross-team projects. I also
       help teams cooperate more smoothly. Based in the countryside between Poitiers and Angoulême,
-      I prefer remote-first missions, but I'm glad to travel on-site: staying connected with my
-      colleagues matters to me.
+      I have worked fully remote since 2019 (BlaBlaCar, Mirakl), with the reflex of writing down
+      whatever needs to outlast the conversation (ideas, decisions, trade-offs); I come on-site
+      regularly, typically 2 to 4 days a month.
 
 experiences:
   - company: Mirakl
-    location: Paris
+    location: Paris — full remote
     url: https://www.mirakl.com
     roles:
       - role:
@@ -91,7 +93,7 @@ experiences:
 
             The solution is based on the [oasdiff](https://github.com/oasdiff/oasdiff) open-source tool.
   - company: BlaBlaCar
-    location: Paris
+    location: Paris — full remote
     url: https://www.blablacar.com
     roles:
       - role:
@@ -109,6 +111,8 @@ experiences:
              * Pionnier des SLO dans l'équipe : en binôme avec l'équipe SRE, mise en place des premiers SLO techniques puis des Feature SLO pour modéliser plus finement l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
              * Amélioration continue de la fiabilité : renforcement de l'observabilité des services en production et du processus de conception des nouveaux services
              * Lancement des Open Spaces (« Forum ouvert ») de l'équipe backend pour renforcer la coopération entre ingénieurs
+             * Point d'avancement hebdomadaire envoyé aux parties prenantes sur les projets pilotés : livré, prochaines étapes, points bloquants
+             * Conception passée par l'écrit : design doc, relecture asynchrone, revue en petit comité avec un référent par équipe, puis kickoff avec toutes les équipes concernées
              * Contribution quotidienne à la livraison de l'équipe
           en: |
             Full-stack team — passenger-side search experience, from the will to travel to choosing the most relevant ride for one's preferences.
@@ -118,6 +122,8 @@ experiences:
              * Pioneered SLOs in the team: paired with the SRE team to ship the first technical SLOs, then Feature SLOs for sharper user-experience modeling; helped onboard other teams
              * Continuously improved reliability: strengthened production observability and the design process for new services
              * Launched the backend team's Open Spaces ("Forum ouvert") to boost cooperation between engineers
+             * Weekly written progress update emailed to stakeholders on the projects I led: shipped, next steps, blockers
+             * Design-first process: written design doc, async review, small-group peer review with one representative per team, then a kickoff with all involved teams
              * Contributed to the team's day-to-day delivery
         tags: [Java, SpringBoot, Elasticsearch, SLO, Datadog, Kubernetes]
       - role:
