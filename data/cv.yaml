@@ -108,7 +108,7 @@ experiences:
 
              * Pilotage de projets produit de la découverte au déploiement, dont des programmes de 9 mois impliquant 4 équipes
              * Refonte de l'architecture de recherche pour l'adapter à l'échelle de l'entreprise et à sa trajectoire multimodale, puis coordination de la migration progressive — sans réécriture _big-bang_ (#NoRewrite)
-             * Pionnier des SLO dans l'équipe : en binôme avec l'équipe SRE, mise en place des premiers SLO techniques puis des Feature SLO pour modéliser plus finement l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
+             * Pionnier des SLO dans une équipe elle-même pilote sur le sujet : en binôme avec l'équipe SRE, mise en place des premiers SLO techniques puis des Feature SLO pour modéliser plus finement l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
              * Amélioration continue de la fiabilité : renforcement de l'observabilité des services en production et du processus de conception des nouveaux services
              * Lancement des Open Spaces (« Forum ouvert ») de l'équipe backend pour renforcer la coopération entre ingénieurs
              * Point d'avancement hebdomadaire envoyé aux parties prenantes sur les projets pilotés : livré, prochaines étapes, points bloquants
@@ -119,7 +119,7 @@ experiences:
 
              * Drove product projects from discovery to rollout, including 9-month programs spanning 4 teams
              * Revamped the search architecture to fit company scale and its multimodal roadmap, then coordinated a progressive migration — no big-bang rewrite (#NoRewrite)
-             * Pioneered SLOs in the team: paired with the SRE team to ship the first technical SLOs, then Feature SLOs for sharper user-experience modeling; helped onboard other teams
+             * Pioneered SLOs in a team that was itself an early adopter of the practice: paired with the SRE team to ship the first technical SLOs, then Feature SLOs for sharper user-experience modeling; helped onboard other teams
              * Continuously improved reliability: strengthened production observability and the design process for new services
              * Launched the backend team's Open Spaces ("Forum ouvert") to boost cooperation between engineers
              * Weekly written progress update emailed to stakeholders on the projects I led: shipped, next steps, blockers
