@@ -21,6 +21,8 @@ Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à 
 
 Développement back-end dans des systèmes distribués à fort trafic : nouveaux services, modernisation de code hérité, mise en place d'observabilité, fiabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
 
+Je peux intervenir aussi bien en régie (intégré à vos équipes) qu'au forfait.
+
 ### Avec quelles technologies ?
 
 Principalement Java et Spring Boot, avec MariaDB, PostgreSQL, Kafka, Docker et Kubernetes. Côté observabilité : Datadog, Prometheus et Grafana. J'utilise aussi les outils de développement assistés par IA au quotidien, notamment Claude Code. Le [CV détaillé](/cv/) précise le contexte de chaque mission.

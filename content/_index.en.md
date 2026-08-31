@@ -21,6 +21,8 @@ If not, maybe you could point me to two people worth reaching out to. :)
 
 Back-end development in high-traffic distributed systems: new services, modernizing legacy code, setting up observability, reliability. I also drive cross-team projects.
 
+I can work either as staff augmentation, embedded in your team, or on a fixed-price basis.
+
 ### Which technologies?
 
 Mainly Java and Spring Boot, with MariaDB, PostgreSQL, Kafka, Docker and Kubernetes. For observability: Datadog, Prometheus and Grafana. I also use AI-assisted development tools daily, Claude Code in particular. The [detailed CV](/en/cv/) gives the context of each mission.
