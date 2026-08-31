@@ -6,7 +6,7 @@ description = "Alban Dericbourg, freelance senior software engineer. 15 years ac
 
 Fifteen years designing and hardening back-end services, notably in three French unicorns: Criteo, BlaBlaCar and Mirakl.
 
-I reinforce your teams while keeping the problem I'm trying to solve and the value for users front and center: that's what drives the technical choices, not the other way around. I'm as comfortable with legacy code as with a greenfield project: exploring and modernizing large existing codebases as much as shipping new services into high-traffic distributed systems, and making the whole thing reliable and observable. Reliability is my home turf: I was among the first to roll out SLOs and an SRE approach in several teams, while still drawn to more generalist back-end work.
+I reinforce your teams, or take a scoped piece of work end to end, while keeping the problem I'm trying to solve and the value for users front and center: that's what drives the technical choices, not the other way around. I'm as comfortable with legacy code as with a greenfield project: exploring and modernizing large existing codebases as much as shipping new services into high-traffic distributed systems, and making the whole thing reliable and observable. Reliability is my home turf: I was among the first to roll out SLOs and an SRE approach in several teams, while still drawn to more generalist back-end work.
 
 I have worked fully remote since 2019, at BlaBlaCar then Mirakl. Seven years during which I led multi-team projects remotely and supported engineers as they grew. My default way of working: plenty of video calls, because that is where the connection with people gets built — and always something written afterwards, so ideas and decisions don't get lost. A progress update arrives every week without you having to ask for it, at whatever rhythm and in whatever format suits you. I come on-site regularly, typically 2 to 4 days a month, always for project kickoffs, and gladly for a team's key moments.
 
@@ -21,7 +21,25 @@ If not, maybe you could point me to two people worth reaching out to. :)
 
 Back-end development in high-traffic distributed systems: new services, modernizing legacy code, setting up observability, reliability. I also drive cross-team projects.
 
-I can work either as staff augmentation, embedded in your team, or on a fixed-price basis.
+### Time and materials, or fixed price?
+
+Both, depending on the shape of your need.
+
+On a time-and-materials basis, I join your team and follow your priorities. The right choice when the need is ongoing, when the scope shifts from week to week, or when strengthening the team matters as much as shipping.
+
+On a fixed-price basis, I take a bounded piece of work and commit to the outcome: a written scope, a firm price, a date. The right choice when you can name what you want to end up with — a connector to put in production, an SLO practice to roll out, tooling to put in place, a slice of legacy code to modernize. That is the shape of what I have delivered so far; the [CV](/en/cv/) has the detail.
+
+Either way, the way of working doesn't change: the same written progress update every week, the same design decisions written down.
+
+If you're unsure, tell me what you're trying to end up with: describing the expected outcome usually points to one or the other.
+
+### How does a fixed-price engagement work?
+
+It starts with a short scoping phase, before any price is committed. It produces a document stating what will be delivered, the criteria by which we will know it is done, what is out of scope, and the intermediate milestones. The firm price covers that scope.
+
+After that, from your side, nothing differs from a time-and-materials engagement: the same written update every week — what shipped, what's next, what's blocking, decisions to be made — and regular deliveries rather than a single hand-off at the end.
+
+If the scope moves — it happens, and it is often good news — I say so straight away, I price the difference, and we decide together: adjust the scope, or amend the contract. What doesn't happen is discovering it at the end.
 
 ### Which technologies?
 

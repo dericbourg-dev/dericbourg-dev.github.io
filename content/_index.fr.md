@@ -6,7 +6,7 @@ description = "Alban Dericbourg, ingénieur logiciel senior indépendant. 15 ans
 
 Quinze ans à concevoir et fiabiliser des services back-end, notamment au cœur de trois licornes françaises : Criteo, BlaBlaCar et Mirakl.
 
-Je viens en renfort de vos équipes en gardant toujours en tête le problème que je cherche à résoudre et la valeur pour les utilisateurs : c'est ce qui guide les choix techniques, et non l'inverse. Je suis aussi à l'aise sur du code hérité que sur un projet parti de zéro : explorer et moderniser de vastes bases de code existantes comme livrer de nouveaux services dans des systèmes distribués à fort trafic, et rendre l'ensemble fiable et observable. La fiabilité est mon terrain de prédilection : j'ai été l'un des premiers à mettre en place les SLO et une démarche SRE dans plusieurs équipes. Je reste attiré par les missions back-end plus généralistes.
+Je viens en renfort de vos équipes, ou je prends en charge un sujet borné de bout en bout, en gardant toujours en tête le problème que je cherche à résoudre et la valeur pour les utilisateurs : c'est ce qui guide les choix techniques, et non l'inverse. Je suis aussi à l'aise sur du code hérité que sur un projet parti de zéro : explorer et moderniser de vastes bases de code existantes comme livrer de nouveaux services dans des systèmes distribués à fort trafic, et rendre l'ensemble fiable et observable. La fiabilité est mon terrain de prédilection : j'ai été l'un des premiers à mettre en place les SLO et une démarche SRE dans plusieurs équipes. Je reste attiré par les missions back-end plus généralistes.
 
 Je travaille en full remote depuis 2019, chez BlaBlaCar puis Mirakl. Sept ans pendant lesquels j'ai piloté à distance des projets impliquant plusieurs équipes et accompagné des ingénieurs dans leur montée en compétence. Ma façon de faire par défaut : beaucoup de visio, parce que le lien avec les gens se construit là — et systématiquement de l'écrit derrière, pour que les idées et les décisions ne se perdent pas. Un point d'avancement arrive chaque semaine sans que vous ayez à le demander, au rythme et au format qui vous conviennent. Je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois, systématiquement pour les lancements de projet, et volontiers pour les temps forts de l'équipe.
 
@@ -21,7 +21,25 @@ Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à 
 
 Développement back-end dans des systèmes distribués à fort trafic : nouveaux services, modernisation de code hérité, mise en place d'observabilité, fiabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
 
-Je peux intervenir aussi bien en régie (intégré à vos équipes) qu'au forfait.
+### Régie ou forfait ?
+
+Les deux, selon la forme de votre besoin.
+
+En régie, je rejoins votre équipe et je suis vos priorités. C'est le bon choix quand le besoin est continu, que le périmètre évolue au fil des semaines, ou que l'enjeu est autant de renforcer l'équipe que de livrer.
+
+Au forfait, je prends en charge un sujet borné et je m'engage sur le résultat : un périmètre écrit, un prix ferme, une date. C'est le bon choix quand vous savez nommer ce que vous voulez obtenir — un connecteur à mettre en production, une démarche SLO à déployer, un outillage à mettre en place, un pan de code hérité à moderniser. Ce sont des sujets de cette forme que j'ai livrés jusqu'ici ; le [CV](/cv/) en donne le détail.
+
+Dans les deux cas, la façon de travailler ne change pas : le même point d'avancement écrit chaque semaine, les mêmes décisions de conception tracées.
+
+Si vous hésitez, dites-moi ce que vous cherchez à obtenir : c'est en général la description du résultat attendu qui indique lequel des deux convient.
+
+### Comment se déroule une mission au forfait ?
+
+Elle commence par un temps de cadrage court, avant tout engagement de prix. Il aboutit à un document qui dit ce qui sera livré, à quels critères nous saurons que c'est fait, ce qui n'est pas inclus, et les jalons intermédiaires. Le prix ferme porte sur ce périmètre-là.
+
+Ensuite, de votre point de vue, rien ne diffère d'une mission en régie : le même point écrit chaque semaine — ce qui est livré, les prochaines étapes, les points bloquants, les décisions à prendre — et des livraisons régulières plutôt qu'un unique rendu final.
+
+Si le périmètre bouge — cela arrive, et c'est souvent une bonne nouvelle — je le dis tout de suite, je chiffre l'écart, et nous décidons ensemble : ajuster le périmètre, ou faire un avenant. Ce qui n'arrive pas, c'est de le découvrir à la fin.
 
 ### Avec quelles technologies ?
 
