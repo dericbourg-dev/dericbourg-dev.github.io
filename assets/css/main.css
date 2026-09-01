@@ -234,6 +234,19 @@ a:hover {
   color: var(--muted);
 }
 
+.footer-contact {
+  margin: 0 0 0.35rem;
+}
+
+.footer-contact a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: var(--link);
+}
+
 .social-list {
   list-style: none;
   margin: 0;

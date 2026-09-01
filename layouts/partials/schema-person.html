@@ -14,14 +14,11 @@
 {{- end -}}
 {{- $personID := printf "%s#person" $canonicalRoot -}}
 
-{{- $email := "" -}}
+{{- $email := site.Params.contact.email -}}
+{{- $phone := replace site.Params.contact.phone " " "" -}}
 {{- $sameAs := slice -}}
 {{- range site.Params.socialLinks -}}
-  {{- if hasPrefix .url "mailto:" -}}
-    {{- $email = strings.TrimPrefix "mailto:" .url -}}
-  {{- else -}}
-    {{- $sameAs = $sameAs | append .url -}}
-  {{- end -}}
+  {{- $sameAs = $sameAs | append .url -}}
 {{- end -}}
 
 {{- $knowsLanguage := slice -}}
@@ -69,6 +66,9 @@
 -}}
 {{- if ne $email "" -}}
   {{- $person = merge $person (dict "email" $email) -}}
+{{- end -}}
+{{- if ne $phone "" -}}
+  {{- $person = merge $person (dict "telephone" $phone) -}}
 {{- end -}}
 {{- if ne $currentCompany "" -}}
   {{- $org := dict "@type" "Organization" "name" $currentCompany -}}

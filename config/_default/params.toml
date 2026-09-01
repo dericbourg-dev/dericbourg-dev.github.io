@@ -2,6 +2,10 @@ author = "Alban Dericbourg"
 favicon = "/favicon.svg"
 cvPdfPrefix = "cv-dericbourg-alban"
 
+[contact]
+email = "alban@dericbourg.dev"
+phone = "+33 6 52 93 38 52"
+
 [[socialLinks]]
 label = "LinkedIn"
 url   = "https://www.linkedin.com/in/adericbourg/"
@@ -13,7 +17,3 @@ url   = "https://github.com/adericbourg"
 [[socialLinks]]
 label = "Malt"
 url   = "https://www.malt.fr/profile/albandericbourg"
-
-[[socialLinks]]
-label = "e-mail"
-url   = "mailto:alban@dericbourg.dev"

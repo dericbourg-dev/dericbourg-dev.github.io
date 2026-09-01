@@ -16,6 +16,11 @@ Core skills: {{ delimit $skills ", " }}.
 - [{{ .Title }}]({{ .Permalink }})
 {{- end }}
 {{ end }}
+## Contact
+
+- E-mail: {{ site.Params.contact.email }}
+- Phone: {{ site.Params.contact.phone }}
+
 ## Professional profiles
 
 {{- range site.Params.socialLinks }}
