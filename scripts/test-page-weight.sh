@@ -45,6 +45,8 @@ PUBLIC = os.environ["PUBLIC_DIR"]
 LINE_RE = re.compile(r'<p[^>]*class=["\']?[^"\'>]*\bpage-weight\b[^>]*>(.*?)</p>', re.S)
 # FR prints a decimal comma ("15,7 Ko"), EN a point ("15.7 KB").
 FIGURE_RE = re.compile(r'([0-9]+(?:[.,][0-9]+)?)\s*(?:Ko|KB)\b')
+# Same shape as the two above: tolerant of single, double or missing quotes.
+STYLESHEET_RE = re.compile(r'<link[^>]*\brel=["\']?stylesheet["\']?[^>]*\bhref=["\']?([^"\'>\s]+)')
 
 
 def die(msg):
@@ -52,18 +54,27 @@ def die(msg):
     raise SystemExit(1)
 
 
-def css_bytes(root):
-    """Size of the fingerprinted minified stylesheet that every page links."""
-    found = sorted(glob.glob(os.path.join(root, "css", "main.min.*.css")))
-    if len(found) != 1:
-        die("expected exactly 1 file matching %s/css/main.min.*.css, found %d: %s"
-            % (root, len(found), found))
-    return os.path.getsize(found[0])
+def css_bytes(root, rel, raw):
+    """Size of the stylesheet this page links.
+
+    Read from the page's own <link> rather than globbed: the name is
+    fingerprinted and Hugo does not clear public/, so a glob can match a stale
+    bundle from an earlier build — or match two and fail on a build that is
+    perfectly fine. Same rule as page-weight.py, re-derived here rather than
+    imported: the test has to measure the page independently of the code it is
+    checking.
+    """
+    match = STYLESHEET_RE.search(raw)
+    if match is None:
+        die("%s: no <link rel=stylesheet> to measure" % rel)
+    path = os.path.join(root, match.group(1).split("?")[0].lstrip("/"))
+    if not os.path.isfile(path):
+        die("%s: linked stylesheet not found at %s" % (rel, path))
+    return os.path.getsize(path)
 
 
 def scan(root):
     """Map rel path -> (printed bytes, real html+css bytes), plus skipped stubs."""
-    css = css_bytes(root)
     pages, stubs = {}, []
     for path in sorted(glob.glob(os.path.join(root, "**", "*.html"), recursive=True)):
         rel = os.path.relpath(path, root)
@@ -82,7 +93,7 @@ def scan(root):
             die("%s: .page-weight line carries no parseable figure: %r"
                 % (rel, line.group(1)))
         printed = float(figure.group(1).replace(",", ".")) * 1024
-        pages[rel] = (printed, os.path.getsize(path) + css)
+        pages[rel] = (printed, os.path.getsize(path) + css_bytes(root, rel, raw))
     return pages, stubs
 
 
