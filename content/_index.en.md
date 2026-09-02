@@ -1,12 +1,12 @@
 +++
-description = "Alban Dericbourg, freelance senior software engineer. 15 years across three French unicorns (Criteo, BlaBlaCar, Mirakl). Distributed systems, observability and reliability (SLO / SRE). Fully remote since 2019, based in rural France between Poitiers and Angoulême."
+description = "Alban Dericbourg, product-minded freelance senior software engineer. 15 years across three French unicorns (Criteo, BlaBlaCar, Mirakl). Distributed systems, observability and reliability (SLO / SRE). Fully remote since 2019, based in rural France between Poitiers and Angoulême."
 +++
 
 # Alban Dericbourg, freelance senior software engineer
 
 Fifteen years designing and hardening back-end services, notably in three French unicorns: Criteo, BlaBlaCar and Mirakl.
 
-I reinforce your teams, or take a scoped piece of work end to end, while keeping the problem I'm trying to solve and the value for users front and center: that's what drives the technical choices, not the other way around. I'm as comfortable with legacy code as with a greenfield project: exploring and modernizing large existing codebases as much as shipping new services into high-traffic distributed systems, and making the whole thing reliable and observable. Reliability is my home turf: I was among the first to roll out SLOs and an SRE approach in several teams, while still drawn to more generalist back-end work.
+I reinforce your teams, or take a scoped piece of work end to end, while keeping the problem I'm trying to solve and the value for users front and center: that product-minded reflex is what drives the technical choices, not the other way around. I'm as comfortable with legacy code as with a greenfield project: exploring and modernizing large existing codebases as much as shipping new services into high-traffic distributed systems, and making the whole thing reliable and observable. Reliability is my home turf: I was among the first to roll out SLOs and an SRE approach in several teams, while still drawn to more generalist back-end work.
 
 I have worked fully remote since 2019, at BlaBlaCar then Mirakl. Seven years during which I led multi-team projects remotely and supported engineers as they grew. My default way of working: plenty of video calls, because that is where the connection with people gets built — and always something written afterwards, so ideas and decisions don't get lost. A progress update arrives every week without you having to ask for it, at whatever rhythm and in whatever format suits you. I come on-site regularly, typically 2 to 4 days a month, always for project kickoffs, and gladly for a team's key moments.
 
@@ -20,6 +20,12 @@ If not, maybe you could point me to two people worth reaching out to. :)
 ### What kind of work do I take on?
 
 Back-end development in high-traffic distributed systems: new services, modernizing legacy code, setting up observability, reliability. I also drive cross-team projects.
+
+### What do I mean by product-minded?
+
+That "who is this for, and what for?" comes before "how?". In practice: I start from the problem and the user, I take part in scoping rather than waiting for a finished specification, and I'll say when a simpler solution is enough — or when what's being asked won't solve the problem behind it.
+
+At BlaBlaCar I drove product projects from discovery to rollout, and rolled out Feature SLOs: reliability indicators that measure what the passenger actually experiences, not just server health. That's the point [my former teammates](/en/references/) make, on the product side as much as the technical one.
 
 ### Time and materials, or fixed price?
 

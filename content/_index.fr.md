@@ -1,12 +1,12 @@
 +++
-description = "Alban Dericbourg, ingénieur logiciel senior indépendant. 15 ans dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Systèmes distribués, observabilité et fiabilité (SLO / SRE). Full remote depuis 2019, basé entre Poitiers et Angoulême."
+description = "Alban Dericbourg, ingénieur logiciel senior indépendant à sensibilité produit. 15 ans dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Systèmes distribués, observabilité et fiabilité (SLO / SRE). Full remote depuis 2019, basé entre Poitiers et Angoulême."
 +++
 
 # Alban Dericbourg, ingénieur logiciel senior indépendant
 
 Quinze ans à concevoir et fiabiliser des services back-end, notamment au cœur de trois licornes françaises : Criteo, BlaBlaCar et Mirakl.
 
-Je viens en renfort de vos équipes, ou je prends en charge un sujet borné de bout en bout, en gardant toujours en tête le problème que je cherche à résoudre et la valeur pour les utilisateurs : c'est ce qui guide les choix techniques, et non l'inverse. Je suis aussi à l'aise sur du code hérité que sur un projet parti de zéro : explorer et moderniser de vastes bases de code existantes comme livrer de nouveaux services dans des systèmes distribués à fort trafic, et rendre l'ensemble fiable et observable. La fiabilité est mon terrain de prédilection : j'ai été l'un des premiers à mettre en place les SLO et une démarche SRE dans plusieurs équipes. Je reste attiré par les missions back-end plus généralistes.
+Je viens en renfort de vos équipes, ou je prends en charge un sujet borné de bout en bout, en gardant toujours en tête le problème que je cherche à résoudre et la valeur pour les utilisateurs : c'est cette sensibilité produit qui guide les choix techniques, et non l'inverse. Je suis aussi à l'aise sur du code hérité que sur un projet parti de zéro : explorer et moderniser de vastes bases de code existantes comme livrer de nouveaux services dans des systèmes distribués à fort trafic, et rendre l'ensemble fiable et observable. La fiabilité est mon terrain de prédilection : j'ai été l'un des premiers à mettre en place les SLO et une démarche SRE dans plusieurs équipes. Je reste attiré par les missions back-end plus généralistes.
 
 Je travaille en full remote depuis 2019, chez BlaBlaCar puis Mirakl. Sept ans pendant lesquels j'ai piloté à distance des projets impliquant plusieurs équipes et accompagné des ingénieurs dans leur montée en compétence. Ma façon de faire par défaut : beaucoup de visio, parce que le lien avec les gens se construit là — et systématiquement de l'écrit derrière, pour que les idées et les décisions ne se perdent pas. Un point d'avancement arrive chaque semaine sans que vous ayez à le demander, au rythme et au format qui vous conviennent. Je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois, systématiquement pour les lancements de projet, et volontiers pour les temps forts de l'équipe.
 
@@ -20,6 +20,12 @@ Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à 
 ### Sur quelles missions puis-je intervenir ?
 
 Développement back-end dans des systèmes distribués à fort trafic : nouveaux services, modernisation de code hérité, mise en place d'observabilité, fiabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
+
+### Qu'est-ce que j'entends par sensibilité produit (« product-minded ») ?
+
+Que la question « pour qui, et pour quoi faire ? » précède la question « comment ? ». Concrètement : je pars du problème et de l'utilisateur, je participe au cadrage plutôt que d'attendre une spécification finie, et je sais dire quand une solution plus simple suffit — ou quand ce qui est demandé ne résoudra pas le problème posé.
+
+Chez BlaBlaCar, j'ai piloté des projets produit de la découverte au déploiement, et mis en place des *Feature SLO* : des indicateurs de fiabilité qui mesurent l'expérience réellement vécue par le passager, et pas seulement la santé des serveurs. C'est le point que relèvent [mes anciens coéquipiers](/references/), côté produit comme côté technique.
 
 ### Régie ou forfait ?
 
