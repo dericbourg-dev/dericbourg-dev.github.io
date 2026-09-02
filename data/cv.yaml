@@ -75,10 +75,10 @@ experiences:
              * Led SLO rollout end-to-end — from design through change management and team adoption
         tags: [Java, SpringBoot, PostgreSQL, Shopify APIs, Mirakl Platform, Datadog]
     extra:
-      - topic: 
+      - topic:
           fr: Détection de changement cassants d'API (OpenAPI)
           en: OpenAPI breaking change detection
-        start: 2026-04
+        start: "2026-04"
         description:
           fr: |
             Mise en place d'outillage automatisé pour évaluer les changements dans un contrat OpenAPI, évaluer leur impact et produire un rapport de changements.
@@ -241,16 +241,16 @@ experiences:
       - role:
           fr: Tech lead
           en: Tech lead
-        start: 2015-04
-        end: 2015-11
+        start: "2015-04"
+        end: "2015-11"
         description:
           fr: |
             Développement et maintenance d'APIs consommées par des fournisseurs de contenu.
-            
+
             Mise en place de la gestion de configuration et du déploiement automatisé pour l'équipe
           en: |
             Development and maintenance of APIs consumed by content providers.
-            
+
             Set up configuration management and automated deployment for the team
 
 education:
