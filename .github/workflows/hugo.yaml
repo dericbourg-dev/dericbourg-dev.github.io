@@ -44,17 +44,22 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
 
-      - name: Read WeasyPrint version
-        id: weasyprint-version
-        run: echo "version=$(cat .weasyprint-version)" >> $GITHUB_OUTPUT
+      - name: Read Python tool versions
+        id: python-versions
+        run: |
+          echo "weasyprint=$(cat .weasyprint-version)" >> $GITHUB_OUTPUT
+          echo "check_jsonschema=$(cat .check-jsonschema-version)" >> $GITHUB_OUTPUT
 
-      - name: Install WeasyPrint
+      - name: Install WeasyPrint and check-jsonschema
         env:
-          WEASYPRINT_VERSION: ${{ steps.weasyprint-version.outputs.version }}
+          WEASYPRINT_VERSION: ${{ steps.python-versions.outputs.weasyprint }}
+          CHECK_JSONSCHEMA_VERSION: ${{ steps.python-versions.outputs.check_jsonschema }}
         run: |
           sudo apt-get update && sudo apt-get install -y --no-install-recommends \
             libpango-1.0-0 libpangoft2-1.0-0 fonts-dejavu-core
-          pip install --break-system-packages "weasyprint==${WEASYPRINT_VERSION}"
+          pip install --break-system-packages \
+            "weasyprint==${WEASYPRINT_VERSION}" \
+            "check-jsonschema==${CHECK_JSONSCHEMA_VERSION}"
 
       - name: Build with Hugo and generate PDFs
         env:

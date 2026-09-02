@@ -5,6 +5,9 @@ set -eu
 PREFIX=$(sed -nE 's/^cvPdfPrefix[[:space:]]*=[[:space:]]*"([^"]+)".*/\1/p' config/_default/params.toml)
 [ -n "$PREFIX" ] || { echo "cvPdfPrefix not found in config/_default/params.toml" >&2; exit 1; }
 
+# Fail fast on a malformed data file, before Hugo silently renders around it
+sh scripts/validate-data.sh
+
 # Build the static site (extra args pass through, e.g. --baseURL in CI)
 hugo --gc --minify "$@"
 

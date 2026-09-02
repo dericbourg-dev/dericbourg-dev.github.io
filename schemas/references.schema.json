@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dericbourg.dev/schemas/references.schema.json",
+  "title": "References data",
+  "description": "Shape of data/references.yaml, consumed by layouts/_default/references.html.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "author", "originalLanguage", "text"],
+    "properties": {
+      "id": {
+        "description": "Stable slug for the reference. Not rendered — it identifies the entry across edits.",
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "author": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "role", "company"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "role": { "type": "string", "minLength": 1 },
+          "company": { "type": "string", "minLength": 1 }
+        }
+      },
+      "originalLanguage": {
+        "description": "Language the reference was written in; the other language shows a \"translated from\" notice. references.html only maps these two.",
+        "enum": ["fr", "en"]
+      },
+      "text": { "$ref": "#/$defs/i18n" }
+    }
+  },
+  "$defs": {
+    "i18n": {
+      "type": "object",
+      "description": "Both languages are required: the site has no fallback, a missing one renders an empty quote.",
+      "additionalProperties": false,
+      "required": ["fr", "en"],
+      "properties": {
+        "fr": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

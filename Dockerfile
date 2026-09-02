@@ -3,6 +3,7 @@ FROM debian:bookworm-slim
 ARG HUGO_VERSION
 ARG GO_VERSION
 ARG WEASYPRINT_VERSION
+ARG CHECK_JSONSCHEMA_VERSION
 ARG TARGETARCH
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -18,7 +19,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m venv /opt/venv \
-    && /opt/venv/bin/pip install --no-cache-dir "weasyprint==${WEASYPRINT_VERSION}"
+    && /opt/venv/bin/pip install --no-cache-dir \
+        "weasyprint==${WEASYPRINT_VERSION}" \
+        "check-jsonschema==${CHECK_JSONSCHEMA_VERSION}"
 ENV PATH="/opt/venv/bin:${PATH}"
 
 RUN ARCH=$(echo ${TARGETARCH} | sed 's/amd64/amd64/;s/arm64/arm64/') && \

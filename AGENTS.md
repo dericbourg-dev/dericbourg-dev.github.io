@@ -40,10 +40,32 @@ Bilingual content uses suffix naming convention:
 
 Content uses TOML frontmatter with `+++` delimiters.
 
+### Data file schemas
+`data/cv.yaml` and `data/references.yaml` are validated by JSON Schemas in `schemas/`
+(`cv.schema.json`, `references.schema.json`). Each data file points at its schema with a
+`# yaml-language-server: $schema=../schemas/*.json` modeline on line 1 (editor completion and
+validation), and `scripts/validate-data.sh` enforces the same schemas from `scripts/build.sh`
+before `hugo` runs — so `make build`, `make test` and CI all fail on a malformed data file.
+`make serve` runs `hugo server` directly and does *not* validate; the editor covers that.
+
+Why it exists: most of `layouts/_default/cv.html` guards with `{{ with … }}`, so a misspelled key
+renders **nothing** instead of failing. `additionalProperties: false` throughout the schemas is
+what turns that silence into an error.
+
+- **Don't move the schemas into `data/`** — Hugo loads everything there as a data file, and
+  `data/cv.schema.json` would land in `hugo.Data` next to (or on top of) `cv.yaml`.
+- **`spokenLanguages[].level` is duplicated in three places**: the enum in `schemas/cv.schema.json`,
+  the keys of `data/cv_levels.yaml`, and the `$levelWidths` dict in `layouts/_default/cv.html`.
+  Adding a level means editing all three.
+- Dates are typed as **strings** on purpose: `cv.html` splits them on `-` and
+  `partials/cv-format-date.html` branches on their length, so an unquoted `start: 2007` (an
+  integer in YAML) breaks the build. Keep them quoted.
+
 ### Version Management
 Versions are pinned in dedicated files (read by Makefile and GitHub Actions):
 - `.hugo-version` - Hugo version
 - `.go-version` - Go version
+- `.check-jsonschema-version` - check-jsonschema version (used by `scripts/validate-data.sh`)
 
 To update: modify the file, then `make build`.
 

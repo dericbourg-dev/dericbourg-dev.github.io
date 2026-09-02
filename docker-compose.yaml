@@ -6,6 +6,7 @@ services:
         HUGO_VERSION: ${HUGO_VERSION}
         GO_VERSION: ${GO_VERSION}
         WEASYPRINT_VERSION: ${WEASYPRINT_VERSION}
+        CHECK_JSONSCHEMA_VERSION: ${CHECK_JSONSCHEMA_VERSION}
     volumes:
       - .:/site
     ports:
@@ -19,6 +20,7 @@ services:
         HUGO_VERSION: ${HUGO_VERSION}
         GO_VERSION: ${GO_VERSION}
         WEASYPRINT_VERSION: ${WEASYPRINT_VERSION}
+        CHECK_JSONSCHEMA_VERSION: ${CHECK_JSONSCHEMA_VERSION}
     volumes:
       - .:/site
     stdin_open: true
