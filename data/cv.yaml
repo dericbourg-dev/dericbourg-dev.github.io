@@ -6,24 +6,24 @@ header:
     en: Freelance Senior Software Engineer
   summary:
     fr: >-
-      Ingénieur logiciel senior, 15 ans d'expérience, notamment au sein de trois licornes
-      françaises (Criteo, BlaBlaCar, Mirakl). Guidé par le problème à résoudre et la valeur
-      pour les utilisateurs, je conçois et fiabilise des services back-end dans des systèmes
-      distribués à fort trafic, aussi à l'aise sur du code hérité que sur un projet parti de
-      zéro. Expertise marquée en observabilité et en fiabilité (SLO / SRE), et en pilotage de
-      projets transverses. Je facilite aussi la coopération au sein des équipes.
-      Basé à la campagne entre Poitiers et Angoulême, je travaille en full remote depuis 2019
-      (BlaBlaCar, Mirakl), avec le réflexe de mettre par écrit ce qui doit rester (idées,
+      Ingénieur logiciel senior, 15 ans d'expérience, notamment au sein de trois licornes françaises
+      (Criteo, BlaBlaCar, Mirakl). Sensibilité produit : le problème à résoudre et la valeur pour les
+      utilisateurs guident mes choix techniques. Je conçois et fiabilise des services back-end dans
+      des systèmes distribués à fort trafic, aussi à l'aise sur du code hérité que sur un projet parti
+      de zéro. Expertise marquée en observabilité et en fiabilité (SLO / SRE), et en pilotage de
+      projets transverses de la découverte au déploiement. Je facilite aussi la coopération au sein
+      des équipes. Basé à la campagne entre Poitiers et Angoulême, je travaille en full remote depuis
+      2019 (BlaBlaCar, Mirakl), avec le réflexe de mettre par écrit ce qui doit rester (idées,
       décisions, arbitrages) ; je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois.
     en: >-
-      Senior software engineer with 15 years of experience, notably across three French
-      unicorns (Criteo, BlaBlaCar, Mirakl). Driven by the problem to solve and the value for
-      users, I design and harden back-end services in high-traffic distributed systems, as
-      comfortable with legacy code as with a greenfield project. Strong expertise in
-      observability and reliability (SLO / SRE), and in driving cross-team projects. I also
-      help teams cooperate more smoothly. Based in the countryside between Poitiers and Angoulême,
-      I have worked fully remote since 2019 (BlaBlaCar, Mirakl), with the reflex of writing down
-      whatever needs to outlast the conversation (ideas, decisions, trade-offs); I come on-site
+      Senior software engineer with 15 years of experience, notably across three French unicorns
+      (Criteo, BlaBlaCar, Mirakl). Product-minded: the problem to solve and the value for users drive
+      my technical choices. I design and harden back-end services in high-traffic distributed systems,
+      as comfortable with legacy code as with a greenfield project. Strong expertise in observability
+      and reliability (SLO / SRE), and in driving cross-team projects from discovery to rollout. I
+      also help teams cooperate more smoothly. Based in the countryside between Poitiers and
+      Angoulême, I have worked fully remote since 2019 (BlaBlaCar, Mirakl), with the reflex of writing
+      down whatever needs to outlast the conversation (ideas, decisions, trade-offs); I come on-site
       regularly, typically 2 to 4 days a month.
 
 experiences:
@@ -38,7 +38,7 @@ experiences:
         start: "2026-04"
         description:
           fr: |
-            Mirakl Connect est le réseau B2B reliant opérateurs et vendeurs. L'équipe _post-sales_ y possède le cycle de vie des commandes (fort volume, système distribué).
+            Mirakl Connect est le réseau B2B reliant opérateurs (propriétaires de marketplaces) et vendeurs. L'équipe _post-sales_ y possède le cycle de vie des commandes (fort volume, système distribué) : deux populations d'utilisateurs, aux contraintes propres, que le produit doit relier en s'adaptant à chacune.
 
             Intégré en renfort de l'équipe, j'ai pris l'initiative d'élever le niveau d'exigence sur la conception et la livraison :
              * Refonte du processus de design doc pour couvrir des angles morts récurrents (capacité / volumétrie, observabilité, tests) et recentrer les revues sur les objectifs et les arbitrages
@@ -46,7 +46,7 @@ experiences:
              * Conception de _plugins_/_skills_ IA (Claude Code) qui restructurent les design docs pour les rendre plus lisibles et actionnables, réduisant les allers-retours en revue
              * Développement assisté par IA au quotidien, en veillant à ce que la revue et les tests restent le garde-fou
           en: |
-            Mirakl Connect is the B2B network connecting operators and sellers. The post-sales team owns the order lifecycle there (high-volume, distributed system).
+            Mirakl Connect is the B2B network connecting operators (marketplace owners) and sellers. The post-sales team owns the order lifecycle there (high-volume, distributed system): two user populations with their own constraints, which the product has to connect while fitting each one.
 
             Joined to reinforce the team, I took the initiative to raise the engineering bar on design and delivery:
              * Reworked the design-doc process to close recurring blind spots (capacity / volumetry, observability, testing) and refocus reviews on goals and trade-offs
@@ -297,7 +297,7 @@ skills:
   - group:
       fr: Pratiques
       en: Practices
-    items: ["Distributed Systems", SLO, SRE, TDD, "Code Review", "Design Docs", "AI-assisted development"]
+    items: ["Distributed Systems", SLO, SRE, TDD, "Code Review", "Design Docs", "Product discovery", "AI-assisted development"]
 
 spokenLanguages:
   - name:
