@@ -151,7 +151,7 @@ experiences:
              * Cross-cutting mission on performance (team, tooling, applications)
              * Audit and revamp of the CI for better performances (focus on Gradle build)
              * Mentored a junior engineer
-        tags: [Java, SpringBoot, MariaDB, Kubernetes, Prometheus, Grafana, Kafka, Gradle]
+        tags: [Java, SpringBoot, MariaDB, Kubernetes, Prometheus, Grafana, Kafka, RabbitMQ, Gradle]
     extra:
       - topic:
           fr: Refonte de l'entretien de recrutement backend
