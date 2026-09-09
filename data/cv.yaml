@@ -169,7 +169,7 @@ experiences:
   - company: Criteo
     location: Paris
     url: https://www.criteo.com
-    tags: [Java, Scala, Finatra, Finagle, .NET Core, MSSQL, Prometheus, Grafana, Observability, Service Discovery]
+    tags: [Java, Scala, Finatra, Finagle, dotNET Core, MSSQL, Prometheus, Grafana, Observability, Service Discovery]
     roles:
       - role:
           fr: Ingénieur logiciel
