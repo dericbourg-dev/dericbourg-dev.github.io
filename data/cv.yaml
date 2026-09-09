@@ -125,7 +125,7 @@ experiences:
              * Weekly written progress update emailed to stakeholders on the projects I led: shipped, next steps, blockers
              * Design-first process: written design doc, async review, small-group peer review with one representative per team, then a kickoff with all involved teams
              * Contributed to the team's day-to-day delivery
-        tags: [Java, SpringBoot, Elasticsearch, SLO, Datadog, Kubernetes]
+        tags: [Java, SpringBoot, Elasticsearch, SLO, Datadog, Kubernetes, Resilience4j, Parallelism, OpenAPI, Gradle]
       - role:
           fr: Ingénieur logiciel senior backend
           en: Senior Backend Software Engineer
@@ -140,6 +140,7 @@ experiences:
              * Impulsion d'une démarche SRE, centrée sur la réduction du bruit et de la fatigue d'alerte en astreinte
              * Pilotage de la migration de Fleet/Rocket vers Docker/Kubernetes sur le périmètre de l'équipe
              * Mission transverse d'optimisation des performances (équipe, outillage, applications)
+             * Audit et restructuration de la CI pour gagner en performances (focus sur la configuration Gradle)
              * Mentorat d'un ingénieur junior
           en: |
             Backend team working closely with frontend teams — computing carpool passenger fees and orchestrating the purchase flow.
@@ -148,8 +149,9 @@ experiences:
              * Drove an SRE approach focused on reducing alert noise and on-call fatigue
              * Led the migration from Fleet/Rocket to Docker/Kubernetes in the team's scope
              * Cross-cutting mission on performance (team, tooling, applications)
+             * Audit and revamp of the CI for better performances (focus on Gradle build)
              * Mentored a junior engineer
-        tags: [Java, SpringBoot, MariaDB, Kubernetes, Prometheus, Grafana]
+        tags: [Java, SpringBoot, MariaDB, Kubernetes, Prometheus, Grafana, Kafka, Gradle]
     extra:
       - topic:
           fr: Refonte de l'entretien de recrutement backend
@@ -167,7 +169,7 @@ experiences:
   - company: Criteo
     location: Paris
     url: https://www.criteo.com
-    tags: [Java, Scala, Finatra, Finagle, .NET Core, MSSQL, Prometheus, Grafana, Observability]
+    tags: [Java, Scala, Finatra, Finagle, .NET Core, MSSQL, Prometheus, Grafana, Observability, Service Discovery]
     roles:
       - role:
           fr: Ingénieur logiciel
