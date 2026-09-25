@@ -9,7 +9,7 @@
   {{- if gt (len $translations) 1 }}
   <ul class="lang-list" role="list" aria-label="{{ if eq site.Language.Lang "fr" }}Langue{{ else }}Language{{ end }}">
     {{- range $translations }}
-    <li><a href="{{ .Permalink }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="true"{{ end }}>{{ .Language.LanguageName }}</a></li>
+    <li><a href="{{ .Permalink }}"{{ if eq .Language.Lang site.Language.Lang }} aria-current="true"{{ end }}>{{ .Language.Label }}</a></li>
     {{- end }}
   </ul>
   {{- end }}

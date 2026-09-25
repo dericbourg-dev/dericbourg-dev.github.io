@@ -1,5 +1,5 @@
 baseURL = "https://dericbourg.dev/"
-languageCode = "fr"
+locale = "fr"
 DefaultContentLanguage = "fr"
 title = "Alban Dericbourg"
 
