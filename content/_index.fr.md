@@ -4,13 +4,13 @@ description = "Alban Dericbourg, ingénieur logiciel senior indépendant à sens
 
 # Alban Dericbourg, ingénieur logiciel senior indépendant
 
-Quinze ans à concevoir et fiabiliser des services back-end, notamment au cœur de trois licornes françaises : Criteo, BlaBlaCar et Mirakl.
+J'ai passé quinze ans à concevoir et fiabiliser des services back-end, notamment au sein de trois licornes françaises : Criteo, BlaBlaCar et Mirakl.
 
-Je viens en renfort de vos équipes, ou je prends en charge un sujet borné de bout en bout, en gardant toujours en tête le problème que je cherche à résoudre et la valeur pour les utilisateurs : c'est cette sensibilité produit qui guide les choix techniques, et non l'inverse. Je suis aussi à l'aise sur du code hérité que sur un projet parti de zéro : explorer et moderniser de vastes bases de code existantes comme livrer de nouveaux services dans des systèmes distribués à fort trafic, et rendre l'ensemble fiable et observable. La fiabilité est mon terrain de prédilection : j'ai été l'un des premiers à mettre en place les SLO et une démarche SRE dans plusieurs équipes. Je reste attiré par les missions back-end plus généralistes.
+Je peux renforcer une équipe existante ou prendre en charge un sujet délimité de bout en bout. Dans les deux cas, je pars du problème à résoudre et de ce qu'il apporte aux utilisateurs, et je fais les choix techniques en conséquence. J'ai travaillé aussi bien sur de grandes bases de code existantes, que j'ai explorées et modernisées, que sur de nouveaux services déployés dans des systèmes distribués à fort trafic. La fiabilité est le domaine qui m'intéresse le plus : j'ai fait partie des premiers à mettre en place des SLO et une démarche SRE dans plusieurs équipes. Je reste intéressé par des missions back-end plus généralistes.
 
-Je travaille en full remote depuis 2019, chez BlaBlaCar puis Mirakl. Sept ans pendant lesquels j'ai piloté à distance des projets impliquant plusieurs équipes et accompagné des ingénieurs dans leur montée en compétence. Ma façon de faire par défaut : beaucoup de visio, parce que le lien avec les gens se construit là — et systématiquement de l'écrit derrière, pour que les idées et les décisions ne se perdent pas. Un point d'avancement arrive chaque semaine sans que vous ayez à le demander, au rythme et au format qui vous conviennent. Je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois, systématiquement pour les lancements de projet, et volontiers pour les temps forts de l'équipe.
+Je travaille en full remote depuis 2019, d'abord chez BlaBlaCar puis chez Mirakl. Pendant ces sept ans, j'ai piloté à distance des projets impliquant plusieurs équipes et accompagné des collègues dans leur montée en compétence. J'utilise beaucoup la communication orale (en visio) pour construire et entretenir les liens avec chacun·e. À la suite des discussions débouchant sur une décision, je m'assure que celle-ci est mise à l'écrit afin qu'elle ne se perde pas. Bien que je privilégie le télétravail, il me semble important de me déplacer régulièrement sur site.
 
-Au-delà du code, j'aime faire avancer un collectif : clarifier les décisions, animer les échanges et désamorcer les tensions. Mes anciens coéquipiers en parlent mieux que moi : [leurs mots sont ici](/references/).
+En dehors du code, j'aime aider une équipe à avancer : clarifier les décisions, animer les discussions, apaiser les tensions. Vous trouverez [les témoignages de personnes avec qui j'ai travaillé](/references/) sur une page dédiée.
 
 Vous cherchez un ingénieur logiciel ? Je serai ravi d'en discuter.
 Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à qui en parler. :)
@@ -19,53 +19,53 @@ Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à 
 
 ### Sur quelles missions puis-je intervenir ?
 
-Développement back-end dans des systèmes distribués à fort trafic : nouveaux services, modernisation de code hérité, mise en place d'observabilité, fiabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
+Du développement back-end dans des systèmes distribués à fort trafic : création de services, modernisation de code existant, observabilité et fiabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
 
 ### Qu'est-ce que j'entends par sensibilité produit (« product-minded ») ?
 
-Que la question « pour qui, et pour quoi faire ? » précède la question « comment ? ». Concrètement : je pars du problème et de l'utilisateur, je participe au cadrage plutôt que d'attendre une spécification finie, et je sais dire quand une solution plus simple suffit — ou quand ce qui est demandé ne résoudra pas le problème posé.
+Avant de me demander comment faire, je cherche à comprendre pour qui et pourquoi. En pratique, je pars du problème et des utilisateurs, je participe au cadrage plutôt que d'attendre une spécification finie, et je n'hésite pas à dire quand une solution plus simple suffit, ou quand la demande ne résoudra pas le problème posé.
 
-Chez BlaBlaCar, j'ai piloté des projets produit de la découverte au déploiement, et mis en place des *Feature SLO* : des indicateurs de fiabilité qui mesurent l'expérience réellement vécue par le passager, et pas seulement la santé des serveurs. C'est le point que relèvent [mes anciens coéquipiers](/references/), côté produit comme côté technique.
+Chez BlaBlaCar, j'ai piloté des projets produit de la phase de découverte jusqu'au déploiement. J'y ai aussi mis en place des *Feature SLO*, des indicateurs de fiabilité qui mesurent ce que vit réellement le passager plutôt que le seul état des serveurs. C'est un point que relèvent [mes anciens collègues](/references/), côté produit comme côté technique.
 
 ### Régie ou forfait ?
 
-Les deux, selon la forme de votre besoin.
+Je travaille dans les deux modes, selon votre besoin.
 
-En régie, je rejoins votre équipe et je suis vos priorités. C'est le bon choix quand le besoin est continu, que le périmètre évolue au fil des semaines, ou que l'enjeu est autant de renforcer l'équipe que de livrer.
+En régie, je rejoins votre équipe et je travaille sur vos priorités. Ce mode convient quand le besoin est continu, que le périmètre évolue d'une semaine à l'autre, ou que renforcer l'équipe compte autant que livrer.
 
-Au forfait, je prends en charge un sujet borné et je m'engage sur le résultat : un périmètre écrit, un prix ferme, une date. C'est le bon choix quand vous savez nommer ce que vous voulez obtenir — un connecteur à mettre en production, une démarche SLO à déployer, un outillage à mettre en place, un pan de code hérité à moderniser. Ce sont des sujets de cette forme que j'ai livrés jusqu'ici ; le [CV](/cv/) en donne le détail.
+Au forfait, je prends en charge un sujet délimité et je m'engage sur le résultat, avec un périmètre écrit, un prix ferme et une date de livraison. Ce mode convient quand vous savez décrire ce que vous voulez obtenir : un connecteur à mettre en production, une démarche SLO à déployer, un outillage à mettre en place, une partie de code existant à moderniser. J'ai déjà livré ce type de sujets, le [CV](/cv/) en donne le détail.
 
-Dans les deux cas, la façon de travailler ne change pas : le même point d'avancement écrit chaque semaine, les mêmes décisions de conception tracées.
+Dans les deux cas, je travaille de la même façon, avec un point d'avancement écrit chaque semaine et des décisions de conception documentées.
 
-Si vous hésitez, dites-moi ce que vous cherchez à obtenir : c'est en général la description du résultat attendu qui indique lequel des deux convient.
+Si vous hésitez, décrivez-moi le résultat que vous attendez. C'est en général ce qui permet de choisir entre les deux.
 
 ### Comment se déroule une mission au forfait ?
 
-Elle commence par un temps de cadrage court, avant tout engagement de prix. Il aboutit à un document qui dit ce qui sera livré, à quels critères nous saurons que c'est fait, ce qui n'est pas inclus, et les jalons intermédiaires. Le prix ferme porte sur ce périmètre-là.
+Elle commence par une courte phase de cadrage, avant tout engagement sur le prix. Ce cadrage aboutit à un document qui précise ce qui sera livré, les critères qui permettront de dire que c'est terminé, ce qui n'est pas inclus et les jalons intermédiaires. Le prix ferme porte sur ce périmètre.
 
-Ensuite, de votre point de vue, rien ne diffère d'une mission en régie : le même point écrit chaque semaine — ce qui est livré, les prochaines étapes, les points bloquants, les décisions à prendre — et des livraisons régulières plutôt qu'un unique rendu final.
+La suite se déroule comme en régie : un point écrit chaque semaine (ce qui a été livré, les prochaines étapes, les points bloquants, les décisions à prendre) et des livraisons régulières plutôt qu'un seul rendu à la fin.
 
-Si le périmètre bouge — cela arrive, et c'est souvent une bonne nouvelle — je le dis tout de suite, je chiffre l'écart, et nous décidons ensemble : ajuster le périmètre, ou faire un avenant. Ce qui n'arrive pas, c'est de le découvrir à la fin.
+Si le périmètre change en cours de route, je vous le signale dès que je m'en rends compte, j'estime l'écart, et nous décidons ensemble d'ajuster le périmètre ou de faire un avenant. L'objectif est que personne ne découvre l'écart à la fin de la mission.
 
 ### Avec quelles technologies ?
 
-Principalement Java et Spring Boot, avec MariaDB, PostgreSQL, Kafka, Docker et Kubernetes. Côté observabilité : Datadog, Prometheus et Grafana. J'utilise aussi les outils de développement assistés par IA au quotidien, notamment Claude Code. Le [CV détaillé](/cv/) précise le contexte de chaque mission.
+Principalement Java et Spring Boot, avec MariaDB, PostgreSQL, Kafka, Docker et Kubernetes. Pour l'observabilité : Datadog, Prometheus et Grafana. J'utilise aussi au quotidien des outils de développement assistés par IA, notamment Claude Code. Mon [CV détaillé](/cv/) précise le contexte de chaque mission.
 
 ### Télétravail ou sur site ?
 
-Full remote depuis 2019, depuis la campagne entre Poitiers et Angoulême. Je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois, à ajuster selon vos besoins, systématiquement pour les lancements de projet, et volontiers pour les temps forts de l'équipe.
+Je travaille en full remote depuis 2019, depuis la campagne entre Poitiers et Angoulême. J'ai l'habitude de me déplacer sur site environ 2 à 4 jours par mois selon vos besoins, systématiquement pour les lancements de projet, et volontiers pour les moments importants de la vie de l'équipe.
 
-### Comment savoir ce que je fais, à distance ?
+### Comment suivre l'avancement à distance ?
 
-Vous n'aurez pas à le demander. Ce que je propose par défaut : chaque semaine, un point écrit — ce qui est livré, les prochaines étapes, les points bloquants, et les décisions à prendre. C'est ce que j'ai pratiqué jusqu'ici. Si votre équipe a déjà ses rituels et son format, je m'y adapte volontiers : ce qui compte est que personne n'ait à se demander où en sont les choses. C'est typiquement le genre de choses sur lesquelles nous pouvons nous accorder en début de mission.
+Par défaut, je vous envoie chaque semaine un point écrit qui reprend ce qui a été livré, les prochaines étapes, les points bloquants et les décisions à prendre. C'est ce que j'ai pratiqué jusqu'ici. Si votre équipe a déjà ses propres rituels, je m'y adapte volontiers. Nous pouvons en convenir en début de mission.
 
 ### Comment les décisions se prennent-elles à distance ?
 
-En parlant, souvent : la visio reste le meilleur moyen de se comprendre et de trancher vite. Mais elles ne doivent pas rester orales : je crois qu'une trace écrite est nécessaire. Mon habitude pour une décision de conception est de passer par un design doc, relu de façon asynchrone, puis en petit comité avec un référent par équipe, et enfin présenté en kickoff avec toutes les équipes concernées. L'intérêt tient moins au document qu'à ce qu'il laisse derrière lui : une décision consultable à tout moment, par quelqu'un qui n'était pas dans la pièce ou qui arrive dans l'équipe plus tard.
+Souvent à l'oral, en visio, parce que c'est le moyen le plus rapide de se comprendre et de trancher. Je m'assure ensuite que la décision est écrite. Pour une décision de conception, j'ai l'habitude de rédiger un _design doc_, relu d'abord de façon asynchrone, puis discuté en petit comité avec un référent par équipe, et enfin présenté lors d'un kickoff à toutes les équipes concernées. La décision reste ainsi consultable par les personnes qui n'étaient pas présentes ou qui arrivent plus tard dans l'équipe. Je fais en sorte que les raisons de cette décision apparaissent afin de toujours pouvoir en réévaluer la pertinence.
 
-### Le télétravail tient-il sur des projets transverses ?
+### Le télétravail est-il adapté aux projets transverses ?
 
-Chez BlaBlaCar, j'ai piloté à distance un programme de neuf mois impliquant quatre équipes, et accompagné des ingénieurs dans leur montée en compétence. [Mes anciens coéquipiers](/references/), avec qui j'ai travaillé un à trois ans à distance, en parlent mieux que moi.
+Chez BlaBlaCar, j'ai piloté à distance un programme de neuf mois impliquant quatre équipes. [Mes anciens collègues](/references/), avec qui j'ai travaillé à distance pendant un à trois ans, en témoignent.
 
 ### En quelles langues ?
 
@@ -73,4 +73,4 @@ Français et anglais, à l'écrit comme à l'oral.
 
 ### Comment me contacter ?
 
-Par [e-mail, LinkedIn ou Malt](/contact/). Si votre besoin ne correspond pas, une mise en relation est toujours la bienvenue.
+Par [e-mail, LinkedIn ou Malt](/contact/). Si votre besoin ne correspond pas à mon profil, une mise en relation est toujours la bienvenue.
