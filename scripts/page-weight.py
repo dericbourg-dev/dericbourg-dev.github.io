@@ -51,24 +51,6 @@ def figure(total_bytes, lang):
     return "~" + (text.replace(".", ",") if lang.startswith("fr") else text)
 
 
-def solve(base_bytes, lang):
-    """Smallest self-consistent figure.
-
-    Self-referential: writing an N-byte figure makes the page N bytes heavier,
-    which is what the figure has to describe. At one decimal place a byte is
-    0.001 KB, so only the token's *width* matters, and there are only a handful
-    of possible widths. Try each once, keep the one that reproduces itself.
-    Bounded and deterministic — no convergence loop.
-    """
-    for width in range(1, 9):
-        token = figure(base_bytes + width, lang)
-        if len(token) == width:
-            return token
-    # Unreachable in practice: widths 4-6 cover 1 KB to 10 MB. If a value ever
-    # lands exactly on a rounding boundary, be a byte off rather than fail.
-    return figure(base_bytes + 5, lang)
-
-
 def rewrite(page):
     """Return True if the page carried a figure and was rewritten."""
     with open(page, "rb") as handle:
@@ -86,9 +68,11 @@ def rewrite(page):
     lang_match = HTML_LANG.search(html)
     lang = lang_match.group(1) if lang_match else ""
 
-    # Tokens are ASCII, so character counts are byte counts here.
+    # Tokens are ASCII, so character counts are byte counts here. The figure
+    # counts itself: assume a 5-byte token (`~20,9`); 1-10 KB and 100+ KB pages
+    # end up a byte off, invisible at 0.1 KB precision.
     base = len(raw) - len(token.group(0)) + stylesheet_bytes(page, html)
-    replacement = solve(base, lang)
+    replacement = figure(base + 5, lang)
 
     with open(page, "wb") as handle:
         handle.write(
