@@ -102,8 +102,8 @@ Automatic deployment to GitHub Pages on push to `main` branch via `.github/workf
   make the dev server show a number, don't: that is the bug this replaced. The figure is
   uncompressed bytes (GitHub Pages serves it gzipped, so the wire cost is roughly a quarter), and
   it never appears in the CV PDFs because `@media print` hides `.site-footer`. `scripts/test-page-weight.sh`
-  (`make test`) guards this: it fails if the figure is constant across pages or drifts from the
-  real file size by more than 50 bytes
+  (`make test`) guards this: it fails if any page's figure drifts from its real
+  size by more than 50 bytes (which also catches a figure that is constant across pages)
 
 ## SEO / GEO
 

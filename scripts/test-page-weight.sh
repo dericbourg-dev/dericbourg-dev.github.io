@@ -116,19 +116,6 @@ check(
     % (len(built), MIN_PAGES, len(stubs), stubs),
 )
 
-# Given the figures printed across all pages
-# When they are compared to each other
-# Then they are not all the same — the original bug, stated directly
-printed = sorted(p for p, _ in built.values())
-distinct = len({round(p) for p in printed})
-spread = printed[-1] - printed[0] if printed else 0
-check(
-    "pageWeight_ofBuiltSite_variesAcrossPages",
-    distinct > 1 and spread >= 2048,
-    "%d distinct figure(s) across %d pages, spread %.1f KB (need >1 distinct and >=2.0 KB)"
-    % (distinct, len(built), spread / 1024),
-)
-
 # Given the post-build rewrite has run over public/
 # When each printed figure is compared to os.stat(page) + os.stat(css)
 # Then it is accurate to within half of its last printed digit
