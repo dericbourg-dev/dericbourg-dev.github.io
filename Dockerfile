@@ -23,12 +23,9 @@ RUN python3 -m venv /opt/venv \
         "check-jsonschema==${CHECK_JSONSCHEMA_VERSION}"
 ENV PATH="/opt/venv/bin:${PATH}"
 
-RUN ARCH=$(echo ${TARGETARCH} | sed 's/amd64/amd64/;s/arm64/arm64/') && \
-    wget -O /tmp/hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${ARCH}.deb" && \
+RUN wget -O /tmp/hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${TARGETARCH}.deb" && \
     dpkg -i /tmp/hugo.deb && \
     rm /tmp/hugo.deb
 
 WORKDIR /site
 EXPOSE 1313
-
-CMD ["hugo", "server", "--bind", "0.0.0.0"]
