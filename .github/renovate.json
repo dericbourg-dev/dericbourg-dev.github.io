@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "gomod": { "enabled": false },
   "customManagers": [
     {
       "customType": "regex",
@@ -11,17 +10,6 @@
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "gohugoio/hugo",
       "extractVersionTemplate": "^v(?<version>.+)$"
-    },
-    {
-      "customType": "regex",
-      "description": "Go version pinned in .go-version and go.mod (kept in sync)",
-      "managerFilePatterns": ["/^\\.go-version$/", "/^go\\.mod$/"],
-      "matchStrings": [
-        "^(?<currentValue>\\d+\\.\\d+\\.\\d+)\\s*$",
-        "^go (?<currentValue>\\d+\\.\\d+\\.\\d+)$"
-      ],
-      "datasourceTemplate": "golang-version",
-      "depNameTemplate": "go"
     },
     {
       "customType": "regex",

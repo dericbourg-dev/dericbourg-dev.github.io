@@ -12,7 +12,7 @@ All development happens in Docker containers. Use Make for convenience:
 
 ```bash
 make serve    # Start dev server at http://localhost:1313
-make shell    # Interactive shell with Hugo/Go
+make shell    # Interactive shell with Hugo
 make build    # Rebuild Docker image
 make clean    # Remove Docker images
 ```
@@ -64,7 +64,6 @@ what turns that silence into an error.
 ### Version Management
 Versions are pinned in dedicated files (read by Makefile and GitHub Actions):
 - `.hugo-version` - Hugo version
-- `.go-version` - Go version
 - `.check-jsonschema-version` - check-jsonschema version (used by `scripts/validate-data.sh`)
 
 To update: modify the file, then `make build`.
