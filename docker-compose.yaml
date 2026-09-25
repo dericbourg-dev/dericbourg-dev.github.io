@@ -1,26 +1,22 @@
+x-site: &site
+  build:
+    context: .
+    args:
+      HUGO_VERSION: ${HUGO_VERSION}
+      WEASYPRINT_VERSION: ${WEASYPRINT_VERSION}
+      CHECK_JSONSCHEMA_VERSION: ${CHECK_JSONSCHEMA_VERSION}
+  volumes:
+    - .:/site
+
 services:
   hugo:
-    build:
-      context: .
-      args:
-        HUGO_VERSION: ${HUGO_VERSION}
-        WEASYPRINT_VERSION: ${WEASYPRINT_VERSION}
-        CHECK_JSONSCHEMA_VERSION: ${CHECK_JSONSCHEMA_VERSION}
-    volumes:
-      - .:/site
+    <<: *site
     ports:
       - "1313:1313"
     command: hugo server --bind 0.0.0.0 --disableFastRender
 
   shell:
-    build:
-      context: .
-      args:
-        HUGO_VERSION: ${HUGO_VERSION}
-        WEASYPRINT_VERSION: ${WEASYPRINT_VERSION}
-        CHECK_JSONSCHEMA_VERSION: ${CHECK_JSONSCHEMA_VERSION}
-    volumes:
-      - .:/site
+    <<: *site
     stdin_open: true
     tty: true
     command: /bin/bash
