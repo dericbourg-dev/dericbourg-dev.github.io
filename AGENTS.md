@@ -79,7 +79,7 @@ No external theme — `layouts/` and `assets/css/main.css` are hand-written and 
 
 ## Deployment
 
-Automatic deployment to GitHub Pages on push to `main` branch via `.github/workflows/hugo.yaml`. The workflow reads `.hugo-version` to ensure consistency between local and CI environments.
+Automatic deployment to GitHub Pages on push to `main` branch via `.github/workflows/hugo.yaml`. The workflow reads `.hugo-version` to ensure consistency between local and CI environments. Pull requests against `main` run the same workflow's build job (including `scripts/test-page-weight.sh`); upload and deploy are skipped for them.
 
 ## Key Conventions
 
