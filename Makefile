@@ -3,14 +3,9 @@ WEASYPRINT_VERSION := $(shell cat .weasyprint-version)
 CHECK_JSONSCHEMA_VERSION := $(shell cat .check-jsonschema-version)
 export HUGO_VERSION WEASYPRINT_VERSION CHECK_JSONSCHEMA_VERSION
 
-.PHONY: image build test serve shell clean env
+.PHONY: image build test serve shell clean
 
-env:
-	@echo "HUGO_VERSION=$(HUGO_VERSION)" > .env
-	@echo "WEASYPRINT_VERSION=$(WEASYPRINT_VERSION)" >> .env
-	@echo "CHECK_JSONSCHEMA_VERSION=$(CHECK_JSONSCHEMA_VERSION)" >> .env
-
-image: env
+image:
 	docker compose build
 
 build: image

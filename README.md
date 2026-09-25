@@ -28,8 +28,9 @@ make clean
 ### Without Make
 
 ```bash
-# Generate the .env file (needed once)
-echo "HUGO_VERSION=$(cat .hugo-version)" > .env
+# docker-compose.yaml reads the pinned versions from the environment
+export HUGO_VERSION=$(cat .hugo-version) WEASYPRINT_VERSION=$(cat .weasyprint-version) \
+  CHECK_JSONSCHEMA_VERSION=$(cat .check-jsonschema-version)
 
 # Start the development server
 docker compose up hugo

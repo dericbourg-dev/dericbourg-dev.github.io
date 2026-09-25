@@ -6,6 +6,3 @@
 public/
 
 resources/_gen
-
-# Generated env file for docker-compose
-.env
