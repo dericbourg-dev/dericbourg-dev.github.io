@@ -6,25 +6,26 @@ header:
     en: Freelance Senior Software Engineer
   summary:
     fr: >-
-      Ingénieur logiciel senior, 15 ans d'expérience, notamment au sein de trois licornes françaises
-      (Criteo, BlaBlaCar, Mirakl). Sensibilité produit : le problème à résoudre et la valeur pour les
-      utilisateurs guident mes choix techniques. Je conçois et fiabilise des services back-end dans
-      des systèmes distribués à fort trafic, aussi à l'aise sur du code hérité que sur un projet parti
-      de zéro. Expertise marquée en observabilité et en fiabilité (SLO / SRE), et en pilotage de
-      projets transverses de la découverte au déploiement. Je facilite aussi la coopération au sein
-      des équipes. Basé à la campagne entre Poitiers et Angoulême, je travaille en full remote depuis
-      2019 (BlaBlaCar, Mirakl), avec le réflexe de mettre par écrit ce qui doit rester (idées,
-      décisions, arbitrages) ; je viens sur site régulièrement, de l'ordre de 2 à 4 jours par mois.
+      Ingénieur logiciel senior, j'ai 15 ans d'expérience, notamment au sein de trois licornes
+      françaises (Criteo, BlaBlaCar, Mirakl). Je conçois et fiabilise des services back-end dans des
+      systèmes distribués à fort trafic, sur de grandes bases de code existantes comme sur des
+      services neufs. Je pars du problème à résoudre et de ce qu'il apporte aux utilisateurs pour
+      faire mes choix techniques. La fiabilité est le domaine qui m'intéresse le plus : observabilité,
+      SLO, démarche SRE. Je pilote aussi des projets impliquant plusieurs équipes, de la découverte au
+      déploiement, et j'aime aider une équipe à avancer ensemble. J'habite à la campagne entre
+      Poitiers et Angoulême et je travaille en full remote depuis 2019 (BlaBlaCar, Mirakl). Je
+      m'assure que les décisions sont mises à l'écrit, et j'ai l'habitude de venir sur site 2 à 4
+      jours par mois.
     en: >-
-      Senior software engineer with 15 years of experience, notably across three French unicorns
-      (Criteo, BlaBlaCar, Mirakl). Product-minded: the problem to solve and the value for users drive
-      my technical choices. I design and harden back-end services in high-traffic distributed systems,
-      as comfortable with legacy code as with a greenfield project. Strong expertise in observability
-      and reliability (SLO / SRE), and in driving cross-team projects from discovery to rollout. I
-      also help teams cooperate more smoothly. Based in the countryside between Poitiers and
-      Angoulême, I have worked fully remote since 2019 (BlaBlaCar, Mirakl), with the reflex of writing
-      down whatever needs to outlast the conversation (ideas, decisions, trade-offs); I come on-site
-      regularly, typically 2 to 4 days a month.
+      Senior software engineer, I have 15 years of experience, notably in three French unicorns
+      (Criteo, BlaBlaCar, Mirakl). I design and harden back-end services in high-traffic distributed
+      systems, on large existing codebases as well as on new services. I start from the problem to
+      solve and what it brings to users to make my technical choices. Reliability is the area that
+      interests me most: observability, SLOs, an SRE approach. I also lead projects involving several
+      teams, from discovery to rollout, and I like helping a team move forward together. I live in
+      the countryside between Poitiers and Angoulême and have worked fully remote since 2019
+      (BlaBlaCar, Mirakl). I make sure decisions are written down, and I usually come on-site 2 to 4
+      days a month.
 
 experiences:
   - company: Mirakl
@@ -38,21 +39,21 @@ experiences:
         start: "2026-04"
         description:
           fr: |
-            Mirakl Connect est le réseau B2B reliant opérateurs (propriétaires de marketplaces) et vendeurs. L'équipe _post-sales_ y possède le cycle de vie des commandes (fort volume, système distribué) : deux populations d'utilisateurs, aux contraintes propres, que le produit doit relier en s'adaptant à chacune.
+            Mirakl Connect est le réseau B2B reliant opérateurs (propriétaires de marketplaces) et vendeurs. L'équipe _post-sales_ y est responsable du cycle de vie des commandes (fort volume, système distribué).
 
-            Intégré en renfort de l'équipe, j'ai pris l'initiative d'élever le niveau d'exigence sur la conception et la livraison :
-             * Refonte du processus de design doc pour couvrir des angles morts récurrents (capacité / volumétrie, observabilité, tests) et recentrer les revues sur les objectifs et les arbitrages
-             * Adoption de templates structurés, avec des indications par section
-             * Conception de _plugins_/_skills_ IA (Claude Code) qui restructurent les design docs pour les rendre plus lisibles et actionnables, réduisant les allers-retours en revue
-             * Développement assisté par IA au quotidien, en veillant à ce que la revue et les tests restent le garde-fou
+            J'ai rejoint l'équipe en renfort, et j'ai aussi travaillé sur sa façon de concevoir et de livrer :
+             * Refonte du processus de design doc : ajout des sujets souvent oubliés (capacité / volumétrie, observabilité, tests), revues recentrées sur les objectifs et les arbitrages
+             * Modèles de documents avec des consignes par section
+             * Création de _plugins_ et de _skills_ Claude Code pour restructurer les design docs et les rendre plus lisibles, avec moins d'allers-retours en revue
+             * Développement assisté par IA au quotidien, avec la revue de code et les tests comme garde-fous
           en: |
-            Mirakl Connect is the B2B network connecting operators (marketplace owners) and sellers. The post-sales team owns the order lifecycle there (high-volume, distributed system): two user populations with their own constraints, which the product has to connect while fitting each one.
+            Mirakl Connect is the B2B network connecting operators (marketplace owners) and sellers. The post-sales team owns the order lifecycle there (high-volume, distributed system).
 
-            Joined to reinforce the team, I took the initiative to raise the engineering bar on design and delivery:
-             * Reworked the design-doc process to close recurring blind spots (capacity / volumetry, observability, testing) and refocus reviews on goals and trade-offs
-             * Drove adoption of structured templates with inline guidance per section
-             * Built AI plugins/skills (Claude Code) that restructure design docs for readability and actionability, cutting review back-and-forth
-             * Day-to-day AI-assisted development, keeping review and tests as the safety net
+            I joined to reinforce the team, and also worked on how it designs and delivers:
+             * Reworked the design-doc process: added often-missed topics (capacity / volumetry, observability, testing), refocused reviews on goals and trade-offs
+             * Document templates with guidance for each section
+             * Built Claude Code plugins and skills that restructure design docs to make them easier to read, with fewer review round-trips
+             * Day-to-day AI-assisted development, with code review and tests as safeguards
         tags: [Java, SpringBoot, PostgreSQL, Kafka, AI, "Claude Code", Datadog]
       - role:
           fr: Ingénieur logiciel senior (indépendant)
@@ -66,30 +67,30 @@ experiences:
 
             Livraison d'un middleware entre Shopify et la plateforme Mirakl permettant aux propriétaires de boutiques Shopify d'ouvrir leur boutique à des vendeurs tiers.
              * Conception et implémentation du support de l'internationalisation (i18n) sur l'ensemble du connecteur
-             * Pilotage de bout en bout de la mise en place des SLO : de la conception à la conduite du changement et à l'adoption par l'équipe
+             * Mise en place des SLO, de leur définition jusqu'à leur utilisation par l'équipe
           en: |
             Mirakl ↔ Shopify connector for platform operators.
 
             Shipped a middleware between Shopify and the Mirakl platform, letting Shopify shop owners open their store to third-party sellers.
              * Designed and implemented internationalization (i18n) support across the connector
-             * Led SLO rollout end-to-end — from design through change management and team adoption
+             * Set up SLOs, from defining them to getting the team to use them
         tags: [Java, SpringBoot, PostgreSQL, Shopify APIs, Mirakl Platform, Datadog]
     extra:
       - topic:
-          fr: Détection de changement cassants d'API (OpenAPI)
+          fr: Détection de changements cassants d'API (OpenAPI)
           en: OpenAPI breaking change detection
         start: "2026-04"
         description:
           fr: |
-            Mise en place d'outillage automatisé pour évaluer les changements dans un contrat OpenAPI, évaluer leur impact et produire un rapport de changements.
+            Mise en place d'outillage automatisé pour analyser les changements dans un contrat OpenAPI, en mesurer l'impact et produire un rapport de changements.
 
             Comprend la possibilité de bloquer un pipeline Github Actions lorsqu'un changement cassant est détecté.
 
             La solution repose sur l'outil open-source [oasdiff](https://github.com/oasdiff/oasdiff).
           en: |
-            Setup automated tooling to evaluate changes in an OpenAPI contract, assess the impact and produce a change report.
+            Set up automated tooling to evaluate changes in an OpenAPI contract, assess the impact and produce a change report.
 
-            Includes the ability to block a Github Action pipeline when a breaking change is detected.
+            Includes the ability to block a GitHub Actions pipeline when a breaking change is detected.
 
             The solution is based on the [oasdiff](https://github.com/oasdiff/oasdiff) open-source tool.
   - company: BlaBlaCar
@@ -104,26 +105,26 @@ experiences:
         end: "2025-10"
         description:
           fr: |
-            Équipe full-stack — expérience de recherche côté passager, de l'envie de voyager au choix du trajet le plus pertinent selon ses préférences.
+            Équipe full-stack en charge de la recherche de trajets côté passager.
 
-             * Pilotage de projets produit de la découverte au déploiement, dont des programmes de 9 mois impliquant 4 équipes
-             * Refonte de l'architecture de recherche pour l'adapter à l'échelle de l'entreprise et à sa trajectoire multimodale, puis coordination de la migration progressive — sans réécriture _big-bang_ (#NoRewrite)
-             * Pionnier des SLO dans une équipe elle-même pilote sur le sujet : en binôme avec l'équipe SRE, mise en place des premiers SLO techniques puis des Feature SLO pour modéliser plus finement l'expérience utilisateur ; contribution à l'embarquement d'autres équipes
-             * Amélioration continue de la fiabilité : renforcement de l'observabilité des services en production et du processus de conception des nouveaux services
-             * Lancement des Open Spaces (« Forum ouvert ») de l'équipe backend pour renforcer la coopération entre ingénieurs
+             * Pilotage de projets produit de la découverte au déploiement, dont un programme de 9 mois impliquant 4 équipes
+             * Refonte de l'architecture de la recherche pour suivre la croissance de l'entreprise et son offre multimodale, puis coordination d'une migration progressive, sans réécriture _big-bang_ (#NoRewrite)
+             * Mise en place des SLO avec l'équipe SRE, dans l'une des premières équipes de l'entreprise à les adopter : d'abord des SLO techniques, puis des Feature SLO qui mesurent ce que vit le passager ; aide à d'autres équipes pour s'y mettre
+             * Amélioration de l'observabilité des services en production et du processus de conception des nouveaux services
+             * Lancement des Open Spaces (« Forum ouvert ») de l'équipe backend, pour que les ingénieurs échangent davantage entre eux
              * Point d'avancement hebdomadaire envoyé aux parties prenantes sur les projets pilotés : livré, prochaines étapes, points bloquants
              * Conception passée par l'écrit : design doc, relecture asynchrone, revue en petit comité avec un référent par équipe, puis kickoff avec toutes les équipes concernées
              * Contribution quotidienne à la livraison de l'équipe
           en: |
-            Full-stack team — passenger-side search experience, from the will to travel to choosing the most relevant ride for one's preferences.
+            Full-stack team in charge of ride search on the passenger side.
 
-             * Drove product projects from discovery to rollout, including 9-month programs spanning 4 teams
-             * Revamped the search architecture to fit company scale and its multimodal roadmap, then coordinated a progressive migration — no big-bang rewrite (#NoRewrite)
-             * Pioneered SLOs in a team that was itself an early adopter of the practice: paired with the SRE team to ship the first technical SLOs, then Feature SLOs for sharper user-experience modeling; helped onboard other teams
-             * Continuously improved reliability: strengthened production observability and the design process for new services
-             * Launched the backend team's Open Spaces ("Forum ouvert") to boost cooperation between engineers
+             * Drove product projects from discovery to rollout, including a 9-month program spanning 4 teams
+             * Redesigned the search architecture to keep up with the company's growth and its multimodal offer, then coordinated a progressive migration, without a big-bang rewrite (#NoRewrite)
+             * Set up SLOs with the SRE team, in one of the first teams in the company to adopt them: technical SLOs first, then Feature SLOs that measure what the passenger actually experiences; helped other teams get started
+             * Improved the observability of production services and the design process for new services
+             * Launched the backend team's Open Spaces ("Forum ouvert") so backend engineers share more with each other
              * Weekly written progress update emailed to stakeholders on the projects I led: shipped, next steps, blockers
-             * Design-first process: written design doc, async review, small-group peer review with one representative per team, then a kickoff with all involved teams
+             * Written design process: written design doc, async review, small-group peer review with one representative per team, then a kickoff with all involved teams
              * Contributed to the team's day-to-day delivery
         tags: [Java, SpringBoot, Elasticsearch, SLO, Datadog, Kubernetes, Resilience4j, Parallelism, OpenAPI, Gradle]
       - role:
@@ -134,22 +135,20 @@ experiences:
         end: "2021-04"
         description:
           fr: |
-            Équipe backend, en collaboration étroite avec les équipes frontend — calcul des frais de service passagers et orchestration du tunnel d'achat.
+            Équipe backend, en collaboration étroite avec les équipes frontend, en charge du calcul des frais de service passagers et de l'orchestration du tunnel d'achat.
 
              * Extraction de services de monétisation autonomes hors du monolithe historique, et diffusion des bonnes pratiques d'architecture et de conception dans l'équipe
-             * Impulsion d'une démarche SRE, centrée sur la réduction du bruit et de la fatigue d'alerte en astreinte
+             * Lancement d'une démarche SRE, d'abord pour réduire le bruit des alertes et la fatigue en astreinte
              * Pilotage de la migration de Fleet/Rocket vers Docker/Kubernetes sur le périmètre de l'équipe
-             * Mission transverse d'optimisation des performances (équipe, outillage, applications)
-             * Audit et restructuration de la CI pour gagner en performances (focus sur la configuration Gradle)
+             * Mission transverse sur l'outillage : accélération du build et de la CI, surtout via la configuration Gradle
              * Mentorat d'un ingénieur junior
           en: |
-            Backend team working closely with frontend teams — computing carpool passenger fees and orchestrating the purchase flow.
+            Backend team working closely with frontend teams, in charge of computing carpool passenger fees and orchestrating the purchase flow.
 
              * Extracted standalone monetization services out of the legacy monolith, and spread architecture and code-design best practices across the team
-             * Drove an SRE approach focused on reducing alert noise and on-call fatigue
+             * Started an SRE approach, first to cut alert noise and on-call fatigue
              * Led the migration from Fleet/Rocket to Docker/Kubernetes in the team's scope
-             * Cross-cutting mission on performance (team, tooling, applications)
-             * Audit and revamp of the CI for better performances (focus on Gradle build)
+             * Cross-team tooling mission: sped up the build and the CI, mostly by reworking the Gradle configuration
              * Mentored a junior engineer
         tags: [Java, SpringBoot, MariaDB, Kubernetes, Prometheus, Grafana, Kafka, RabbitMQ, Gradle]
     extra:
@@ -159,13 +158,13 @@ experiences:
         start: "2021"
         description:
           fr: |
-            J'ai piloté la définition du nouvel exercice de recrutement backend (live coding), avec 6 autres ingénieurs contributeurs. Nous avons mis l'accent sur l'équité de l'exercice et l'avons conçu pour maximiser l'égalité des chances.
+            J'ai piloté la définition du nouvel exercice de recrutement backend (live coding), avec 6 autres ingénieurs contributeurs. Notre priorité était que l'exercice soit équitable pour tous les candidats.
 
-            L'entretien est conçu pour ressembler au quotidien chez BlaBlaCar et favorise fortement le travail en équipe, ce qui permet d'évaluer les soft skills.
+            L'entretien est conçu pour ressembler au quotidien chez BlaBlaCar et se fait en équipe, ce qui permet aussi d'évaluer le savoir-être.
           en: |
-            I led the definition of the new backend hiring exercise (live coding), with 6 other contributing engineers. We focused on the exercise's fairness and designed it to maximize equality of chances.
+            I led the definition of the new backend hiring exercise (live coding), with 6 other contributing engineers. Our priority was to make the exercise fair for every candidate.
 
-            The interview is designed to feel like a day-to-day job at BlaBlaCar and heavily promotes teamwork, which helps assessing soft skills.
+            The interview is designed to feel like a day-to-day job at BlaBlaCar and is done as a team, which also helps assess soft skills.
   - company: Criteo
     location: Paris
     url: https://www.criteo.com
@@ -184,16 +183,16 @@ experiences:
             Seul ingénieur logiciel au sein d'une équipe d'ops :
              * Conception d'APIs orientées utilisateur pour les bibliothèques clientes de l'équipe
              * Contribution aux composants d'observabilité, dont de l'open source (ex. BigGraphite)
-             * Diffusion des bonnes pratiques d'ingénierie (conception, code, tests, revues)
-             * Animation d'ateliers Scala pour monter l'équipe en compétences
+             * Partage de pratiques d'ingénierie (conception, code, tests, revues)
+             * Ateliers Scala pour l'équipe
           en: |
             Team owning Criteo's observability stack (logging, metrics, distributed tracing).
 
             Sole software engineer among ops:
              * Designed user-oriented APIs for the team's client libraries
              * Contributed to observability components, including open source (e.g. BigGraphite)
-             * Spread engineering best practices (design, code, testing, reviews)
-             * Ran Scala workshops to upskill teammates
+             * Shared engineering practices (design, code, testing, reviews)
+             * Ran Scala workshops for the team
       - role:
           fr: Ingénieur logiciel
           en: Software engineer
@@ -233,8 +232,8 @@ experiences:
           fr: Agilité
           en: Agility
         description:
-          fr: Mise en place de rétrospectives dans les trois équipes pour soutenir un processus d'amélioration continue
-          en: Bootstrapped retrospectives in all three teams to support a continuous improvement process
+          fr: Mise en place de rétrospectives dans les trois équipes
+          en: Set up retrospectives in all three teams
   - company: Spideo
     location: Paris
     url: https://spideo.com
