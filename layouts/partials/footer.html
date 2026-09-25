@@ -13,13 +13,6 @@
       </a>
     </li>
     {{- end }}
-    {{- range site.Menus.footer }}
-    <li>
-      <a href="{{ .URL }}" rel="noopener noreferrer" target="_blank">
-        {{ .Name }}<span class="ext-hint" aria-label="{{ if eq site.Language.Lang "fr" }}(ouvre dans un nouvel onglet){{ else }}(opens in new tab){{ end }}">&#8599;</span>
-      </a>
-    </li>
-    {{- end }}
   </ul>
   {{/*
     The figure is written after the build by scripts/page-weight.py: this page's
