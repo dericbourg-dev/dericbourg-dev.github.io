@@ -44,7 +44,7 @@ Content uses TOML frontmatter with `+++` delimiters.
 `data/cv.yaml` and `data/references.yaml` are validated by JSON Schemas in `schemas/`
 (`cv.schema.json`, `references.schema.json`). Each data file points at its schema with a
 `# yaml-language-server: $schema=../schemas/*.json` modeline on line 1 (editor completion and
-validation), and `scripts/validate-data.sh` enforces the same schemas from `scripts/build.sh`
+validation), and `scripts/build.sh` enforces the same schemas with `check-jsonschema`
 before `hugo` runs — so `make build`, `make test` and CI all fail on a malformed data file.
 `make serve` runs `hugo server` directly and does *not* validate; the editor covers that.
 
@@ -64,7 +64,7 @@ what turns that silence into an error.
 ### Version Management
 Versions are pinned in dedicated files (read by Makefile and GitHub Actions):
 - `.hugo-version` - Hugo version
-- `.check-jsonschema-version` - check-jsonschema version (used by `scripts/validate-data.sh`)
+- `.check-jsonschema-version` - check-jsonschema version (used by `scripts/build.sh`)
 
 To update: modify the file, then `make build`.
 

@@ -5,8 +5,11 @@ set -eu
 PREFIX=$(sed -nE 's/^cvPdfPrefix[[:space:]]*=[[:space:]]*"([^"]+)".*/\1/p' config/_default/params.toml)
 [ -n "$PREFIX" ] || { echo "cvPdfPrefix not found in config/_default/params.toml" >&2; exit 1; }
 
-# Fail fast on a malformed data file, before Hugo silently renders around it
-sh scripts/validate-data.sh
+# Fail fast on a malformed data file, before Hugo silently renders around it:
+# most of the CV template guards with `{{ with … }}`, so a misspelled key would
+# render nothing. Same schemas as the data files' yaml-language-server modeline.
+check-jsonschema --schemafile schemas/cv.schema.json         data/cv.yaml
+check-jsonschema --schemafile schemas/references.schema.json data/references.yaml
 
 # Build the static site (extra args pass through, e.g. --baseURL in CI)
 hugo --gc --minify "$@"
