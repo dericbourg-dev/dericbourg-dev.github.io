@@ -19,6 +19,15 @@
       "datasourceTemplate": "pypi",
       "depNameTemplate": "weasyprint",
       "versioningTemplate": "pep440"
+    },
+    {
+      "customType": "regex",
+      "description": "check-jsonschema version pinned in .check-jsonschema-version",
+      "managerFilePatterns": ["/^\\.check-jsonschema-version$/"],
+      "matchStrings": ["^(?<currentValue>\\S+)\\s*$"],
+      "datasourceTemplate": "pypi",
+      "depNameTemplate": "check-jsonschema",
+      "versioningTemplate": "pep440"
     }
   ]
 }
