@@ -85,7 +85,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: build
     steps:
       - name: Deploy to GitHub Pages
@@ -93,7 +93,7 @@ jobs:
         uses: actions/deploy-pages@v5
 
   notify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: deploy
     # An index ping is advisory — a hiccup on IndexNow's side must never mark
     # the deploy as failed. The step itself still fails visibly in the log.
