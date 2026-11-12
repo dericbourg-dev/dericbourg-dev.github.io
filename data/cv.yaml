@@ -7,21 +7,21 @@ header:
   summary:
     fr: >-
       Ingénieur logiciel senior, j'ai 15 ans d'expérience, notamment au sein de trois licornes
-      françaises (Criteo, BlaBlaCar, Mirakl). Je conçois et fiabilise des services back-end dans des
+      françaises (Criteo, BlaBlaCar, Mirakl). Je conçois et livre des services back-end dans des
       systèmes distribués à fort trafic, sur de grandes bases de code existantes comme sur des
       services neufs. Je pars du problème à résoudre et de ce qu'il apporte aux utilisateurs pour
-      faire mes choix techniques. La fiabilité est le domaine qui m'intéresse le plus : observabilité,
-      SLO, démarche SRE. Je pilote aussi des projets impliquant plusieurs équipes, de la découverte au
+      faire mes choix techniques. Je m'assure que ce que je livre tient en production (observabilité,
+      SLO). Je pilote aussi des projets impliquant plusieurs équipes, de la découverte au
       déploiement, et j'aime aider une équipe à avancer ensemble. J'habite à la campagne entre
       Poitiers et Angoulême et je travaille en full remote depuis 2019 (BlaBlaCar, Mirakl). Je
       m'assure que les décisions sont mises à l'écrit, et j'ai l'habitude de venir sur site 2 à 4
       jours par mois.
     en: >-
       Senior software engineer, I have 15 years of experience, notably in three French unicorns
-      (Criteo, BlaBlaCar, Mirakl). I design and harden back-end services in high-traffic distributed
+      (Criteo, BlaBlaCar, Mirakl). I design and deliver back-end services in high-traffic distributed
       systems, on large existing codebases as well as on new services. I start from the problem to
-      solve and what it brings to users to make my technical choices. Reliability is the area that
-      interests me most: observability, SLOs, an SRE approach. I also lead projects involving several
+      solve and what it brings to users to make my technical choices. I make sure what I deliver
+      holds up in production (observability, SLOs). I also lead projects involving several
       teams, from discovery to rollout, and I like helping a team move forward together. I live in
       the countryside between Poitiers and Angoulême and have worked fully remote since 2019
       (BlaBlaCar, Mirakl). I make sure decisions are written down, and I usually come on-site 2 to 4
@@ -298,7 +298,7 @@ skills:
   - group:
       fr: Pratiques
       en: Practices
-    items: ["Distributed Systems", SLO, SRE, TDD, "Code Review", "Design Docs", "Product discovery", "AI-assisted development"]
+    items: ["Distributed Systems", "Design Docs", "Code Review", TDD, "Product discovery", SLO, SRE, "AI-assisted development"]
 
 spokenLanguages:
   - name:

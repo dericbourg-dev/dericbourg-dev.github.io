@@ -1,12 +1,16 @@
 +++
-description = "Alban Dericbourg, ingénieur logiciel senior indépendant à sensibilité produit. 15 ans dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Systèmes distribués, observabilité et fiabilité (SLO / SRE). Full remote depuis 2019, basé entre Poitiers et Angoulême."
+description = "Alban Dericbourg, ingénieur logiciel senior indépendant à sensibilité produit. 15 ans dans trois licornes françaises (Criteo, BlaBlaCar, Mirakl). Conception et livraison de services back-end dans des systèmes distribués à fort trafic. Full remote depuis 2019, basé entre Poitiers et Angoulême."
 +++
 
 # Alban Dericbourg, ingénieur logiciel senior indépendant
 
-J'ai passé quinze ans à concevoir et fiabiliser des services back-end, notamment au sein de trois licornes françaises : Criteo, BlaBlaCar et Mirakl.
+J'ai passé quinze ans à concevoir et livrer des services back-end, notamment au sein de trois licornes françaises : Criteo, BlaBlaCar et Mirakl.
 
-Je peux renforcer une équipe existante ou prendre en charge un sujet délimité de bout en bout. Dans les deux cas, je pars du problème à résoudre et de ce qu'il apporte aux utilisateurs, et je fais les choix techniques en conséquence. J'ai travaillé aussi bien sur de grandes bases de code existantes, que j'ai explorées et modernisées, que sur de nouveaux services déployés dans des systèmes distribués à fort trafic. La fiabilité est le domaine qui m'intéresse le plus : j'ai fait partie des premiers à mettre en place des SLO et une démarche SRE dans plusieurs équipes. Je reste intéressé par des missions back-end plus généralistes.
+Je peux renforcer une équipe existante ou prendre en charge un sujet délimité de bout en bout. Dans les deux cas, je pars du problème à résoudre et de ce qu'il apporte aux utilisateurs, et je fais les choix techniques en conséquence. J'ai travaillé aussi bien sur de grandes bases de code existantes, que j'ai explorées et modernisées, que sur de nouveaux services déployés dans des systèmes distribués à fort trafic. Pour moi, livrer ne s'arrête pas à la mise en production : je m'assure que le service tient dans la durée, et j'ai fait partie des premiers à mettre en place des SLO dans plusieurs équipes.
+
+> Alban sait imaginer, présenter et mettre en place des solutions de bout en bout, robustes et avec le bon niveau d'abstraction.
+>
+> — Jérémy B., développeur front-end chez BlaBlaCar ([tous les témoignages](/references/))
 
 Je travaille en full remote depuis 2019, d'abord chez BlaBlaCar puis chez Mirakl. Pendant ces sept ans, j'ai piloté à distance des projets impliquant plusieurs équipes et accompagné des collègues dans leur montée en compétence. J'utilise beaucoup la communication orale (en visio) pour construire et entretenir les liens avec chacun·e. À la suite des discussions débouchant sur une décision, je m'assure que celle-ci est mise à l'écrit afin qu'elle ne se perde pas. Bien que je privilégie le télétravail, il me semble important de me déplacer régulièrement sur site.
 
@@ -19,7 +23,7 @@ Ce n'est pas le cas ? Vous pourriez peut-être me recommander deux personnes à 
 
 ### Sur quelles missions puis-je intervenir ?
 
-Du développement back-end dans des systèmes distribués à fort trafic : création de services, modernisation de code existant, observabilité et fiabilité. Je pilote aussi des projets transverses impliquant plusieurs équipes.
+De la conception et du développement back-end dans des systèmes distribués à fort trafic : création de services, modernisation de code existant, pilotage de projets transverses impliquant plusieurs équipes. La tenue en production (observabilité, SLO) fait partie de ce que je livre.
 
 ### Qu'est-ce que j'entends par sensibilité produit (« product-minded ») ?
 
@@ -33,7 +37,7 @@ Je travaille dans les deux modes, selon votre besoin.
 
 En régie, je rejoins votre équipe et je travaille sur vos priorités. Ce mode convient quand le besoin est continu, que le périmètre évolue d'une semaine à l'autre, ou que renforcer l'équipe compte autant que livrer.
 
-Au forfait, je prends en charge un sujet délimité et je m'engage sur le résultat, avec un périmètre écrit, un prix ferme et une date de livraison. Ce mode convient quand vous savez décrire ce que vous voulez obtenir : un connecteur à mettre en production, une démarche SLO à déployer, un outillage à mettre en place, une partie de code existant à moderniser. J'ai déjà livré ce type de sujets, le [CV](/cv/) en donne le détail.
+Au forfait, je prends en charge un sujet délimité et je m'engage sur le résultat, avec un périmètre écrit, un prix ferme et une date de livraison. Ce mode convient quand vous savez décrire ce que vous voulez obtenir : un service ou un connecteur à mettre en production, une partie de code existant à moderniser, une démarche SLO à déployer. J'ai déjà livré ce type de sujets, le [CV](/cv/) en donne le détail.
 
 Dans les deux cas, je travaille de la même façon, avec un point d'avancement écrit chaque semaine et des décisions de conception documentées.
 

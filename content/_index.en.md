@@ -1,12 +1,16 @@
 +++
-description = "Alban Dericbourg, product-minded freelance senior software engineer. 15 years across three French unicorns (Criteo, BlaBlaCar, Mirakl). Distributed systems, observability and reliability (SLO / SRE). Fully remote since 2019, based in rural France between Poitiers and Angoulême."
+description = "Alban Dericbourg, product-minded freelance senior software engineer. 15 years across three French unicorns (Criteo, BlaBlaCar, Mirakl). Designs and delivers back-end services in high-traffic distributed systems. Fully remote since 2019, based in rural France between Poitiers and Angoulême."
 +++
 
 # Alban Dericbourg, freelance senior software engineer
 
-I have spent fifteen years designing and hardening back-end services, notably in three French unicorns: Criteo, BlaBlaCar and Mirakl.
+I have spent fifteen years designing and delivering back-end services, notably in three French unicorns: Criteo, BlaBlaCar and Mirakl.
 
-I can reinforce an existing team or take a scoped piece of work end to end. In both cases, I start from the problem to solve and what it brings to users, and I make the technical choices accordingly. I have worked on large existing codebases, which I explored and modernized, as well as on new services deployed in high-traffic distributed systems. Reliability is the area that interests me most: I was among the first to set up SLOs and an SRE approach in several teams. I am still interested in more generalist back-end work.
+I can reinforce an existing team or take a scoped piece of work end to end. In both cases, I start from the problem to solve and what it brings to users, and I make the technical choices accordingly. I have worked on large existing codebases, which I explored and modernized, as well as on new services deployed in high-traffic distributed systems. To me, delivering doesn't stop at going to production: I make sure the service holds up over time, and I was among the first to set up SLOs in several teams.
+
+> Alban knows how to imagine, present, and implement robust, end-to-end solutions with the right level of abstraction.
+>
+> — Jérémy B., front-end developer at BlaBlaCar, translated from French ([all testimonials](/en/references/))
 
 I have worked fully remote since 2019, first at BlaBlaCar and then at Mirakl. Over these seven years, I led multi-team projects remotely and helped colleagues grow their skills. I rely a lot on spoken communication (over video calls) to build and maintain relationships with each person. After discussions that lead to a decision, I make sure the decision is written down so that it doesn't get lost. Although I favor remote work, I think it is important to come on-site regularly.
 
@@ -19,7 +23,7 @@ If not, maybe you could point me to two people worth reaching out to. :)
 
 ### What kind of work do I take on?
 
-Back-end development in high-traffic distributed systems: building new services, modernizing existing code, observability and reliability. I also drive cross-team projects.
+Back-end design and development in high-traffic distributed systems: building new services, modernizing existing code, driving cross-team projects. Keeping them running in production (observability, SLOs) is part of what I deliver.
 
 ### What do I mean by product-minded?
 
@@ -33,7 +37,7 @@ I work both ways, depending on your need.
 
 On a time-and-materials basis, I join your team and work on your priorities. This fits when the need is ongoing, when the scope changes from week to week, or when strengthening the team matters as much as delivering.
 
-On a fixed-price basis, I take on a scoped piece of work and commit to the result, with a written scope, a firm price and a delivery date. This fits when you can describe what you want to obtain: a connector to put in production, an SLO practice to roll out, tooling to set up, part of an existing codebase to modernize. I have already delivered this kind of work, and my [CV](/en/cv/) gives the details.
+On a fixed-price basis, I take on a scoped piece of work and commit to the result, with a written scope, a firm price and a delivery date. This fits when you can describe what you want to obtain: a service or a connector to put in production, part of an existing codebase to modernize, an SLO practice to roll out. I have already delivered this kind of work, and my [CV](/en/cv/) gives the details.
 
 In both cases, I work the same way, with a written progress update every week and documented design decisions.
 
